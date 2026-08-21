@@ -1,0 +1,8 @@
+# Local raw imports and temporary preview output
+non/raw-data/*.json
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

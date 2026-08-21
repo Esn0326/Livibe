@@ -1,0 +1,37 @@
+{
+  "defaultLocale": "zh-TW",
+  "countries": {
+    "TW": { "region": { "zh-TW": "台灣", "en": "Taiwan" }, "accent": "#d9425f" },
+    "KR": { "region": { "zh-TW": "韓國", "en": "South Korea" }, "accent": "#6d78c9" },
+    "JP": { "region": { "zh-TW": "日本", "en": "Japan" }, "accent": "#cc5a72" },
+    "HK": { "region": { "zh-TW": "香港", "en": "Hong Kong" }, "accent": "#c97842" },
+    "MO": { "region": { "zh-TW": "澳門", "en": "Macau" }, "accent": "#9b6fc4" },
+    "SG": { "region": { "zh-TW": "新加坡", "en": "Singapore" }, "accent": "#4f9c85" },
+    "MY": { "region": { "zh-TW": "馬來西亞", "en": "Malaysia" }, "accent": "#4e8fb5" },
+    "TH": { "region": { "zh-TW": "泰國", "en": "Thailand" }, "accent": "#9b7354" },
+    "PH": { "region": { "zh-TW": "菲律賓", "en": "Philippines" }, "accent": "#657db6" },
+    "ID": { "region": { "zh-TW": "印尼", "en": "Indonesia" }, "accent": "#b05252" }
+  },
+  "cities": {
+    "Taipei": { "name": { "zh-TW": "台北市", "en": "Taipei" }, "palette": ["#d9425f", "#7f315c"] },
+    "New Taipei": { "name": { "zh-TW": "新北市", "en": "New Taipei" }, "palette": ["#e36b4f", "#8d3f54"] },
+    "Kaohsiung": { "name": { "zh-TW": "高雄市", "en": "Kaohsiung" }, "palette": ["#2488c7", "#334c9b"] },
+    "Taoyuan": { "name": { "zh-TW": "桃園市", "en": "Taoyuan" }, "palette": ["#8b61c7", "#4f58a8"] },
+    "Taichung": { "name": { "zh-TW": "台中市", "en": "Taichung" }, "palette": ["#2f9a74", "#276b86"] },
+    "Seoul": { "name": { "zh-TW": "首爾", "en": "Seoul" }, "palette": ["#596bd2", "#493d91"] },
+    "Incheon": { "name": { "zh-TW": "仁川", "en": "Incheon" }, "palette": ["#377fb9", "#3b4c94"] },
+    "Goyang": { "name": { "zh-TW": "高陽市", "en": "Goyang" }, "palette": ["#6e67c8", "#70438d"] },
+    "Tokyo": { "name": { "zh-TW": "東京都", "en": "Tokyo" }, "palette": ["#d24e69", "#8c355f"] },
+    "Osaka": { "name": { "zh-TW": "大阪市", "en": "Osaka" }, "palette": ["#d36d42", "#8b3e4a"] },
+    "Saitama": { "name": { "zh-TW": "埼玉市", "en": "Saitama" }, "palette": ["#b95687", "#694287"] },
+    "Yokohama": { "name": { "zh-TW": "橫濱市", "en": "Yokohama" }, "palette": ["#bd5264", "#475a9c"] },
+    "Hong Kong": { "name": { "zh-TW": "香港", "en": "Hong Kong" }, "palette": ["#c97842", "#893b48"] },
+    "Macau": { "name": { "zh-TW": "澳門", "en": "Macau" }, "palette": ["#9b6fc4", "#5e458c"] },
+    "Singapore": { "name": { "zh-TW": "新加坡", "en": "Singapore" }, "palette": ["#4f9c85", "#276b75"] },
+    "Manila": { "name": { "zh-TW": "馬尼拉", "en": "Manila" }, "palette": ["#657db6", "#4a4e8a"] },
+    "Quezon City": { "name": { "zh-TW": "奎松市", "en": "Quezon City" }, "palette": ["#7287c7", "#4d568f"] },
+    "Bangkok": { "name": { "zh-TW": "曼谷", "en": "Bangkok" }, "palette": ["#9b7354", "#724156"] },
+    "Kuala Lumpur": { "name": { "zh-TW": "吉隆坡", "en": "Kuala Lumpur" }, "palette": ["#4e8fb5", "#3b5c8b"] },
+    "Tangerang": { "name": { "zh-TW": "丹格朗", "en": "Tangerang" }, "palette": ["#b05252", "#713e62"] }
+  }
+}

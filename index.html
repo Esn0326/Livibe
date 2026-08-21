@@ -2,50 +2,93 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>LIVIBE - 現場演出脈動</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVIBE - 演唱會資料庫</title>
+    <link rel="stylesheet" href="assets/css/app.css?v=20260821-10">
 </head>
-
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo-box">LIVIBE</a>
+        <div class="nav-links">
+            <a href="#concert-grid">演出</a>
+            <a href="venues.html">場館視野</a>
+            <a href="#news-strip">新聞</a>
+        </div>
+        <a class="nav-auth-link" data-auth-link href="login.html">管理登入</a>
     </nav>
-<div class="control-panel" style="max-width:1200px; margin:20px auto; display:flex; gap:10px; padding:0 20px;">
-    <input type="text" id="search-input" placeholder="搜尋藝人或活動..." style="flex:2; padding:12px; background:#111; border:1px solid #333; color:#fff; border-radius:4px;">
-    <select id="filter-tag" style="flex:1; padding:12px; background:#111; border:1px solid #333; color:#fff;">
-        <option value="all">所有標籤</option>
-        <option value="TOUR">TOUR</option>
-        <option value="JOINT">JOINT</option>
-        <option value="FESTIVAL">FESTIVAL</option>
-        <option value="SHOWCASE">SHOWCASE</option>
-        <option value="VARIETY">VARIETY</option>
-    </select>
-    <select id="sort-order" style="flex:1; padding:12px; background:#111; border:1px solid #333; color:#fff;">
-        <option value="newest">最新</option>
-        <option value="oldest">最舊</option>
-    </select>
-</div>
-    <div class="control-panel">
-        <div class="sort-group">
-            <select id="filter-tag" class="sort-btn" style="appearance: none; text-align: center;">
-                <option value="ALL">全部類型</option>
-                <option value="tour">巡迴演唱會</option>
-                <option value="festival">音樂祭 / 跨年</option>
-                <option value="showcase">專場演出</option>
-                <option value="variety">職棒 / 體育</option>
-            </select>
-            
-            <input type="date" id="filter-date" class="sort-btn" style="color-scheme: dark;">
 
-            <button class="sort-btn active" data-sort="date-desc">最新日期</button>
-            <button class="sort-btn" data-sort="date-asc">最舊日期</button>
-            <button class="sort-btn" data-sort="title">名稱排序</button>
+    <header class="home-hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="eyebrow">Concert Database for Taiwan</p>
+            <h1>找到下一場值得進場的演唱會</h1>
+            <p class="hero-copy">像 IMDb 查電影一樣，快速瀏覽演唱會、音樂祭、場館資訊、觀眾評分與討論熱度。</p>
+            <div class="hero-stats" id="hero-stats">
+                <span>載入資料中</span>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div id="concert-grid" class="concert-grid">
-        </div>
+    <main>
+        <section class="toolbar" aria-label="演唱會搜尋與篩選">
+            <label class="search-box">
+                <span>搜尋</span>
+                <input type="search" id="search-input" placeholder="輸入藝人、演出名稱、場館">
+            </label>
 
-    <script src="main.js"></script>
+            <label>
+                <span>類型</span>
+                <select id="filter-tag">
+                    <option value="all">全部類型</option>
+                    <option value="TOUR">巡迴</option>
+                    <option value="FESTIVAL">音樂祭</option>
+                    <option value="SHOWCASE">專場</option>
+                </select>
+            </label>
+
+            <label>
+                <span>時間</span>
+                <select id="filter-period">
+                    <option value="all">全部時間</option>
+                    <option value="upcoming">即將到來</option>
+                    <option value="past">歷史演出</option>
+                </select>
+            </label>
+
+            <label>
+                <span>排序</span>
+                <select id="sort-order">
+                    <option value="popular">LIVIBE 推薦</option>
+                    <option value="newest">日期新到舊</option>
+                    <option value="oldest">日期舊到新</option>
+                    <option value="rating">評分最高</option>
+                </select>
+            </label>
+        </section>
+
+        <section class="section-header">
+            <div>
+                <p class="eyebrow">Browse</p>
+                <h2>演唱會片單</h2>
+            </div>
+            <p id="result-count">0 場演出</p>
+        </section>
+
+        <section id="concert-grid" class="concert-grid" aria-live="polite"></section>
+
+        <section class="news-strip" id="news-strip">
+            <div class="section-header compact">
+                <div>
+                    <p class="eyebrow">Newsroom</p>
+                    <h2>近期關注</h2>
+                </div>
+            </div>
+            <div class="news-grid" id="home-news"></div>
+        </section>
+    </main>
+
+    <script src="assets/data/site-data.js?v=20260821-3"></script>
+    <script src="assets/js/core.js?v=20260821-10"></script>
+    <script src="assets/js/home.js?v=20260821-3"></script>
 </body>
 </html>

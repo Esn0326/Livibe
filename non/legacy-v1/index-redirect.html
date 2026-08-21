@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <script>
+        window.location.replace('livibe.html');
+    </script>
+    <meta charset="UTF-8">
+    <title>LIVIBE - 現場演出脈動</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-box">LIVIBE</a>
+    </nav>
+
+    <div class="control-panel" style="max-width:1200px; margin:20px auto; display:flex; gap:10px; padding:0 20px;">
+        <input type="text" id="search-input" placeholder="搜尋藝人或活動..." style="flex:2; padding:12px; background:#111; border:1px solid #333; color:#fff; border-radius:4px;">
+
+        <select id="filter-tag" style="flex:1; padding:12px; background:#111; border:1px solid #333; color:#fff; border-radius:4px;">
+            <option value="all">所有類型 (ALL)</option>
+            <option value="TOUR">巡迴演出 (TOUR)</option>
+            <option value="FESTIVAL">音樂祭 (FESTIVAL)</option>
+            <option value="SHOWCASE">專場演出 (SHOWCASE)</option>
+        </select>
+
+        <select id="sort-order" style="flex:1; padding:12px; background:#111; border:1px solid #333; color:#fff; border-radius:4px;">
+            <option value="newest">最新日期</option>
+            <option value="oldest">最舊日期</option>
+        </select>
+    </div>
+
+    <div id="concert-grid" class="concert-grid"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

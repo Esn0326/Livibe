@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVIBE | 場館視野</title>
+    <link rel="stylesheet" href="assets/css/app.css?v=20260821-10">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-box">LIVIBE</a>
+        <div class="nav-links">
+            <a href="index.html">演唱會</a>
+            <a class="nav-active" href="venues.html">場館視野</a>
+            <a href="index.html#news-strip">新聞</a>
+        </div>
+        <a class="nav-auth-link" data-auth-link href="login.html">管理登入</a>
+    </nav>
+
+    <header class="venue-hero">
+        <div>
+            <p class="eyebrow">LIVIBE Venue Guide</p>
+            <h1>各大場館座位視野</h1>
+            <p>選場館、舞台配置與座位區，查看觀眾提供的真實視角。視野評價會與 LIVIBE 的演唱會場次及評論互相連結。</p>
+            <div class="venue-search-row">
+                <label class="search-box">
+                    <span>搜尋場館</span>
+                    <input id="venue-search" type="search" placeholder="例如：台北小巨蛋、高雄巨蛋">
+                </label>
+                <label>
+                    <span>地區</span>
+                    <select id="venue-region">
+                        <option value="all">所有地區</option>
+                        <option value="北部">北部</option>
+                        <option value="中部">中部</option>
+                        <option value="南部">南部</option>
+                        <option value="海外">海外</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="venue-hero-stat">
+            <strong id="venue-count">0</strong>
+            <span>座場館</span>
+            <small>持續收錄觀眾實拍</small>
+        </div>
+    </header>
+
+    <main class="venue-page">
+        <section class="featured-venue" id="featured-venue">
+            <div class="featured-copy">
+                <p class="eyebrow">Featured Venue</p>
+                <h2 id="featured-name">台北小巨蛋</h2>
+                <p id="featured-meta">台北市 · 容納約 15,000 人</p>
+                <div id="venue-role-control"></div>
+                <div id="layout-tabs" class="layout-tabs"></div>
+                <div class="venue-category-row">
+                    <span id="featured-category-badge" class="venue-category-badge"></span>
+                    <div id="venue-category-admin"></div>
+                </div>
+                <div class="featured-stats">
+                    <span><strong id="featured-photos">1,577</strong> <span id="featured-photo-unit">張視野</span></span>
+                    <span><strong id="featured-rating">8.6</strong> 平均視野</span>
+                    <span><strong id="featured-zones">24</strong> 個區域</span>
+                </div>
+            </div>
+            <div class="featured-diagram-wrap">
+                <div class="featured-map-tools map-tools" data-map-tools>
+                    <button type="button" data-map-action="hide-empty">隱藏無照片區</button>
+                    <button type="button" data-map-action="out" aria-label="縮小座位圖">−</button>
+                    <button type="button" data-map-action="reset">重設</button>
+                    <button type="button" data-map-action="in" aria-label="放大座位圖">＋</button>
+                </div>
+                <div class="arena-map-viewport">
+                    <svg id="featured-diagram" class="stage-diagram venue-stage-diagram taipei-arena-diagram" viewBox="0 0 2550 3488" preserveAspectRatio="xMidYMid meet" aria-label="台北小巨蛋座位配置圖"></svg>
+                </div>
+                <p id="featured-map-caption">點選座位區查看視野摘要 · 配置參考臺北小巨蛋官方公開資料</p>
+            </div>
+            <aside class="mini-view-card">
+                <div id="featured-photo" class="seat-view-photo venue-photo"></div>
+                <small id="featured-zone-label">黃 2A · 14排 7號</small>
+                <h3 id="featured-zone-title">正面完整舞台視野</h3>
+                <div class="mini-rating"><strong id="featured-zone-score">8.8</strong><span>/ 10</span></div>
+                <p id="featured-zone-copy">適合看完整舞美，延伸舞台升起時距離感比照片更近。</p>
+            </aside>
+        </section>
+
+        <section class="section-header venue-list-header">
+            <div>
+                <p class="eyebrow">Browse Venues</p>
+                <h2>瀏覽所有場館</h2>
+            </div>
+            <p id="venue-result-count"></p>
+        </section>
+        <section id="venue-grid" class="venue-card-grid" aria-live="polite"></section>
+    </main>
+
+    <script src="assets/data/site-data.js?v=20260821-3"></script>
+    <script src="assets/js/venue-maps.js?v=20260821-10"></script>
+    <script src="assets/js/core.js?v=20260821-10"></script>
+    <script src="assets/js/venues.js?v=20260821-10"></script>
+</body>
+</html>

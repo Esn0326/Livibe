@@ -1,0 +1,2125 @@
+/**
+ * LIVIBE 場館資料唯一來源。
+ * 國家、城市、多語系、色票、場館與舞台配置都集中在此檔案。
+ */
+window.LIVIBE_VENUE_DATA = {
+  "venues": [
+    {
+      "id": "taipei-dome",
+      "name": "台北大巨蛋",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 40000,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-dome",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-dome/",
+          "mapAsset": "assets/venue-maps/taipei-dome.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "taipei-dome-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-dome-center-stage/",
+          "mapAsset": "assets/venue-maps/taipei-dome-center-stage.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        },
+        {
+          "id": "taipei-dome-baseball",
+          "label": "球賽模式",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-dome-baseball/",
+          "mapAsset": "assets/venue-maps/taipei-dome-baseball.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-arena",
+      "name": "台北小巨蛋",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 15000,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-arena",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-arena/",
+          "mapAsset": "assets/venue-maps/taipei-arena.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        },
+        {
+          "id": "taipei-arena-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-arena-center-stage/",
+          "mapAsset": "assets/venue-maps/taipei-arena-center-stage.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "ntsu-arena-linkou",
+      "name": "林口體育館、國立體育大學綜合體育館",
+      "city": "New Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 10000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "ntsu-arena-linkou",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/ntsu-arena-linkou/",
+          "mapAsset": "assets/venue-maps/ntsu-arena-linkou.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kaohsiung-national-stadium",
+      "name": "高雄世運主場館",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 55000,
+      "photos": 0,
+      "rating": 8.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "kaohsiung-national-stadium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-national-stadium/",
+          "mapAsset": "assets/venue-maps/kaohsiung-national-stadium.svg",
+          "viewBox": "-34 0 2550 3483",
+          "zoneCount": 0
+        },
+        {
+          "id": "kaohsiung-national-stadium-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-national-stadium-center-stage/",
+          "mapAsset": "assets/venue-maps/kaohsiung-national-stadium-center-stage.svg",
+          "viewBox": "0 0 2550 3483",
+          "zoneCount": 0
+        },
+        {
+          "id": "kaohsiung-national-stadium-aaa",
+          "label": "AAA 中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-national-stadium-aaa/",
+          "mapAsset": "assets/venue-maps/kaohsiung-national-stadium-aaa.svg",
+          "viewBox": "0 0 2550 3483",
+          "zoneCount": 0
+        },
+        {
+          "id": "kaohsiung-national-stadium-horizontal-stage",
+          "label": "橫向舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-national-stadium-horizontal-stage/",
+          "mapAsset": "assets/venue-maps/kaohsiung-national-stadium-horizontal-stage.svg",
+          "viewBox": "0 0 2551 2558",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kaohsiung-arena",
+      "name": "高雄巨蛋",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 15000,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "kaohsiung-arena",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-arena/",
+          "mapAsset": "assets/venue-maps/kaohsiung-arena.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "kaohsiung-arena-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-arena-center-stage/",
+          "mapAsset": "assets/venue-maps/kaohsiung-arena-center-stage.svg",
+          "viewBox": "0 0 2550 3483",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-music-center",
+      "name": "台北流行音樂中心",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 6000,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-music-center",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-music-center/",
+          "mapAsset": "assets/venue-maps/taipei-music-center.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "ntu-sports-center",
+      "name": "台大綜合體育館",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 4000,
+      "photos": 0,
+      "rating": 8.3,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "ntu-sports-center",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/ntu-sports-center/",
+          "mapAsset": "assets/venue-maps/ntu-sports-center.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "ticc-taipei",
+      "name": "TICC 台北國際會議中心",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 3100,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "ticc-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/ticc-taipei/",
+          "mapAsset": "assets/venue-maps/ticc-taipei.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "new-taipei-exhibition-hall",
+      "name": "五股工商展覽館",
+      "city": "New Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "new-taipei-exhibition-hall",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/new-taipei-exhibition-hall/",
+          "mapAsset": "assets/venue-maps/new-taipei-exhibition-hall.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taoyuan-convention-center",
+      "name": "桃園會展中心",
+      "city": "Taoyuan",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taoyuan-convention-center",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taoyuan-convention-center/",
+          "mapAsset": "assets/venue-maps/taoyuan-convention-center.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kaohsiung-music-center",
+      "name": "高雄流行音樂中心",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 12000,
+      "photos": 0,
+      "rating": 8.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "kaohsiung-music-center",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-music-center/",
+          "mapAsset": "assets/venue-maps/kaohsiung-music-center.svg",
+          "viewBox": "48 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "tianmu-gymnasium",
+      "name": "天母體育館",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "tianmu-gymnasium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/tianmu-gymnasium/",
+          "mapAsset": "assets/venue-maps/tianmu-gymnasium.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kaohsiung-dream-mall-square",
+      "name": "高雄夢時代前廣場",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "kaohsiung-dream-mall-square",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-dream-mall-square/",
+          "mapAsset": "assets/venue-maps/kaohsiung-dream-mall-square.svg",
+          "viewBox": "-35 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "zepp-new-taipei",
+      "name": "Zepp New Taipei",
+      "city": "New Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 2700,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "zepp-new-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/zepp-new-taipei/",
+          "mapAsset": "assets/venue-maps/zepp-new-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "clapper-studio-taipei",
+      "name": "Clapper Studio",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1100,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "clapper-studio-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/clapper-studio-taipei/",
+          "mapAsset": "assets/venue-maps/clapper-studio-taipei.svg",
+          "viewBox": "91 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "legacy-max-taipei",
+      "name": "LEGACY MAX",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "legacy-max-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/legacy-max-taipei/",
+          "mapAsset": "assets/venue-maps/legacy-max-taipei.svg",
+          "viewBox": "-31 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "westar-taipei",
+      "name": "WESTAR",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "westar-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/westar-taipei/",
+          "mapAsset": "assets/venue-maps/westar-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "legacy-tera-taipei",
+      "name": "LEGACY TERA",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "legacy-tera-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/legacy-tera-taipei/",
+          "mapAsset": "assets/venue-maps/legacy-tera-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "moondog-taipei",
+      "name": "MOONDOG",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "moondog-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/moondog-taipei/",
+          "mapAsset": "assets/venue-maps/moondog-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "sub-live-taipei",
+      "name": "SUB Live",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "sub-live-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/sub-live-taipei/",
+          "mapAsset": "assets/venue-maps/sub-live-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "billboard-live-taipei",
+      "name": "Billboard Live Taipei",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "billboard-live-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/billboard-live-taipei/",
+          "mapAsset": "assets/venue-maps/billboard-live-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "hana-space-taipei",
+      "name": "花漾 hana space",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 700,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "hana-space-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/hana-space-taipei/",
+          "mapAsset": "assets/venue-maps/hana-space-taipei.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "legacy-taipei",
+      "name": "Legacy Taipei",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1200,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "legacy-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/legacy-taipei/",
+          "mapAsset": "assets/venue-maps/legacy-taipei.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "legacy-taichung",
+      "name": "Legacy Taichung",
+      "city": "Taichung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1500,
+      "photos": 0,
+      "rating": 8.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "legacy-taichung",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/legacy-taichung/",
+          "mapAsset": "assets/venue-maps/legacy-taichung.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "the-wall-livehouse-taipei",
+      "name": "The Wall Live House",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 800,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "the-wall-livehouse-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/the-wall-livehouse-taipei/",
+          "mapAsset": "assets/venue-maps/the-wall-livehouse-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "backstage-live-kaohsiung",
+      "name": "Backstage Live",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1000,
+      "photos": 0,
+      "rating": 8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "backstage-live-kaohsiung",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/backstage-live-kaohsiung/",
+          "mapAsset": "assets/venue-maps/backstage-live-kaohsiung.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "weiwuying-concert-hall",
+      "name": "衛武營音樂廳",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "weiwuying-concert-hall",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/weiwuying-concert-hall/",
+          "mapAsset": "assets/venue-maps/weiwuying-concert-hall.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "national-theater-taipei",
+      "name": "國家戲劇院",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1498,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "national-theater-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/national-theater-taipei/",
+          "mapAsset": "assets/venue-maps/national-theater-taipei.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taichung-opera-house",
+      "name": "台中歌劇院大劇院",
+      "city": "Taichung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 2007,
+      "photos": 0,
+      "rating": 8.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taichung-opera-house",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taichung-opera-house/",
+          "mapAsset": "assets/venue-maps/taichung-opera-house.svg",
+          "viewBox": "38 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "weiwuying-opera-house",
+      "name": "衛武營歌劇院",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 2236,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "weiwuying-opera-house",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/weiwuying-opera-house/",
+          "mapAsset": "assets/venue-maps/weiwuying-opera-house.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "national-concert-hall-taipei",
+      "name": "國家音樂廳",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 2074,
+      "photos": 0,
+      "rating": 8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "national-concert-hall-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/national-concert-hall-taipei/",
+          "mapAsset": "assets/venue-maps/national-concert-hall-taipei.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-pac-grand-theater",
+      "name": "臺北表演藝術中心 大劇院",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1500,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-pac-grand-theater",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-pac-grand-theater/",
+          "mapAsset": "assets/venue-maps/taipei-pac-grand-theater.svg",
+          "viewBox": "70 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-pac-globe-playhouse",
+      "name": "臺北表演藝術中心 球劇場",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 800,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-pac-globe-playhouse",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-pac-globe-playhouse/",
+          "mapAsset": "assets/venue-maps/taipei-pac-globe-playhouse.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-pac-blue-box",
+      "name": "臺北表演藝術中心 藍盒子",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 800,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-pac-blue-box",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-pac-blue-box/",
+          "mapAsset": "assets/venue-maps/taipei-pac-blue-box.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taichung-yuanman-outdoor-theater",
+      "name": "台中圓滿戶外劇場",
+      "city": "Taichung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taichung-yuanman-outdoor-theater",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taichung-yuanman-outdoor-theater/",
+          "mapAsset": "assets/venue-maps/taichung-yuanman-outdoor-theater.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "nancun-theater-taipei",
+      "name": "南村劇場",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "nancun-theater-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/nancun-theater-taipei/",
+          "mapAsset": "assets/venue-maps/nancun-theater-taipei.svg",
+          "viewBox": "129 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taichung-zhongshan-hall",
+      "name": "台中市中山堂",
+      "city": "Taichung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1400,
+      "photos": 0,
+      "rating": 8,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taichung-zhongshan-hall",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taichung-zhongshan-hall/",
+          "mapAsset": "assets/venue-maps/taichung-zhongshan-hall.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taiwan-traditional-theatre-center-grand-theater",
+      "name": "臺灣戲曲中心 大表演廳",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1057,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taiwan-traditional-theatre-center-grand-theater",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taiwan-traditional-theatre-center-grand-theater/",
+          "mapAsset": "assets/venue-maps/taiwan-traditional-theatre-center-grand-theater.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "taipei-city-stage",
+      "name": "城市舞台",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1000,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "taipei-city-stage",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/taipei-city-stage/",
+          "mapAsset": "assets/venue-maps/taipei-city-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "shuiyuan-theater-taipei",
+      "name": "水源劇場",
+      "city": "Taipei",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 330,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "shuiyuan-theater-taipei",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/shuiyuan-theater-taipei/",
+          "mapAsset": "assets/venue-maps/shuiyuan-theater-taipei.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kaohsiung-cultural-center-zhide-hall",
+      "name": "高雄市文化中心至德堂",
+      "city": "Kaohsiung",
+      "region": "台灣",
+      "country": "TW",
+      "capacity": 1702,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#d9425f",
+      "configs": [
+        {
+          "id": "kaohsiung-cultural-center-zhide-hall",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kaohsiung-cultural-center-zhide-hall/",
+          "mapAsset": "assets/venue-maps/kaohsiung-cultural-center-zhide-hall.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kspo-dome-seoul",
+      "name": "KSPO Dome 首爾奧林匹克體操競技場",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 15000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "kspo-dome-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kspo-dome-seoul/",
+          "mapAsset": "assets/venue-maps/kspo-dome-seoul.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "kspo-dome-seoul-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kspo-dome-seoul-center-stage/",
+          "mapAsset": "assets/venue-maps/kspo-dome-seoul-center-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "inspire-arena-incheon",
+      "name": "Inspire Arena 迎仕柏綜藝館",
+      "city": "Incheon",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 15000,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "inspire-arena-incheon",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/inspire-arena-incheon/",
+          "mapAsset": "assets/venue-maps/inspire-arena-incheon.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "inspire-arena-incheon-standard-stage-2",
+          "label": "標準舞台 2",
+          "sourceUrl": "https://twconcertview.com/venue/inspire-arena-incheon-standard-stage-2/",
+          "mapAsset": "assets/venue-maps/inspire-arena-incheon-standard-stage-2.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "inspire-arena-incheon-no-second-floor",
+          "label": "無二樓配置",
+          "sourceUrl": "https://twconcertview.com/venue/inspire-arena-incheon-no-second-floor/",
+          "mapAsset": "assets/venue-maps/inspire-arena-incheon-no-second-floor.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "inspire-arena-incheon-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/inspire-arena-incheon-center-stage/",
+          "mapAsset": "assets/venue-maps/inspire-arena-incheon-center-stage.svg",
+          "viewBox": "0 0 2550 3492",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "gocheok-sky-dome-seoul",
+      "name": "Gocheok Sky Dome 高尺天空巨蛋",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 25000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "gocheok-sky-dome-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/gocheok-sky-dome-seoul/",
+          "mapAsset": "assets/venue-maps/gocheok-sky-dome-seoul.svg",
+          "viewBox": "0 0 2550 3483",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "jamsil-indoor-stadium-seoul",
+      "name": "Jamsil Indoor Stadium 蠶室室內體育館",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 11000,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "jamsil-indoor-stadium-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/jamsil-indoor-stadium-seoul/",
+          "mapAsset": "assets/venue-maps/jamsil-indoor-stadium-seoul.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "goyang-gymnasium",
+      "name": "高陽體育館 (Goyang Gymnasium)",
+      "city": "Goyang",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "goyang-gymnasium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/goyang-gymnasium/",
+          "mapAsset": "assets/venue-maps/goyang-gymnasium.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "goyang-gymnasium-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/goyang-gymnasium-center-stage/",
+          "mapAsset": "assets/venue-maps/goyang-gymnasium-center-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "incheon-asiad-main-stadium",
+      "name": "仁川亞運主體育場 (Incheon Asiad Main Stadium)",
+      "city": "Incheon",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 60000,
+      "photos": 0,
+      "rating": 8.9,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "incheon-asiad-main-stadium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/incheon-asiad-main-stadium/",
+          "mapAsset": "assets/venue-maps/incheon-asiad-main-stadium.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "incheon-munhak-stadium",
+      "name": "仁川文鶴競技場 (Incheon Munhak Stadium)",
+      "city": "Incheon",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 50000,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "incheon-munhak-stadium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/incheon-munhak-stadium/",
+          "mapAsset": "assets/venue-maps/incheon-munhak-stadium.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kbs-arena-hall-seoul",
+      "name": "KBS Arena Hal",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 3500,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "kbs-arena-hall-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kbs-arena-hall-seoul/",
+          "mapAsset": "assets/venue-maps/kbs-arena-hall-seoul.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "korea-university-hwajeong-gymnasium-seoul",
+      "name": "高麗大學化汀體育館（Tiger Dome）",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 8000,
+      "photos": 0,
+      "rating": 8.3,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "korea-university-hwajeong-gymnasium-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/korea-university-hwajeong-gymnasium-seoul/",
+          "mapAsset": "assets/venue-maps/korea-university-hwajeong-gymnasium-seoul.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "olympic-hall-seoul",
+      "name": "奧林匹克廳 (Olympic Hall)",
+      "city": "Seoul",
+      "region": "韓國",
+      "country": "KR",
+      "capacity": 2452,
+      "photos": 0,
+      "rating": 7.8,
+      "zones": 0,
+      "accent": "#6d78c9",
+      "configs": [
+        {
+          "id": "olympic-hall-seoul",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/olympic-hall-seoul/",
+          "mapAsset": "assets/venue-maps/olympic-hall-seoul.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "tokyo-dome",
+      "name": "東京巨蛋 (Tokyo Dome)",
+      "city": "Tokyo",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 55000,
+      "photos": 0,
+      "rating": 8.8,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "tokyo-dome",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/tokyo-dome/",
+          "mapAsset": "assets/venue-maps/tokyo-dome.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kyocera-dome-osaka",
+      "name": "大阪京瓷巨蛋 (Kyocera Dome Osaka)",
+      "city": "Osaka",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 55000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "kyocera-dome-osaka",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kyocera-dome-osaka/",
+          "mapAsset": "assets/venue-maps/kyocera-dome-osaka.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "saitama-super-arena",
+      "name": "埼玉超級競技場 (Saitama Super Arena)",
+      "city": "Saitama",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 37000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "saitama-super-arena",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/saitama-super-arena/",
+          "mapAsset": "assets/venue-maps/saitama-super-arena.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "k-arena-yokohama",
+      "name": "K-Arena 橫濱",
+      "city": "Yokohama",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 20000,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "k-arena-yokohama",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/k-arena-yokohama/",
+          "mapAsset": "assets/venue-maps/k-arena-yokohama.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "pia-arena-mm-yokohama",
+      "name": "Pia Arena MM (ぴあアリーナMM)",
+      "city": "Yokohama",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 12141,
+      "photos": 0,
+      "rating": 7.9,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "pia-arena-mm-yokohama",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/pia-arena-mm-yokohama/",
+          "mapAsset": "assets/venue-maps/pia-arena-mm-yokohama.svg",
+          "viewBox": "-22 0 2511 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "osaka-jo-hall",
+      "name": "大阪城音樂廳 (Osaka-jo Hall)",
+      "city": "Osaka",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 16000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "osaka-jo-hall",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/osaka-jo-hall/",
+          "mapAsset": "assets/venue-maps/osaka-jo-hall.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "nippon-budokan-tokyo",
+      "name": "日本武道館 (Nippon Budokan)",
+      "city": "Tokyo",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 14000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "nippon-budokan-tokyo",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/nippon-budokan-tokyo/",
+          "mapAsset": "assets/venue-maps/nippon-budokan-tokyo.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "nippon-budokan-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/nippon-budokan-center-stage/",
+          "mapAsset": "assets/venue-maps/nippon-budokan-center-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "nissan-stadium-yokohama",
+      "name": "日產體育場 (Nissan Stadium 橫濱)",
+      "city": "Yokohama",
+      "region": "日本",
+      "country": "JP",
+      "capacity": 72000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#cc5a72",
+      "configs": [
+        {
+          "id": "nissan-stadium-yokohama",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/nissan-stadium-yokohama/",
+          "mapAsset": "assets/venue-maps/nissan-stadium-yokohama.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "asiaworld-expo-hongkong",
+      "name": "亞洲國際博覽館 1 號展館 (AsiaWorld-Expo Hall 1)",
+      "city": "Hong Kong",
+      "region": "香港",
+      "country": "HK",
+      "capacity": 14000,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#c97842",
+      "configs": [
+        {
+          "id": "asiaworld-expo-hongkong",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/asiaworld-expo-hongkong/",
+          "mapAsset": "assets/venue-maps/asiaworld-expo-hongkong.svg",
+          "viewBox": "0 0 2550 3450",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "asiaworld-expo-hall-10-hongkong",
+      "name": "亞洲國際博覽館 10 號展館 (AsiaWorld-Expo Hall 10)",
+      "city": "Hong Kong",
+      "region": "香港",
+      "country": "HK",
+      "capacity": 14000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#c97842",
+      "configs": [
+        {
+          "id": "asiaworld-expo-hall-10-hongkong",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/asiaworld-expo-hall-10-hongkong/",
+          "mapAsset": "assets/venue-maps/asiaworld-expo-hall-10-hongkong.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "kai-tak-stadium-hongkong",
+      "name": "香港啟德主場館 (Kai Tak Main Stadium)",
+      "city": "Hong Kong",
+      "region": "香港",
+      "country": "HK",
+      "capacity": 50000,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#c97842",
+      "configs": [
+        {
+          "id": "kai-tak-stadium-hongkong",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kai-tak-stadium-hongkong/",
+          "mapAsset": "assets/venue-maps/kai-tak-stadium-hongkong.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "kai-tak-stadium-center-stage-hongkong",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/kai-tak-stadium-center-stage-hongkong/",
+          "mapAsset": "assets/venue-maps/kai-tak-stadium-center-stage-hongkong.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "hong-kong-coliseum",
+      "name": "香港體育館 紅館 (Hong Kong Coliseum)",
+      "city": "Hong Kong",
+      "region": "香港",
+      "country": "HK",
+      "capacity": 12500,
+      "photos": 0,
+      "rating": 8.8,
+      "zones": 0,
+      "accent": "#c97842",
+      "configs": [
+        {
+          "id": "hong-kong-coliseum-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/hong-kong-coliseum-center-stage/",
+          "mapAsset": "assets/venue-maps/hong-kong-coliseum-center-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "hong-kong-coliseum-end-stage",
+          "label": "單側舞台",
+          "sourceUrl": "https://twconcertview.com/venue/hong-kong-coliseum-end-stage/",
+          "mapAsset": "assets/venue-maps/hong-kong-coliseum-end-stage.svg",
+          "viewBox": "-43 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "galaxy-arena-macau",
+      "name": "澳門銀河綜藝館 (Galaxy Arena)",
+      "city": "Macau",
+      "region": "澳門",
+      "country": "MO",
+      "capacity": 16000,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#9b6fc4",
+      "configs": [
+        {
+          "id": "galaxy-arena-macau",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/galaxy-arena-macau/",
+          "mapAsset": "assets/venue-maps/galaxy-arena-macau.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "venetian-cotai-arena-macau",
+      "name": "澳門威尼斯人綜藝館 (Venetian Cotai Arena)",
+      "city": "Macau",
+      "region": "澳門",
+      "country": "MO",
+      "capacity": 15000,
+      "photos": 0,
+      "rating": 8.3,
+      "zones": 0,
+      "accent": "#9b6fc4",
+      "configs": [
+        {
+          "id": "venetian-cotai-arena-end-stage-macau",
+          "label": "單側舞台",
+          "sourceUrl": "https://twconcertview.com/venue/venetian-cotai-arena-end-stage-macau/",
+          "mapAsset": "assets/venue-maps/venetian-cotai-arena-end-stage-macau.svg",
+          "viewBox": "0 0 2511 3488",
+          "zoneCount": 0
+        },
+        {
+          "id": "venetian-cotai-arena-center-stage-macau",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/venetian-cotai-arena-center-stage-macau/",
+          "mapAsset": "assets/venue-maps/venetian-cotai-arena-center-stage-macau.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "singapore-indoor-stadium",
+      "name": "新加坡室內體育館 (Singapore Indoor Stadium)",
+      "city": "Singapore",
+      "region": "新加坡",
+      "country": "SG",
+      "capacity": 12000,
+      "photos": 0,
+      "rating": 8.2,
+      "zones": 0,
+      "accent": "#4f9c85",
+      "configs": [
+        {
+          "id": "singapore-indoor-stadium",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/singapore-indoor-stadium/",
+          "mapAsset": "assets/venue-maps/singapore-indoor-stadium.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "moa-arena-manila",
+      "name": "SM Mall of Asia Arena (MOA Arena)",
+      "city": "Manila",
+      "region": "菲律賓",
+      "country": "PH",
+      "capacity": 20000,
+      "photos": 0,
+      "rating": 8.6,
+      "zones": 0,
+      "accent": "#657db6",
+      "configs": [
+        {
+          "id": "moa-arena-manila",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/moa-arena-manila/",
+          "mapAsset": "assets/venue-maps/moa-arena-manila.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "smart-araneta-coliseum-manila",
+      "name": "Smart Araneta Coliseum",
+      "city": "Quezon City",
+      "region": "菲律賓",
+      "country": "PH",
+      "capacity": 19679,
+      "photos": 0,
+      "rating": 8.3,
+      "zones": 0,
+      "accent": "#657db6",
+      "configs": [
+        {
+          "id": "smart-araneta-coliseum-manila",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/smart-araneta-coliseum-manila/",
+          "mapAsset": "assets/venue-maps/smart-araneta-coliseum-manila.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "impact-arena-bangkok",
+      "name": "IMPACT Arena",
+      "city": "Bangkok",
+      "region": "泰國",
+      "country": "TH",
+      "capacity": 12000,
+      "photos": 0,
+      "rating": 8,
+      "zones": 0,
+      "accent": "#9b7354",
+      "configs": [
+        {
+          "id": "impact-arena-bangkok",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/impact-arena-bangkok/",
+          "mapAsset": "assets/venue-maps/impact-arena-bangkok.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "axiata-arena-kuala-lumpur",
+      "name": "亞通體育館 (Axiata Arena)(Unifi Arena)",
+      "city": "Kuala Lumpur",
+      "region": "馬來西亞",
+      "country": "MY",
+      "capacity": 16000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#4e8fb5",
+      "configs": [
+        {
+          "id": "axiata-arena-kuala-lumpur",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/axiata-arena-kuala-lumpur/",
+          "mapAsset": "assets/venue-maps/axiata-arena-kuala-lumpur.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "bukit-jalil-national-stadium",
+      "name": "武吉加里爾國家體育場 (Bukit Jalil National Stadium)",
+      "city": "Kuala Lumpur",
+      "region": "馬來西亞",
+      "country": "MY",
+      "capacity": 87000,
+      "photos": 0,
+      "rating": 8.1,
+      "zones": 0,
+      "accent": "#4e8fb5",
+      "configs": [
+        {
+          "id": "bukit-jalil-national-stadium-end-stage-1",
+          "label": "單側舞台 1",
+          "sourceUrl": "https://twconcertview.com/venue/bukit-jalil-national-stadium-end-stage-1/",
+          "mapAsset": "assets/venue-maps/bukit-jalil-national-stadium-end-stage-1.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "bukit-jalil-national-stadium-end-stage-2",
+          "label": "單側舞台 2",
+          "sourceUrl": "https://twconcertview.com/venue/bukit-jalil-national-stadium-end-stage-2/",
+          "mapAsset": "assets/venue-maps/bukit-jalil-national-stadium-end-stage-2.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        },
+        {
+          "id": "bukit-jalil-national-stadium-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/bukit-jalil-national-stadium-center-stage/",
+          "mapAsset": "assets/venue-maps/bukit-jalil-national-stadium-center-stage.svg",
+          "viewBox": "41 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "thunder-dome-bangkok",
+      "name": "曼谷雷霆巨蛋 (Thunder Dome)",
+      "city": "Bangkok",
+      "region": "泰國",
+      "country": "TH",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#9b7354",
+      "configs": [
+        {
+          "id": "thunder-dome-bangkok",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/thunder-dome-bangkok/",
+          "mapAsset": "assets/venue-maps/thunder-dome-bangkok.svg",
+          "viewBox": "0 0 2550 3488",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "rajamangala-national-stadium-bangkok",
+      "name": "拉加曼加拉國家體育場 (Rajamangala National Stadium)",
+      "city": "Bangkok",
+      "region": "泰國",
+      "country": "TH",
+      "capacity": 51560,
+      "photos": 0,
+      "rating": 8.8,
+      "zones": 0,
+      "accent": "#9b7354",
+      "configs": [
+        {
+          "id": "rajamangala-national-stadium-bangkok",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/rajamangala-national-stadium-bangkok/",
+          "mapAsset": "assets/venue-maps/rajamangala-national-stadium-bangkok.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "rajamangala-national-stadium-bangkok-standard-stage-2",
+          "label": "標準舞台 2",
+          "sourceUrl": "https://twconcertview.com/venue/rajamangala-national-stadium-bangkok-standard-stage-2/",
+          "mapAsset": "assets/venue-maps/rajamangala-national-stadium-bangkok-standard-stage-2.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "rajamangala-national-stadium-bangkok-center-stage",
+          "label": "中央舞台",
+          "sourceUrl": "https://twconcertview.com/venue/rajamangala-national-stadium-bangkok-center-stage/",
+          "mapAsset": "assets/venue-maps/rajamangala-national-stadium-bangkok-center-stage.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "the-star-theatre-singapore",
+      "name": "新加坡星宇表演藝術中心 (The Star Theatre)",
+      "city": "Singapore",
+      "region": "新加坡",
+      "country": "SG",
+      "capacity": 5000,
+      "photos": 0,
+      "rating": 8.5,
+      "zones": 0,
+      "accent": "#4f9c85",
+      "configs": [
+        {
+          "id": "the-star-theatre-singapore",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/the-star-theatre-singapore/",
+          "mapAsset": "assets/venue-maps/the-star-theatre-singapore.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "singapore-national-stadium",
+      "name": "新加坡國家體育場 (Singapore National Stadium)",
+      "city": "Singapore",
+      "region": "新加坡",
+      "country": "SG",
+      "capacity": 55000,
+      "photos": 0,
+      "rating": 8.7,
+      "zones": 0,
+      "accent": "#4f9c85",
+      "configs": [
+        {
+          "id": "singapore-national-stadium-north",
+          "label": "北側舞台",
+          "sourceUrl": "https://twconcertview.com/venue/singapore-national-stadium-north/",
+          "mapAsset": "assets/venue-maps/singapore-national-stadium-north.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        },
+        {
+          "id": "singapore-national-stadium-east",
+          "label": "東側舞台",
+          "sourceUrl": "https://twconcertview.com/venue/singapore-national-stadium-east/",
+          "mapAsset": "assets/venue-maps/singapore-national-stadium-east.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    },
+    {
+      "id": "ice-bsd-jakarta",
+      "name": "Indonesia Convention Exhibition (ICE BSD)",
+      "city": "Tangerang",
+      "region": "印尼",
+      "country": "ID",
+      "capacity": null,
+      "photos": 0,
+      "rating": 8.4,
+      "zones": 0,
+      "accent": "#b05252",
+      "configs": [
+        {
+          "id": "ice-bsd-jakarta",
+          "label": "標準舞台",
+          "sourceUrl": "https://twconcertview.com/venue/ice-bsd-jakarta/",
+          "mapAsset": "assets/venue-maps/ice-bsd-jakarta.svg",
+          "viewBox": "0 0 2550 2550",
+          "zoneCount": 0
+        }
+      ]
+    }
+  ],
+  "locations": {
+    "defaultLocale": "zh-TW",
+    "countries": {
+      "TW": {
+        "region": {
+          "zh-TW": "台灣",
+          "en": "Taiwan"
+        },
+        "accent": "#d9425f"
+      },
+      "KR": {
+        "region": {
+          "zh-TW": "韓國",
+          "en": "South Korea"
+        },
+        "accent": "#6d78c9"
+      },
+      "JP": {
+        "region": {
+          "zh-TW": "日本",
+          "en": "Japan"
+        },
+        "accent": "#cc5a72"
+      },
+      "HK": {
+        "region": {
+          "zh-TW": "香港",
+          "en": "Hong Kong"
+        },
+        "accent": "#c97842"
+      },
+      "MO": {
+        "region": {
+          "zh-TW": "澳門",
+          "en": "Macau"
+        },
+        "accent": "#9b6fc4"
+      },
+      "SG": {
+        "region": {
+          "zh-TW": "新加坡",
+          "en": "Singapore"
+        },
+        "accent": "#4f9c85"
+      },
+      "MY": {
+        "region": {
+          "zh-TW": "馬來西亞",
+          "en": "Malaysia"
+        },
+        "accent": "#4e8fb5"
+      },
+      "TH": {
+        "region": {
+          "zh-TW": "泰國",
+          "en": "Thailand"
+        },
+        "accent": "#9b7354"
+      },
+      "PH": {
+        "region": {
+          "zh-TW": "菲律賓",
+          "en": "Philippines"
+        },
+        "accent": "#657db6"
+      },
+      "ID": {
+        "region": {
+          "zh-TW": "印尼",
+          "en": "Indonesia"
+        },
+        "accent": "#b05252"
+      }
+    },
+    "cities": {
+      "Taipei": {
+        "name": {
+          "zh-TW": "台北市",
+          "en": "Taipei"
+        },
+        "palette": [
+          "#d9425f",
+          "#7f315c"
+        ]
+      },
+      "New Taipei": {
+        "name": {
+          "zh-TW": "新北市",
+          "en": "New Taipei"
+        },
+        "palette": [
+          "#e36b4f",
+          "#8d3f54"
+        ]
+      },
+      "Kaohsiung": {
+        "name": {
+          "zh-TW": "高雄市",
+          "en": "Kaohsiung"
+        },
+        "palette": [
+          "#2488c7",
+          "#334c9b"
+        ]
+      },
+      "Taoyuan": {
+        "name": {
+          "zh-TW": "桃園市",
+          "en": "Taoyuan"
+        },
+        "palette": [
+          "#8b61c7",
+          "#4f58a8"
+        ]
+      },
+      "Taichung": {
+        "name": {
+          "zh-TW": "台中市",
+          "en": "Taichung"
+        },
+        "palette": [
+          "#2f9a74",
+          "#276b86"
+        ]
+      },
+      "Seoul": {
+        "name": {
+          "zh-TW": "首爾",
+          "en": "Seoul"
+        },
+        "palette": [
+          "#596bd2",
+          "#493d91"
+        ]
+      },
+      "Incheon": {
+        "name": {
+          "zh-TW": "仁川",
+          "en": "Incheon"
+        },
+        "palette": [
+          "#377fb9",
+          "#3b4c94"
+        ]
+      },
+      "Goyang": {
+        "name": {
+          "zh-TW": "高陽市",
+          "en": "Goyang"
+        },
+        "palette": [
+          "#6e67c8",
+          "#70438d"
+        ]
+      },
+      "Tokyo": {
+        "name": {
+          "zh-TW": "東京都",
+          "en": "Tokyo"
+        },
+        "palette": [
+          "#d24e69",
+          "#8c355f"
+        ]
+      },
+      "Osaka": {
+        "name": {
+          "zh-TW": "大阪市",
+          "en": "Osaka"
+        },
+        "palette": [
+          "#d36d42",
+          "#8b3e4a"
+        ]
+      },
+      "Saitama": {
+        "name": {
+          "zh-TW": "埼玉市",
+          "en": "Saitama"
+        },
+        "palette": [
+          "#b95687",
+          "#694287"
+        ]
+      },
+      "Yokohama": {
+        "name": {
+          "zh-TW": "橫濱市",
+          "en": "Yokohama"
+        },
+        "palette": [
+          "#bd5264",
+          "#475a9c"
+        ]
+      },
+      "Hong Kong": {
+        "name": {
+          "zh-TW": "香港",
+          "en": "Hong Kong"
+        },
+        "palette": [
+          "#c97842",
+          "#893b48"
+        ]
+      },
+      "Macau": {
+        "name": {
+          "zh-TW": "澳門",
+          "en": "Macau"
+        },
+        "palette": [
+          "#9b6fc4",
+          "#5e458c"
+        ]
+      },
+      "Singapore": {
+        "name": {
+          "zh-TW": "新加坡",
+          "en": "Singapore"
+        },
+        "palette": [
+          "#4f9c85",
+          "#276b75"
+        ]
+      },
+      "Manila": {
+        "name": {
+          "zh-TW": "馬尼拉",
+          "en": "Manila"
+        },
+        "palette": [
+          "#657db6",
+          "#4a4e8a"
+        ]
+      },
+      "Quezon City": {
+        "name": {
+          "zh-TW": "奎松市",
+          "en": "Quezon City"
+        },
+        "palette": [
+          "#7287c7",
+          "#4d568f"
+        ]
+      },
+      "Bangkok": {
+        "name": {
+          "zh-TW": "曼谷",
+          "en": "Bangkok"
+        },
+        "palette": [
+          "#9b7354",
+          "#724156"
+        ]
+      },
+      "Kuala Lumpur": {
+        "name": {
+          "zh-TW": "吉隆坡",
+          "en": "Kuala Lumpur"
+        },
+        "palette": [
+          "#4e8fb5",
+          "#3b5c8b"
+        ]
+      },
+      "Tangerang": {
+        "name": {
+          "zh-TW": "丹格朗",
+          "en": "Tangerang"
+        },
+        "palette": [
+          "#b05252",
+          "#713e62"
+        ]
+      }
+    }
+  }
+};

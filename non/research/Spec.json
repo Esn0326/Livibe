@@ -1,0 +1,80 @@
+{
+  "project_name": "LIVIBE",
+  "version": "2.0",
+  "last_updated": "2026-04-30",
+  "author_role": "Lead Architect",
+  "specification_details": {
+    "backend_engine": {
+      "language": "Python",
+      "data_source": "Setlist.fm API",
+      "fetching_rules": {
+        "pagination": "Mandatory full-page traversal (until page == totalPages)",
+        "year_range": ["2024", "2025", "2026"],
+        "api_cooldown": "0.05s between requests"
+      },
+
+      {
+  "data_verification_workflow": {
+    "step_1": "Fetch raw events from Setlist.fm (Source of Truth for dates)",
+    "step_2": "Cross-reference with Wikipedia API using 'Tour Name' or 'Artist + Year'",
+    "step_3": "If Wikipedia match found: Update Title, Poster, and Tag to JOINT/FESTIVAL",
+    "step_4": "If no Wikipedia match: Keep as SHOWCASE/TOUR based on internal logic"
+  }
+}
+
+      "classification_priority": {
+        "order": ["JOINT", "FESTIVAL", "TOUR", "SHOWCASE", "VARIETY"],
+        "logic": {
+          "JOINT": "Artists >= 2 AND Has Tour Title AND Same Venue",
+          "FESTIVAL": "Artists >= 2 AND No Tour Title AND Same Venue (Grouped by Date/Venue)",
+          "TOUR": "Artist == 1 AND Has Tour Title",
+          "SHOWCASE": "Artist == 1 AND No Tour Title",
+          "VARIETY": "Artists >= 2 AND No Tour Title AND Venue is Stadium/Dome/Arena",
+          "master_rule": "Tour Name overrides Venue-based classification"
+        }
+      },
+      "poster_logic": {
+        "provider": "iTunes Search API",
+        "matching_rule": "Latest album where ReleaseDate <= EventYear",
+        "resolution": "600x600",
+        "uniqueness": "Same artist in different years must pull different posters if applicable"
+      }
+    },
+    "frontend_home_page": {
+      "features": {
+        "search": "Instant search by Title and all_artists",
+        "filtering": "Dropdown filter by five tags (TOUR, JOINT, FESTIVAL, SHOWCASE, VARIETY)",
+        "sorting": ["Newest to Oldest", "Oldest to Newest"]
+      },
+      "card_display": {
+        "multi_artist_label": "Display '多組藝人出演' for JOINT, FESTIVAL, VARIETY",
+        "date_format": {
+          "single_session": "YYYY-MM-DD",
+          "multi_session": "YYYY-MM-DD 起 (共 n 場)"
+        },
+        "tag_styling": "All-caps text with CSS classes matching .tag-{lowercase_tag}"
+      }
+    },
+    "frontend_detail_page": {
+      "interaction": {
+        "dropdown_logic": "Show session-dropdown only for TOUR and JOINT",
+        "realtime_update": "Date, Venue, and Google Maps URL must update instantly upon dropdown change",
+        "maps_format": "http://googleusercontent.com/maps.google.com/?q={encoded_venue_name}"
+      },
+      "content_rendering": {
+        "artist_list_format": "Strictly Bullet Points (• Name). No slashes or commas.",
+        "festival_layout": "Group by Day (Day 1, Day 2...) with bulleted artists for FESTIVAL and VARIETY",
+        "decibel_rating": {
+          "label": "LIVIBE Volume (dB)",
+          "range": "90 - 125 dB",
+          "visual": "Speaker icon + bold dB value"
+        }
+      }
+    },
+    "technical_guardrails": {
+      "css_compatibility": "Dynamic HTML must use predefined IDs: #artist-list, #session-dropdown, #tag-display",
+      "data_storage": "Single aggregated data.json keyed by Title",
+      "url_handling": "All venue names must use encodeURIComponent for Map links"
+    }
+  }
+}
