@@ -20,11 +20,6 @@
         return String(value || '').match(/\d{4}-\d{2}-\d{2}/)?.[0] || '1970-01-01';
     }
 
-    function seededScore(seed, min, max, decimals = 1) {
-        const raw = Math.abs(hashCode(seed)) % 1000;
-        return Number((min + (raw / 999) * (max - min)).toFixed(decimals));
-    }
-
     function classifyEvent(title, artists, sessions) {
         const text = `${title} ${sessions.map((session) => session.venue).join(' ')}`;
         if (/音樂祭|開唱|Festival|Fest|S2O|櫻花祭|火球祭|浪人祭|簡單生活節/i.test(text) || artists.length > 2) return 'FESTIVAL';
@@ -36,8 +31,15 @@
         const grouped = new Map();
         (Array.isArray(flatData) ? flatData : []).forEach((item) => {
             const title = String(item.theme || '未命名演出').replace(/\s+/g, ' ').trim();
-            if (!grouped.has(title)) grouped.set(title, { id: slugify(title), title, organizer: item.organizer || '未提供', rawItems: [] });
-            grouped.get(title).rawItems.push(item);
+            const groupKey = item.eventId || title;
+            if (!grouped.has(groupKey)) grouped.set(groupKey, {
+                id: item.eventId || slugify(title),
+                legacyId: slugify(title),
+                title,
+                organizer: item.organizer || '未提供',
+                rawItems: []
+            });
+            grouped.get(groupKey).rawItems.push(item);
         });
 
         return Array.from(grouped.values()).map((group) => {
@@ -54,6 +56,7 @@
             const endDate = sessions.at(-1)?.date || startDate;
             return {
                 id: group.id,
+                legacyId: group.legacyId,
                 title: group.title,
                 displayArtist: tag === 'FESTIVAL' ? '多組藝人共同演出' : artists[0] || '待公布',
                 artists,
@@ -62,8 +65,6 @@
                 endDate,
                 dateDisplay: sessions.length > 1 ? `${startDate} 起，共 ${sessions.length} 場` : startDate,
                 poster: FALLBACK_POSTERS[Math.abs(hashCode(group.title)) % FALLBACK_POSTERS.length],
-                rating: seededScore(`${group.title}-rating`, 7.2, 9.7),
-                volume: seededScore(`${group.title}-volume`, 90, 124, 0),
                 organizer: group.organizer,
                 sessions,
                 isUpcoming: new Date(`${endDate}T00:00:00+08:00`) >= TODAY
@@ -85,10 +86,65 @@
 }());
 
 (function () {
+    const DISCUSSION_PREFIX = 'livibe-discussion-';
+    const MIN_REPRESENTATIVE_SAMPLES = 5;
+
+    function kindFor(event) {
+        return event?.isUpcoming ? 'expectation' : 'review';
+    }
+
+    function read(eventId) {
+        try {
+            const value = JSON.parse(localStorage.getItem(`${DISCUSSION_PREFIX}${eventId}`) || '[]');
+            return Array.isArray(value) ? value : [];
+        } catch {
+            return [];
+        }
+    }
+
+    function entriesFor(event) {
+        const kind = kindFor(event);
+        const ids = [...new Set([event.id, event.legacyId].filter(Boolean))];
+        const seen = new Set();
+        return ids.flatMap((eventId) => read(eventId)).filter((item) => {
+            const itemId = item.id || `${item.time}:${item.text}`;
+            if (seen.has(itemId)) return false;
+            seen.add(itemId);
+            return (item.kind || kind) === kind && Number.isFinite(Number(item.rating));
+        });
+    }
+
+    function summary(event) {
+        const entries = entriesFor(event);
+        const total = entries.reduce((sum, item) => sum + Number(item.rating), 0);
+        const distribution = Array.from({ length: 10 }, (_, index) => ({
+            score: index + 1,
+            count: entries.filter((item) => Number(item.rating) === index + 1).length
+        }));
+        return {
+            kind: kindFor(event),
+            count: entries.length,
+            average: entries.length ? Number((total / entries.length).toFixed(1)) : null,
+            minimumSamples: MIN_REPRESENTATIVE_SAMPLES,
+            isRepresentative: entries.length >= MIN_REPRESENTATIVE_SAMPLES,
+            distribution
+        };
+    }
+
+    window.LIVIBE_COMMUNITY = {
+        MIN_REPRESENTATIVE_SAMPLES,
+        kindFor,
+        read,
+        entriesFor,
+        summary
+    };
+}());
+
+(function () {
     const ADMIN_SESSION_KEY = 'livibe-admin-session';
     const ADMIN_ACCOUNT = Object.freeze({
-        username: 'esn',
-        passwordHash: 'b9270ef103a6a5d4d21a75330111fd651df4f3b75b81f81dd580820e4ee9aad0'
+        username: 'admin',
+        passwordHash: '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0'
     });
     const roles = Object.freeze({
         visitor: { label: '訪客', level: 0, permissions: [] },

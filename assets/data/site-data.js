@@ -3,8 +3,14 @@
  * 集中管理演出、國家、城市、多語系、色票、場館與舞台配置。
  */
 window.LIVIBE_DATA = {
+  "meta": {
+    "catalogSnapshot": "2026-08-21",
+    "catalogScope": "2022–2026 台灣已舉行及已正式公告演出",
+    "catalogPolicy": "排除純傳聞、未定日期活動、典禮與體育中場演出"
+  },
   "concerts": [
     {
+      "eventId": "池堂影夜-演唱會-2022-02-19-台北小巨蛋",
       "artist": "魚丁糸 (Oaeen)",
       "venue": "台北小巨蛋",
       "date": "2022-02-19",
@@ -12,6 +18,7 @@ window.LIVIBE_DATA = {
       "organizer": "環球音樂"
     },
     {
+      "eventId": "池堂影夜-演唱會-2022-02-19-台北小巨蛋",
       "artist": "魚丁糸 (Oaeen)",
       "venue": "台北小巨蛋",
       "date": "2022-02-20",
@@ -19,6 +26,7 @@ window.LIVIBE_DATA = {
       "organizer": "環球音樂"
     },
     {
+      "eventId": "都是因為愛-世界巡迴演唱會-台北旗艦場-2022-03-05-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2022-03-05",
@@ -26,6 +34,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-01",
@@ -33,6 +42,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-02",
@@ -40,6 +50,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-03",
@@ -47,6 +58,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-05",
@@ -54,6 +66,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-06",
@@ -61,6 +74,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-08",
@@ -68,6 +82,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-09",
@@ -75,6 +90,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-10",
@@ -82,6 +98,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-12",
@@ -89,6 +106,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-13",
@@ -96,6 +114,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-15",
@@ -103,6 +122,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-台北首站-2022-04-01-台北小巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北小巨蛋",
       "date": "2022-04-16",
@@ -110,6 +130,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "羅志祥演唱會-2022-07-09-台北小巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "台北小巨蛋",
       "date": "2022-07-09",
@@ -117,6 +138,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "a-link-with-passengers-演唱會-2022-07-16-台北小巨蛋",
       "artist": "A-Lin",
       "venue": "台北小巨蛋",
       "date": "2022-07-16",
@@ -124,6 +146,7 @@ window.LIVIBE_DATA = {
       "organizer": "宜辰整合行銷"
     },
     {
+      "eventId": "a-link-with-passengers-演唱會-2022-07-16-台北小巨蛋",
       "artist": "A-Lin",
       "venue": "台北小巨蛋",
       "date": "2022-07-17",
@@ -131,6 +154,7 @@ window.LIVIBE_DATA = {
       "organizer": "宜辰整合行銷"
     },
     {
+      "eventId": "moman-演唱會-2022-07-30-台北小巨蛋",
       "artist": "陶晶瑩",
       "venue": "台北小巨蛋",
       "date": "2022-07-30",
@@ -138,6 +162,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "sigur-rós-world-tour-2022-2022-08-05-新莊體育館",
       "artist": "Sigur Rós",
       "venue": "新莊體育館",
       "date": "2022-08-05",
@@ -145,6 +170,7 @@ window.LIVIBE_DATA = {
       "organizer": "乙太娛樂"
     },
     {
+      "eventId": "moon-landing-月面著陸演唱會-2022-08-06-台北小巨蛋",
       "artist": "五堅情",
       "venue": "台北小巨蛋",
       "date": "2022-08-06",
@@ -152,6 +178,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "moon-landing-月面著陸演唱會-2022-08-06-台北小巨蛋",
       "artist": "五堅情",
       "venue": "台北小巨蛋",
       "date": "2022-08-07",
@@ -159,6 +186,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "地囚人演唱會-2022-08-12-台北小巨蛋",
       "artist": "瘦子 E.SO",
       "venue": "台北小巨蛋",
       "date": "2022-08-12",
@@ -166,6 +194,7 @@ window.LIVIBE_DATA = {
       "organizer": "本色音樂"
     },
     {
+      "eventId": "地囚人演唱會-2022-08-12-台北小巨蛋",
       "artist": "瘦子 E.SO",
       "venue": "台北小巨蛋",
       "date": "2022-08-13",
@@ -173,6 +202,7 @@ window.LIVIBE_DATA = {
       "organizer": "本色音樂"
     },
     {
+      "eventId": "地囚人演唱會-2022-08-12-台北小巨蛋",
       "artist": "瘦子 E.SO",
       "venue": "台北小巨蛋",
       "date": "2022-08-14",
@@ -180,6 +210,7 @@ window.LIVIBE_DATA = {
       "organizer": "本色音樂"
     },
     {
+      "eventId": "顛倒世界-巡迴演唱會-台北首站-2022-08-20-台北小巨蛋",
       "artist": "八三夭 (831)",
       "venue": "台北小巨蛋",
       "date": "2022-08-20",
@@ -187,6 +218,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "顛倒世界-巡迴演唱會-台北首站-2022-08-20-台北小巨蛋",
       "artist": "八三夭 (831)",
       "venue": "台北小巨蛋",
       "date": "2022-08-21",
@@ -194,6 +226,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "viviland-巡迴演唱會-2022-09-03-台北小巨蛋",
       "artist": "徐若瑄",
       "venue": "台北小巨蛋",
       "date": "2022-09-03",
@@ -201,6 +234,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "如果可以-我想和你明天再見-演唱會-2022-09-10-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2022-09-10",
@@ -208,6 +242,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "如果可以-我想和你明天再見-演唱會-2022-09-10-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2022-09-11",
@@ -215,6 +250,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "rock-star-演唱會-2022-09-24-台北小巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "台北小巨蛋",
       "date": "2022-09-24",
@@ -222,6 +258,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "rock-star-演唱會-2022-09-24-台北小巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "台北小巨蛋",
       "date": "2022-09-25",
@@ -229,6 +266,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "怎樣-julia-run-wild-巡迴演唱會-台北站-2022-10-01-台北小巨蛋",
       "artist": "彭佳慧",
       "venue": "台北小巨蛋",
       "date": "2022-10-01",
@@ -236,6 +274,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "飛行日-巡迴演唱會-2022-10-08-台北小巨蛋",
       "artist": "劉若英",
       "venue": "台北小巨蛋",
       "date": "2022-10-08",
@@ -243,6 +282,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2022-浪人祭-vagabond-festival-2022-10-09-台南安平觀夕平台",
       "artist": "美秀集團 (Amazing Show)",
       "venue": "台南安平觀夕平台",
       "date": "2022-10-09",
@@ -250,6 +290,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-2022-10-21-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2022-10-21",
@@ -257,6 +298,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-2022-10-21-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2022-10-22",
@@ -264,6 +306,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-2022-10-21-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2022-10-23",
@@ -271,6 +314,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "萬芳30-你的30-你今天有沒有來-演唱會-2022-11-12-台北小巨蛋",
       "artist": "萬芳",
       "venue": "台北小巨蛋",
       "date": "2022-11-12",
@@ -278,6 +322,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "realive-演唱會-2022-11-19-台北小巨蛋",
       "artist": "周湯豪",
       "venue": "台北小巨蛋",
       "date": "2022-11-19",
@@ -285,6 +330,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "realive-演唱會-2022-11-19-台北小巨蛋",
       "artist": "周湯豪",
       "venue": "台北小巨蛋",
       "date": "2022-11-20",
@@ -292,6 +338,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-9-road-in-taipei-2022-11-25-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2022-11-25",
@@ -299,6 +346,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "super-show-9-road-in-taipei-2022-11-25-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2022-11-26",
@@ -306,6 +354,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "super-show-9-road-in-taipei-2022-11-25-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2022-11-27",
@@ -313,6 +362,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "勵志的早晨-勵志的夜晚-14週年演唱會-2022-12-03-台北小巨蛋",
       "artist": "盧廣仲 (Crowd Lu)",
       "venue": "台北小巨蛋",
       "date": "2022-12-03",
@@ -320,6 +370,7 @@ window.LIVIBE_DATA = {
       "organizer": "添翼創越"
     },
     {
+      "eventId": "阿宏的心聲-演唱會-2022-12-10-台北小巨蛋",
       "artist": "洪榮宏",
       "venue": "台北小巨蛋",
       "date": "2022-12-10",
@@ -327,6 +378,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "s2o-taiwan-songkran-music-festival-2022-2022-12-11-台北大佳河濱公園",
       "artist": "Alan Walker",
       "venue": "台北大佳河濱公園",
       "date": "2022-12-11",
@@ -334,6 +386,7 @@ window.LIVIBE_DATA = {
       "organizer": "斯邦奈"
     },
     {
+      "eventId": "a-christmas-symphony-2022-12-17-台北小巨蛋",
       "artist": "Sarah Brightman",
       "venue": "台北小巨蛋",
       "date": "2022-12-17",
@@ -341,6 +394,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "to-ebb-潮水箴言10週年演唱會-2022-12-24-台北小巨蛋",
       "artist": "安溥",
       "venue": "台北小巨蛋",
       "date": "2022-12-24",
@@ -348,6 +402,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "to-ebb-潮水箴言10週年演唱會-2022-12-24-台北小巨蛋",
       "artist": "安溥",
       "venue": "台北小巨蛋",
       "date": "2022-12-25",
@@ -355,6 +410,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2022-12-31",
@@ -362,6 +418,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2023-01-01",
@@ -369,6 +426,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2023-01-02",
@@ -376,6 +434,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2023-01-06",
@@ -383,6 +442,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2023-01-07",
@@ -390,6 +450,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "ugly-beauty-世界巡迴演唱會-finale-in-taipei-2022-12-31-台北小巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北小巨蛋",
       "date": "2023-01-08",
@@ -397,6 +458,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "池堂影夜-演唱會-2023-02-18-台北小巨蛋",
       "artist": "魚丁糸 (Oaeen)",
       "venue": "台北小巨蛋",
       "date": "2023-02-18",
@@ -404,6 +466,7 @@ window.LIVIBE_DATA = {
       "organizer": "環球音樂"
     },
     {
+      "eventId": "dna-world-tour-2023-02-18-高雄巨蛋",
       "artist": "Backstreet Boys",
       "venue": "高雄巨蛋",
       "date": "2023-02-18",
@@ -411,6 +474,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "池堂影夜-演唱會-2023-02-18-台北小巨蛋",
       "artist": "魚丁糸 (Oaeen)",
       "venue": "台北小巨蛋",
       "date": "2023-02-19",
@@ -418,6 +482,7 @@ window.LIVIBE_DATA = {
       "organizer": "環球音樂"
     },
     {
+      "eventId": "未來式-2-0-世界巡迴演唱會-2023-02-25-台北小巨蛋",
       "artist": "張信哲",
       "venue": "台北小巨蛋",
       "date": "2023-02-25",
@@ -425,6 +490,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "the-wild-dreams-tour-2023-02-26-高雄巨蛋",
       "artist": "Westlife",
       "venue": "高雄巨蛋",
       "date": "2023-02-26",
@@ -432,6 +498,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "onerepublic-live-in-concert-2023-03-05-台北小巨蛋",
       "artist": "OneRepublic",
       "venue": "台北小巨蛋",
       "date": "2023-03-05",
@@ -439,6 +506,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "born-pink-world-tour-2023-03-18-高雄國家體育場",
       "artist": "BLACKPINK",
       "venue": "高雄國家體育場",
       "date": "2023-03-18",
@@ -446,6 +514,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "re-grasshopper-巡迴演唱會-台北首站-2023-03-18-台北小巨蛋",
       "artist": "草蜢",
       "venue": "台北小巨蛋",
       "date": "2023-03-18",
@@ -453,6 +522,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "born-pink-world-tour-2023-03-18-高雄國家體育場",
       "artist": "BLACKPINK",
       "venue": "高雄國家體育場",
       "date": "2023-03-19",
@@ -460,6 +530,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "諾亞方舟10週年進化復刻限定版-2023-03-29-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2023-03-29",
@@ -467,6 +538,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "諾亞方舟10週年進化復刻限定版-2023-03-29-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2023-03-31",
@@ -474,6 +546,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-03-31",
@@ -481,6 +554,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "大飛機-世界巡迴演唱會-2023-04-01-台北小巨蛋",
       "artist": "黃明志",
       "venue": "台北小巨蛋",
       "date": "2023-04-01",
@@ -488,6 +562,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "諾亞方舟10週年進化復刻限定版-2023-03-29-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2023-04-01",
@@ -495,6 +570,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-01",
@@ -502,6 +578,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "諾亞方舟10週年進化復刻限定版-2023-03-29-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2023-04-02",
@@ -509,6 +586,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-02",
@@ -516,6 +594,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-04",
@@ -523,6 +602,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-05",
@@ -530,6 +610,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-07",
@@ -537,6 +618,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "宇宙的有趣-第一次新世界巡迴演唱會-2023-04-08-台北小巨蛋",
       "artist": "告五人 (Accusefive)",
       "venue": "台北小巨蛋",
       "date": "2023-04-08",
@@ -544,6 +626,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-08",
@@ -551,6 +634,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "宇宙的有趣-第一次新世界巡迴演唱會-2023-04-08-台北小巨蛋",
       "artist": "告五人 (Accusefive)",
       "venue": "台北小巨蛋",
       "date": "2023-04-09",
@@ -558,6 +642,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-14",
@@ -565,6 +650,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-15",
@@ -572,6 +658,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "broman-演唱會-2023-04-15-台北小巨蛋",
       "artist": "玖壹壹",
       "venue": "台北小巨蛋",
       "date": "2023-04-15",
@@ -579,6 +666,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "asmr-世界巡迴演唱會-高雄站-2023-03-31-高雄巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "高雄巨蛋",
       "date": "2023-04-16",
@@ -586,6 +674,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "都是因為愛-世界巡迴演唱會-台北安可場-2023-04-22-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2023-04-22",
@@ -593,6 +682,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "都是因為愛-世界巡迴演唱會-台北安可場-2023-04-22-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2023-04-23",
@@ -600,6 +690,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "let-s-depart-給世界最悠長的吻演唱會-2023-05-06-台北小巨蛋",
       "artist": "蔡健雅",
       "venue": "台北小巨蛋",
       "date": "2023-05-06",
@@ -607,6 +698,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "let-s-depart-給世界最悠長的吻演唱會-2023-05-06-台北小巨蛋",
       "artist": "蔡健雅",
       "venue": "台北小巨蛋",
       "date": "2023-05-07",
@@ -614,6 +706,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "have-a-nice-day-2-you-巡迴演唱會-2023-05-13-台北小巨蛋",
       "artist": "魏如萱",
       "venue": "台北小巨蛋",
       "date": "2023-05-13",
@@ -621,6 +714,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "have-a-nice-day-2-you-巡迴演唱會-2023-05-13-台北小巨蛋",
       "artist": "魏如萱",
       "venue": "台北小巨蛋",
       "date": "2023-05-14",
@@ -628,6 +722,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "one-take-2-0-我忘了我已老去世界巡迴演唱會-2023-05-20-台北小巨蛋",
       "artist": "林志炫",
       "venue": "台北小巨蛋",
       "date": "2023-05-20",
@@ -635,6 +730,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ikon-world-tour-take-off-2023-05-21-台北小巨蛋",
       "artist": "iKON",
       "venue": "台北小巨蛋",
       "date": "2023-05-21",
@@ -642,6 +738,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "timeless-演唱會-2023-06-10-台北小巨蛋",
       "artist": "張清芳",
       "venue": "台北小巨蛋",
       "date": "2023-06-10",
@@ -649,6 +746,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "timeless-演唱會-2023-06-10-台北小巨蛋",
       "artist": "張清芳",
       "venue": "台北小巨蛋",
       "date": "2023-06-11",
@@ -656,6 +754,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "like-a-star-世界巡迴演唱會-台北返場-2023-06-17-台北小巨蛋",
       "artist": "楊丞琳",
       "venue": "台北小巨蛋",
       "date": "2023-06-17",
@@ -663,6 +762,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "like-a-star-世界巡迴演唱會-台北返場-2023-06-17-台北小巨蛋",
       "artist": "楊丞琳",
       "venue": "台北小巨蛋",
       "date": "2023-06-18",
@@ -670,6 +770,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "the-odd-of-love-2023-06-24-台北小巨蛋",
       "artist": "TAEYEON 太妍",
       "venue": "台北小巨蛋",
       "date": "2023-06-24",
@@ -677,6 +778,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-15",
@@ -684,6 +786,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-16",
@@ -691,6 +794,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-18",
@@ -698,6 +802,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-19",
@@ -705,6 +810,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-21",
@@ -712,6 +818,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-22",
@@ -719,6 +826,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-2023-07-15-台北小巨蛋",
       "artist": "陳奕迅",
       "venue": "台北小巨蛋",
       "date": "2023-07-23",
@@ -726,6 +834,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "evolution-羅志祥演唱會-2023-07-29-台北小巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "台北小巨蛋",
       "date": "2023-07-29",
@@ -733,6 +842,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "evolution-羅志祥演唱會-2023-07-29-台北小巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "台北小巨蛋",
       "date": "2023-07-30",
@@ -740,6 +850,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "一一巡迴演唱會-台北最終場-2023-08-05-台北小巨蛋",
       "artist": "田馥甄 (Hebe)",
       "venue": "台北小巨蛋",
       "date": "2023-08-05",
@@ -747,6 +858,7 @@ window.LIVIBE_DATA = {
       "organizer": "何樂音樂"
     },
     {
+      "eventId": "一一巡迴演唱會-台北最終場-2023-08-05-台北小巨蛋",
       "artist": "田馥甄 (Hebe)",
       "venue": "台北小巨蛋",
       "date": "2023-08-06",
@@ -754,6 +866,7 @@ window.LIVIBE_DATA = {
       "organizer": "何樂音樂"
     },
     {
+      "eventId": "一一巡迴演唱會-台北最終場-2023-08-05-台北小巨蛋",
       "artist": "田馥甄 (Hebe)",
       "venue": "台北小巨蛋",
       "date": "2023-08-11",
@@ -761,6 +874,7 @@ window.LIVIBE_DATA = {
       "organizer": "何樂音樂"
     },
     {
+      "eventId": "一一巡迴演唱會-台北最終場-2023-08-05-台北小巨蛋",
       "artist": "田馥甄 (Hebe)",
       "venue": "台北小巨蛋",
       "date": "2023-08-12",
@@ -768,6 +882,7 @@ window.LIVIBE_DATA = {
       "organizer": "何樂音樂"
     },
     {
+      "eventId": "一一巡迴演唱會-台北最終場-2023-08-05-台北小巨蛋",
       "artist": "田馥甄 (Hebe)",
       "venue": "台北小巨蛋",
       "date": "2023-08-13",
@@ -775,6 +890,7 @@ window.LIVIBE_DATA = {
       "organizer": "何樂音樂"
     },
     {
+      "eventId": "one-leehom-wang-一個王力宏巡迴演唱會-2023-09-09-台北小巨蛋",
       "artist": "王力宏",
       "venue": "台北小巨蛋",
       "date": "2023-09-09",
@@ -782,6 +898,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬魚國際"
     },
     {
+      "eventId": "one-leehom-wang-一個王力宏巡迴演唱會-2023-09-09-台北小巨蛋",
       "artist": "王力宏",
       "venue": "台北小巨蛋",
       "date": "2023-09-10",
@@ -789,6 +906,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬魚國際"
     },
     {
+      "eventId": "縱橫四海世界巡迴演唱會-2023-09-16-台北小巨蛋",
       "artist": "李榮浩",
       "venue": "台北小巨蛋",
       "date": "2023-09-16",
@@ -796,6 +914,7 @@ window.LIVIBE_DATA = {
       "organizer": "華納音樂"
     },
     {
+      "eventId": "luxury-disease-asia-tour-2023-2023-09-16-台北南港展覽館一館",
       "artist": "ONE OK ROCK",
       "venue": "台北南港展覽館一館",
       "date": "2023-09-16",
@@ -803,6 +922,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "luxury-disease-asia-tour-2023-2023-09-16-台北南港展覽館一館",
       "artist": "ONE OK ROCK",
       "venue": "台北南港展覽館一館",
       "date": "2023-09-17",
@@ -810,6 +930,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "wolves-on-parade-world-tour-2023-09-17-zepp-new-taipei",
       "artist": "MAN WITH A MISSION",
       "venue": "Zepp New Taipei",
       "date": "2023-09-17",
@@ -817,6 +938,7 @@ window.LIVIBE_DATA = {
       "organizer": "好玩國際文化"
     },
     {
+      "eventId": "if-y-all-weren-t-here-i-d-be-crying-tour-2023-09-20-台北南港展覽館一館",
       "artist": "Post Malone",
       "venue": "台北南港展覽館一館",
       "date": "2023-09-20",
@@ -824,6 +946,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "sugar-high-世界巡迴演唱會-台北首站-2023-09-23-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2023-09-23",
@@ -831,6 +954,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "sugar-high-世界巡迴演唱會-台北首站-2023-09-23-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2023-09-24",
@@ -838,6 +962,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "勵志的團圓-巡迴演唱會-旗艦安可場-2023-09-30-台北小巨蛋",
       "artist": "盧廣仲 (Crowd Lu)",
       "venue": "台北小巨蛋",
       "date": "2023-09-30",
@@ -845,6 +970,7 @@ window.LIVIBE_DATA = {
       "organizer": "添翼創越"
     },
     {
+      "eventId": "倒數三秒-巡迴演唱會-2023-10-07-台北小巨蛋",
       "artist": "徐懷鈺",
       "venue": "台北小巨蛋",
       "date": "2023-10-07",
@@ -852,6 +978,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "gloria-the-tour-2023-10-09-台北小巨蛋",
       "artist": "Sam Smith",
       "venue": "台北小巨蛋",
       "date": "2023-10-09",
@@ -859,6 +986,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "2056-20週年演唱會-台北安可場-2023-10-14-台北小巨蛋",
       "artist": "5566",
       "venue": "台北小巨蛋",
       "date": "2023-10-14",
@@ -866,6 +994,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "變得有些奢侈的事-巡迴演唱會-2023-11-04-台北小巨蛋",
       "artist": "徐佳瑩",
       "venue": "台北小巨蛋",
       "date": "2023-11-04",
@@ -873,6 +1002,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "變得有些奢侈的事-巡迴演唱會-2023-11-04-台北小巨蛋",
       "artist": "徐佳瑩",
       "venue": "台北小巨蛋",
       "date": "2023-11-05",
@@ -880,6 +1010,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "如果可以-我想和你明天再見-again-演唱會-2023-11-11-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2023-11-11",
@@ -887,6 +1018,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "music-of-the-spheres-world-tour-2023-11-11-高雄國家體育場",
       "artist": "Coldplay",
       "venue": "高雄國家體育場",
       "date": "2023-11-11",
@@ -894,6 +1026,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "如果可以-我想和你明天再見-again-演唱會-2023-11-11-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2023-11-12",
@@ -901,6 +1034,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "music-of-the-spheres-world-tour-2023-11-11-高雄國家體育場",
       "artist": "Coldplay",
       "venue": "高雄國家體育場",
       "date": "2023-11-12",
@@ -908,6 +1042,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "人生的路-演唱會-2023-11-18-台北小巨蛋",
       "artist": "姜育恆",
       "venue": "台北小巨蛋",
       "date": "2023-11-18",
@@ -915,6 +1050,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "pandemonium-tour-2023-11-24-台北南港展覽館一館",
       "artist": "Joji",
       "venue": "台北南港展覽館一館",
       "date": "2023-11-24",
@@ -922,6 +1058,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "10-FEET",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-25",
@@ -929,6 +1066,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "李泳知",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-25",
@@ -936,6 +1074,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "滅火器 (Fire EX.)",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-25",
@@ -943,6 +1082,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "ASIAN KUNG-FU GENERATION",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-25",
@@ -950,6 +1090,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "ELLEGARDEN",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-25",
@@ -957,6 +1098,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "愛在你身邊-love-game-演唱會-2023-11-25-台北小巨蛋",
       "artist": "九澤CP",
       "venue": "台北小巨蛋",
       "date": "2023-11-25",
@@ -964,6 +1106,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "10-FEET",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-26",
@@ -971,6 +1114,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "李泳知",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-26",
@@ -978,6 +1122,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "滅火器 (Fire EX.)",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-26",
@@ -985,6 +1130,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "ASIAN KUNG-FU GENERATION",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-26",
@@ -992,6 +1138,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2023-fireball-fest-火球祭-2023-11-25-樂天桃園棒球場",
       "artist": "ELLEGARDEN",
       "venue": "樂天桃園棒球場",
       "date": "2023-11-26",
@@ -999,6 +1146,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "milet-live-tour-5am-in-taipei-2023-11-29-zepp-new-taipei",
       "artist": "milet",
       "venue": "Zepp New Taipei",
       "date": "2023-11-29",
@@ -1006,6 +1154,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "milet-live-tour-5am-in-taipei-2023-11-29-zepp-new-taipei",
       "artist": "milet",
       "venue": "Zepp New Taipei",
       "date": "2023-11-30",
@@ -1013,6 +1162,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "告五人",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-02",
@@ -1020,6 +1170,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "落日飛車",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-02",
@@ -1027,6 +1178,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "YOASOBI",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-02",
@@ -1034,6 +1186,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "告五人",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-03",
@@ -1041,6 +1194,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "落日飛車",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-03",
@@ -1048,6 +1202,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "2023-simple-life-簡單生活節-2023-12-02-台北華山1914文創園區",
       "artist": "YOASOBI",
       "venue": "台北華山1914文創園區",
       "date": "2023-12-03",
@@ -1055,6 +1210,7 @@ window.LIVIBE_DATA = {
       "organizer": "中子創新"
     },
     {
+      "eventId": "yoasobi-asia-tour-2023-2024-2023-12-04-zepp-new-taipei",
       "artist": "YOASOBI",
       "venue": "Zepp New Taipei",
       "date": "2023-12-04",
@@ -1062,6 +1218,7 @@ window.LIVIBE_DATA = {
       "organizer": "好玩國際文化"
     },
     {
+      "eventId": "idol-世界巡迴演唱會-台北返場-2023-12-15-台北小巨蛋",
       "artist": "林宥嘉",
       "venue": "台北小巨蛋",
       "date": "2023-12-15",
@@ -1069,6 +1226,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "idol-世界巡迴演唱會-台北返場-2023-12-15-台北小巨蛋",
       "artist": "林宥嘉",
       "venue": "台北小巨蛋",
       "date": "2023-12-16",
@@ -1076,6 +1234,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "idol-世界巡迴演唱會-台北返場-2023-12-15-台北小巨蛋",
       "artist": "林宥嘉",
       "venue": "台北小巨蛋",
       "date": "2023-12-17",
@@ -1083,6 +1242,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "髒藝術家-演唱會-2023-12-23-台北小巨蛋",
       "artist": "MC HotDog",
       "venue": "台北小巨蛋",
       "date": "2023-12-23",
@@ -1090,6 +1250,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "髒藝術家-演唱會-2023-12-23-台北小巨蛋",
       "artist": "MC HotDog",
       "venue": "台北小巨蛋",
       "date": "2023-12-24",
@@ -1097,6 +1258,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "world-tour-fate-2024-01-13-國立體育大學綜合體育館",
       "artist": "ENHYPEN",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-01-13",
@@ -1104,6 +1266,7 @@ window.LIVIBE_DATA = {
       "organizer": "Applewood Taiwan"
     },
     {
+      "eventId": "world-tour-fate-2024-01-13-國立體育大學綜合體育館",
       "artist": "ENHYPEN",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-01-14",
@@ -1111,6 +1274,7 @@ window.LIVIBE_DATA = {
       "organizer": "Applewood Taiwan"
     },
     {
+      "eventId": "春分-巡迴演唱會-2024-01-20-台北小巨蛋",
       "artist": "詹雅雯",
       "venue": "台北小巨蛋",
       "date": "2024-01-20",
@@ -1118,6 +1282,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "時寐-巡迴演唱會-2024-02-03-台北小巨蛋",
       "artist": "安溥",
       "venue": "台北小巨蛋",
       "date": "2024-02-03",
@@ -1125,6 +1290,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "1st-world-tour-show-what-i-have-2024-03-02-國立體育大學綜合體育館",
       "artist": "IVE",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-03-02",
@@ -1132,6 +1298,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "1st-world-tour-show-what-i-have-2024-03-02-國立體育大學綜合體育館",
       "artist": "IVE",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-03-03",
@@ -1139,6 +1306,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "fragments-of-wonder-世界巡迴演唱會-台北站-2024-03-09-台北小巨蛋",
       "artist": "鄭中基",
       "venue": "台北小巨蛋",
       "date": "2024-03-09",
@@ -1146,6 +1314,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fragments-of-wonder-世界巡迴演唱會-台北站-2024-03-09-台北小巨蛋",
       "artist": "鄭中基",
       "venue": "台北小巨蛋",
       "date": "2024-03-10",
@@ -1153,6 +1322,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-2024-03-23-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2024-03-23",
@@ -1160,6 +1330,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-2024-03-23-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2024-03-24",
@@ -1167,6 +1338,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "calum-scott-2024-taipei-2024-03-27-台北小巨蛋",
       "artist": "Calum Scott",
       "venue": "台北小巨蛋",
       "date": "2024-03-27",
@@ -1174,6 +1346,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-2024-03-23-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2024-03-29",
@@ -1181,6 +1354,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "拍謝少年",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-30",
@@ -1188,6 +1362,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "閃靈",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-30",
@@ -1195,6 +1370,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "康士坦的變化球",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-30",
@@ -1202,6 +1378,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "滿島光 x 大象體操",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-30",
@@ -1209,6 +1386,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-2024-03-23-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2024-03-30",
@@ -1216,6 +1394,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "拍謝少年",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-31",
@@ -1223,6 +1402,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "閃靈",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-31",
@@ -1230,6 +1410,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "康士坦的變化球",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-31",
@@ -1237,6 +1418,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "2024-大港開唱-megaport-festival-2024-03-30-高雄駁二藝術特區",
       "artist": "滿島光 x 大象體操",
       "venue": "高雄駁二藝術特區",
       "date": "2024-03-31",
@@ -1244,6 +1426,7 @@ window.LIVIBE_DATA = {
       "organizer": "出日音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-2024-03-23-高雄國家體育場",
       "artist": "五月天 (Mayday)",
       "venue": "高雄國家體育場",
       "date": "2024-03-31",
@@ -1251,6 +1434,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "cnbluentity-in-kaohsiung-2024-04-05-高雄流行音樂中心-海音館",
       "artist": "CNBLUE",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2024-04-05",
@@ -1258,6 +1442,7 @@ window.LIVIBE_DATA = {
       "organizer": "希林國際"
     },
     {
+      "eventId": "cnbluentity-in-kaohsiung-2024-04-05-高雄流行音樂中心-海音館",
       "artist": "CNBLUE",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2024-04-06",
@@ -1265,6 +1450,7 @@ window.LIVIBE_DATA = {
       "organizer": "希林國際"
     },
     {
+      "eventId": "iu-h-e-r-e-h-world-tour-concert-2024-04-06-台北小巨蛋",
       "artist": "IU",
       "venue": "台北小巨蛋",
       "date": "2024-04-06",
@@ -1272,6 +1458,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "iu-h-e-r-e-h-world-tour-concert-2024-04-06-台北小巨蛋",
       "artist": "IU",
       "venue": "台北小巨蛋",
       "date": "2024-04-07",
@@ -1279,6 +1466,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "時間遇上我們世界巡迴演唱會-2024-04-13-台北小巨蛋",
       "artist": "梁詠琪",
       "venue": "台北小巨蛋",
       "date": "2024-04-13",
@@ -1286,6 +1474,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "都是因為愛-世界巡迴演唱會-高雄安可場-2024-04-20-高雄巨蛋",
       "artist": "動力火車",
       "venue": "高雄巨蛋",
       "date": "2024-04-20",
@@ -1293,6 +1482,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "都是因為愛-世界巡迴演唱會-高雄安可場-2024-04-20-高雄巨蛋",
       "artist": "動力火車",
       "venue": "高雄巨蛋",
       "date": "2024-04-21",
@@ -1300,6 +1490,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "α-回到未來20週年演唱會-2024-04-27-台北小巨蛋",
       "artist": "宇宙人",
       "venue": "台北小巨蛋",
       "date": "2024-04-27",
@@ -1307,6 +1498,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "get-up-世界巡迴演唱會-2024-05-18-台北小巨蛋",
       "artist": "杜德偉",
       "venue": "台北小巨蛋",
       "date": "2024-05-18",
@@ -1314,6 +1506,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-treasure-relay-tour-reboot-2024-05-19-國立體育大學綜合體育館",
       "artist": "TREASURE",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-05-19",
@@ -1321,6 +1514,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-05-31",
@@ -1328,6 +1522,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-06-01",
@@ -1335,6 +1530,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-06-02",
@@ -1342,6 +1538,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-06-14",
@@ -1349,6 +1546,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-06-15",
@@ -1356,6 +1554,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北站-2024-05-31-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2024-06-16",
@@ -1363,6 +1562,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "3-nuits-tour-2024-in-taipei-2024-06-22-國立體育大學綜合體育館",
       "artist": "Aimer",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-06-22",
@@ -1370,6 +1570,7 @@ window.LIVIBE_DATA = {
       "organizer": "雅慕斯娛樂"
     },
     {
+      "eventId": "world-tour-all-or-nothing-2024-06-22-台北流行音樂中心-表演廳",
       "artist": "李泳知",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-06-22",
@@ -1377,6 +1578,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "3-nuits-tour-2024-in-taipei-2024-06-22-國立體育大學綜合體育館",
       "artist": "Aimer",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-06-23",
@@ -1384,6 +1586,7 @@ window.LIVIBE_DATA = {
       "organizer": "雅慕斯娛樂"
     },
     {
+      "eventId": "presents-see-you-there-in-taipei-2024-06-23-台北流行音樂中心-表演廳",
       "artist": "BABYMONSTER",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-06-23",
@@ -1391,6 +1594,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "cod3-of-p3rfum3-zoz5-asia-tour-2024-07-06-台北流行音樂中心-表演廳",
       "artist": "Perfume",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-07-06",
@@ -1398,6 +1602,7 @@ window.LIVIBE_DATA = {
       "organizer": "雅慕斯娛樂"
     },
     {
+      "eventId": "2024-suho-concert-su-home-2024-07-13-台北流行音樂中心-表演廳",
       "artist": "SUHO",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-07-13",
@@ -1405,6 +1610,7 @@ window.LIVIBE_DATA = {
       "organizer": "Applewood Taiwan"
     },
     {
+      "eventId": "k-mega-concert-in-kaohsiung-2024-07-13-高雄巨蛋",
       "artist": "HWASA",
       "venue": "高雄巨蛋",
       "date": "2024-07-13",
@@ -1412,6 +1618,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "k-mega-concert-in-kaohsiung-2024-07-13-高雄巨蛋",
       "artist": "KWON EUNBI",
       "venue": "高雄巨蛋",
       "date": "2024-07-13",
@@ -1419,6 +1626,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "k-mega-concert-in-kaohsiung-2024-07-13-高雄巨蛋",
       "artist": "Red Velvet",
       "venue": "高雄巨蛋",
       "date": "2024-07-13",
@@ -1426,6 +1634,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "k-mega-concert-in-kaohsiung-2024-07-13-高雄巨蛋",
       "artist": "SUNMI",
       "venue": "高雄巨蛋",
       "date": "2024-07-13",
@@ -1433,6 +1642,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "k-mega-concert-in-kaohsiung-2024-07-13-高雄巨蛋",
       "artist": "UNIS",
       "venue": "高雄巨蛋",
       "date": "2024-07-13",
@@ -1440,6 +1650,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "one-take-2-0-我忘了我已老去世界巡迴演唱會-台北安可場-2024-07-13-台北小巨蛋",
       "artist": "林志炫",
       "venue": "台北小巨蛋",
       "date": "2024-07-13",
@@ -1447,6 +1658,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "itzy-2nd-world-tour-born-to-be-2024-07-20-台北小巨蛋",
       "artist": "ITZY",
       "venue": "台北小巨蛋",
       "date": "2024-07-20",
@@ -1454,6 +1666,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "一觸即發-巡迴演唱會-2024-07-27-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2024-07-27",
@@ -1461,6 +1674,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "一觸即發-巡迴演唱會-2024-07-27-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2024-07-28",
@@ -1468,6 +1682,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "world-top-演唱會-2024-08-03-台北小巨蛋",
       "artist": "Ozone",
       "venue": "台北小巨蛋",
       "date": "2024-08-03",
@@ -1475,6 +1690,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "synk-parallel-line-2024-08-09-國立體育大學綜合體育館",
       "artist": "aespa",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-08-09",
@@ -1482,6 +1698,7 @@ window.LIVIBE_DATA = {
       "organizer": "iMe Taiwan"
     },
     {
+      "eventId": "hikaru-utada-science-fiction-tour-2024-2024-08-10-台北小巨蛋",
       "artist": "宇多田光",
       "venue": "台北小巨蛋",
       "date": "2024-08-10",
@@ -1489,6 +1706,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "synk-parallel-line-2024-08-09-國立體育大學綜合體育館",
       "artist": "aespa",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-08-10",
@@ -1496,6 +1714,7 @@ window.LIVIBE_DATA = {
       "organizer": "iMe Taiwan"
     },
     {
+      "eventId": "α-回到未來20週年演唱會-2024-08-10-高雄巨蛋",
       "artist": "宇宙人",
       "venue": "高雄巨蛋",
       "date": "2024-08-10",
@@ -1503,6 +1722,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "hikaru-utada-science-fiction-tour-2024-2024-08-10-台北小巨蛋",
       "artist": "宇多田光",
       "venue": "台北小巨蛋",
       "date": "2024-08-11",
@@ -1510,6 +1730,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "synk-parallel-line-2024-08-09-國立體育大學綜合體育館",
       "artist": "aespa",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-08-11",
@@ -1517,6 +1738,7 @@ window.LIVIBE_DATA = {
       "organizer": "iMe Taiwan"
     },
     {
+      "eventId": "2024-doyoung-concert-dear-youth-2024-08-16-台北流行音樂中心-表演廳",
       "artist": "DOYOUNG 道英",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-08-16",
@@ -1524,6 +1746,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "super-show-spin-off-halftime-2024-08-16-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2024-08-16",
@@ -1531,6 +1754,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-spin-off-halftime-2024-08-16-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2024-08-17",
@@ -1538,6 +1762,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-spin-off-halftime-2024-08-16-台北小巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北小巨蛋",
       "date": "2024-08-18",
@@ -1545,6 +1770,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "五月天",
       "venue": "台北小巨蛋",
       "date": "2024-08-24",
@@ -1552,6 +1778,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2024-08-24",
@@ -1559,6 +1786,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2024-08-24",
@@ -1566,6 +1794,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "GLAY",
       "venue": "台北小巨蛋",
       "date": "2024-08-24",
@@ -1573,6 +1802,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "五月天",
       "venue": "台北小巨蛋",
       "date": "2024-08-25",
@@ -1580,6 +1810,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2024-08-25",
@@ -1587,6 +1818,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2024-08-25",
@@ -1594,6 +1826,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2024-super-slippa-超犀利趴13-2024-08-24-台北小巨蛋",
       "artist": "GLAY",
       "venue": "台北小巨蛋",
       "date": "2024-08-25",
@@ -1601,6 +1834,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "eco-l-ve-concert-2024-08-31-高雄巨蛋",
       "artist": "多組藝人",
       "venue": "高雄巨蛋",
       "date": "2024-08-31",
@@ -1608,6 +1842,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "一觸即發-巡迴演唱會-2024-09-07-高雄巨蛋",
       "artist": "Energy",
       "venue": "高雄巨蛋",
       "date": "2024-09-07",
@@ -1615,6 +1850,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "一觸即發-巡迴演唱會-2024-09-07-高雄巨蛋",
       "artist": "Energy",
       "venue": "高雄巨蛋",
       "date": "2024-09-08",
@@ -1622,6 +1858,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "let-s-depart-給世界最悠長的吻巡迴演唱會-2024-09-14-高雄巨蛋",
       "artist": "蔡健雅",
       "venue": "高雄巨蛋",
       "date": "2024-09-14",
@@ -1629,6 +1866,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "馬戲團運動-circus-世界巡迴演唱會-2024-09-21-台北小巨蛋",
       "artist": "麋先生",
       "venue": "台北小巨蛋",
       "date": "2024-09-21",
@@ -1636,6 +1874,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "心有獨鍾-世界巡迴演唱會-2024-09-28-台北小巨蛋",
       "artist": "陳曉東",
       "venue": "台北小巨蛋",
       "date": "2024-09-28",
@@ -1643,6 +1882,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fragments-of-wonder-世界巡迴演唱會-高雄安可場-2024-09-28-高雄巨蛋",
       "artist": "鄭中基",
       "venue": "高雄巨蛋",
       "date": "2024-09-28",
@@ -1650,6 +1890,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fragments-of-wonder-世界巡迴演唱會-高雄安可場-2024-09-28-高雄巨蛋",
       "artist": "鄭中基",
       "venue": "高雄巨蛋",
       "date": "2024-09-29",
@@ -1657,6 +1898,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "g-i-dle-world-tour-idol-2024-10-04-台北小巨蛋",
       "artist": "(G)I-DLE",
       "venue": "台北小巨蛋",
       "date": "2024-10-04",
@@ -1664,6 +1906,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "水曜日のカンパネラ",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-04",
@@ -1671,6 +1914,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "Creepy Nuts",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-04",
@@ -1678,6 +1922,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "toe",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-04",
@@ -1685,6 +1930,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "g-i-dle-world-tour-idol-2024-10-04-台北小巨蛋",
       "artist": "(G)I-DLE",
       "venue": "台北小巨蛋",
       "date": "2024-10-05",
@@ -1692,6 +1938,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "變得有些奢侈的事-巡迴演唱會-高雄場-2024-10-05-高雄巨蛋",
       "artist": "徐佳瑩",
       "venue": "高雄巨蛋",
       "date": "2024-10-05",
@@ -1699,6 +1946,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "水曜日のカンパネラ",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-05",
@@ -1706,6 +1954,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "Creepy Nuts",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-05",
@@ -1713,6 +1962,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "toe",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-05",
@@ -1720,6 +1970,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "world-tour-act-promise-2024-10-05-國立體育大學綜合體育館",
       "artist": "TOMORROW X TOGETHER",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-10-05",
@@ -1727,6 +1978,7 @@ window.LIVIBE_DATA = {
       "organizer": "遠雄創藝"
     },
     {
+      "eventId": "g-i-dle-world-tour-idol-2024-10-04-台北小巨蛋",
       "artist": "(G)I-DLE",
       "venue": "台北小巨蛋",
       "date": "2024-10-06",
@@ -1734,6 +1986,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "水曜日のカンパネラ",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-06",
@@ -1741,6 +1994,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "Creepy Nuts",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-06",
@@ -1748,6 +2002,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "2024-浪人祭-vagabond-festival-2024-10-04-台南安平觀夕平台",
       "artist": "toe",
       "venue": "台南安平觀夕平台",
       "date": "2024-10-06",
@@ -1755,6 +2010,7 @@ window.LIVIBE_DATA = {
       "organizer": "笨道人"
     },
     {
+      "eventId": "world-tour-act-promise-2024-10-05-國立體育大學綜合體育館",
       "artist": "TOMORROW X TOGETHER",
       "venue": "國立體育大學綜合體育館",
       "date": "2024-10-06",
@@ -1762,6 +2018,7 @@ window.LIVIBE_DATA = {
       "organizer": "遠雄創藝"
     },
     {
+      "eventId": "sugar-high-2-0-世界巡迴演唱會-2024-10-12-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2024-10-12",
@@ -1769,6 +2026,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "sugar-high-2-0-世界巡迴演唱會-2024-10-12-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2024-10-13",
@@ -1776,6 +2034,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "timeless-演唱會-花見特別安可場-2024-10-19-台北小巨蛋",
       "artist": "張清芳",
       "venue": "台北小巨蛋",
       "date": "2024-10-19",
@@ -1783,6 +2042,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-ftisland-live-pulse-in-kaohsiung-2024-10-26-高雄流行音樂中心-海音館",
       "artist": "FTISLAND",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2024-10-26",
@@ -1790,6 +2050,7 @@ window.LIVIBE_DATA = {
       "organizer": "希林國際"
     },
     {
+      "eventId": "今天-is-the-day-巡迴演唱會-2024-11-01-台北小巨蛋",
       "artist": "劉德華",
       "venue": "台北小巨蛋",
       "date": "2024-11-01",
@@ -1797,6 +2058,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "今天-is-the-day-巡迴演唱會-2024-11-01-台北小巨蛋",
       "artist": "劉德華",
       "venue": "台北小巨蛋",
       "date": "2024-11-02",
@@ -1804,6 +2066,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "今天-is-the-day-巡迴演唱會-2024-11-01-台北小巨蛋",
       "artist": "劉德華",
       "venue": "台北小巨蛋",
       "date": "2024-11-03",
@@ -1811,6 +2074,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "soul-power-ii-世界巡迴演唱會-2024-11-09-台北小巨蛋",
       "artist": "陶喆",
       "venue": "台北小巨蛋",
       "date": "2024-11-09",
@@ -1818,6 +2082,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "soul-power-ii-世界巡迴演唱會-2024-11-09-台北小巨蛋",
       "artist": "陶喆",
       "venue": "台北小巨蛋",
       "date": "2024-11-10",
@@ -1825,6 +2090,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "best-of-fujii-kaze-2020-2024-asia-tour-2024-11-16-台北小巨蛋",
       "artist": "藤井風",
       "venue": "台北小巨蛋",
       "date": "2024-11-16",
@@ -1832,6 +2098,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "best-of-fujii-kaze-2020-2024-asia-tour-2024-11-16-台北小巨蛋",
       "artist": "藤井風",
       "venue": "台北小巨蛋",
       "date": "2024-11-17",
@@ -1839,6 +2106,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "here-now-鄭伊健演唱會2024-高雄站-2024-11-23-高雄巨蛋",
       "artist": "鄭伊健",
       "venue": "高雄巨蛋",
       "date": "2024-11-23",
@@ -1846,6 +2114,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "realive-r2-演唱會-特仕版-2024-11-23-台北小巨蛋",
       "artist": "周湯豪",
       "venue": "台北小巨蛋",
       "date": "2024-11-23",
@@ -1853,6 +2122,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "realive-r2-演唱會-特仕版-2024-11-23-台北小巨蛋",
       "artist": "周湯豪",
       "venue": "台北小巨蛋",
       "date": "2024-11-24",
@@ -1860,6 +2130,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "naniwa-danshi-asia-tour-2024-2025-alpha-2024-11-30-台北小巨蛋",
       "artist": "浪花男子",
       "venue": "台北小巨蛋",
       "date": "2024-11-30",
@@ -1867,6 +2138,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "naniwa-danshi-asia-tour-2024-2025-alpha-2024-11-30-台北小巨蛋",
       "artist": "浪花男子",
       "venue": "台北小巨蛋",
       "date": "2024-12-01",
@@ -1874,6 +2146,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "嘉年華世界巡迴演唱會-台北站-2024-12-05-台北大巨蛋",
       "artist": "周杰倫",
       "venue": "台北大巨蛋",
       "date": "2024-12-05",
@@ -1881,6 +2154,7 @@ window.LIVIBE_DATA = {
       "organizer": "杰威爾音樂"
     },
     {
+      "eventId": "charlie-puth-presents-something-new-2024-12-05-高雄巨蛋",
       "artist": "Charlie Puth",
       "venue": "高雄巨蛋",
       "date": "2024-12-05",
@@ -1888,6 +2162,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "嘉年華世界巡迴演唱會-台北站-2024-12-05-台北大巨蛋",
       "artist": "周杰倫",
       "venue": "台北大巨蛋",
       "date": "2024-12-06",
@@ -1895,6 +2170,7 @@ window.LIVIBE_DATA = {
       "organizer": "杰威爾音樂"
     },
     {
+      "eventId": "活著alive-演唱會-2024-12-07-台北小巨蛋",
       "artist": "蕭秉治",
       "venue": "台北小巨蛋",
       "date": "2024-12-07",
@@ -1902,6 +2178,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "嘉年華世界巡迴演唱會-台北站-2024-12-05-台北大巨蛋",
       "artist": "周杰倫",
       "venue": "台北大巨蛋",
       "date": "2024-12-07",
@@ -1909,6 +2186,7 @@ window.LIVIBE_DATA = {
       "organizer": "杰威爾音樂"
     },
     {
+      "eventId": "嘉年華世界巡迴演唱會-台北站-2024-12-05-台北大巨蛋",
       "artist": "周杰倫",
       "venue": "台北大巨蛋",
       "date": "2024-12-08",
@@ -1916,6 +2194,7 @@ window.LIVIBE_DATA = {
       "organizer": "杰威爾音樂"
     },
     {
+      "eventId": "幸福的末班車-15週年演唱會-2024-12-14-台北小巨蛋",
       "artist": "TRASH",
       "venue": "台北小巨蛋",
       "date": "2024-12-14",
@@ -1923,6 +2202,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "the-light-year-in-taipei-2024-12-14-台北流行音樂中心-表演廳",
       "artist": "TAEYANG 太陽",
       "venue": "台北流行音樂中心 表演廳",
       "date": "2024-12-14",
@@ -1930,6 +2210,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "official-hige-dandism-asia-tour-2024-rejoice-2024-12-15-台北小巨蛋",
       "artist": "Official髭男dism",
       "venue": "台北小巨蛋",
       "date": "2024-12-15",
@@ -1937,6 +2218,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "asmr-maxxx-台北大巨蛋演唱會-2024-12-21-台北大巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北大巨蛋",
       "date": "2024-12-21",
@@ -1944,6 +2226,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "asmr-maxxx-台北大巨蛋演唱會-2024-12-21-台北大巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北大巨蛋",
       "date": "2024-12-22",
@@ -1951,6 +2234,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "iconic-世界巡迴演唱會-2024-12-27-台北小巨蛋",
       "artist": "郭富城",
       "venue": "台北小巨蛋",
       "date": "2024-12-27",
@@ -1958,6 +2242,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "羅志祥30巡迴演唱會-高雄站-2024-12-28-高雄巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "高雄巨蛋",
       "date": "2024-12-28",
@@ -1965,6 +2250,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "asmr-maxxx-台北大巨蛋演唱會-2024-12-21-台北大巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北大巨蛋",
       "date": "2024-12-28",
@@ -1972,6 +2258,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "iconic-世界巡迴演唱會-2024-12-27-台北小巨蛋",
       "artist": "郭富城",
       "venue": "台北小巨蛋",
       "date": "2024-12-28",
@@ -1979,6 +2266,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "asmr-maxxx-台北大巨蛋演唱會-2024-12-21-台北大巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北大巨蛋",
       "date": "2024-12-29",
@@ -1986,6 +2274,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "iconic-世界巡迴演唱會-2024-12-27-台北小巨蛋",
       "artist": "郭富城",
       "venue": "台北小巨蛋",
       "date": "2024-12-29",
@@ -1993,6 +2282,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "羅志祥30巡迴演唱會-高雄站-2024-12-28-高雄巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "高雄巨蛋",
       "date": "2024-12-31",
@@ -2000,6 +2290,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "asmr-maxxx-台北大巨蛋演唱會-2024-12-21-台北大巨蛋",
       "artist": "張惠妹 (aMEI)",
       "venue": "台北大巨蛋",
       "date": "2024-12-31",
@@ -2007,6 +2298,7 @@ window.LIVIBE_DATA = {
       "organizer": "聲動娛樂"
     },
     {
+      "eventId": "a-link-with-passengers-巡迴演唱會最終站-2025-01-17-台北小巨蛋",
       "artist": "A-Lin",
       "venue": "台北小巨蛋",
       "date": "2025-01-17",
@@ -2014,6 +2306,7 @@ window.LIVIBE_DATA = {
       "organizer": "宜辰整合行銷"
     },
     {
+      "eventId": "a-link-with-passengers-巡迴演唱會最終站-2025-01-17-台北小巨蛋",
       "artist": "A-Lin",
       "venue": "台北小巨蛋",
       "date": "2025-01-18",
@@ -2021,6 +2314,7 @@ window.LIVIBE_DATA = {
       "organizer": "宜辰整合行銷"
     },
     {
+      "eventId": "a-link-with-passengers-巡迴演唱會最終站-2025-01-17-台北小巨蛋",
       "artist": "A-Lin",
       "venue": "台北小巨蛋",
       "date": "2025-01-19",
@@ -2028,6 +2322,7 @@ window.LIVIBE_DATA = {
       "organizer": "宜辰整合行銷"
     },
     {
+      "eventId": "world-tour-eclipse-in-kaohsiung-2025-01-25-高雄巨蛋",
       "artist": "SUPER JUNIOR-D&E",
       "venue": "高雄巨蛋",
       "date": "2025-01-25",
@@ -2035,6 +2330,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "world-tour-eclipse-in-kaohsiung-2025-01-25-高雄巨蛋",
       "artist": "SUPER JUNIOR-D&E",
       "venue": "高雄巨蛋",
       "date": "2025-01-26",
@@ -2042,6 +2338,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-apink-7th-concert-pink-new-year-in-taipei-2025-02-01-ticc-台北國際會議中心",
       "artist": "Apink",
       "venue": "TICC 台北國際會議中心",
       "date": "2025-02-01",
@@ -2049,6 +2346,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2024-25-2ne1-asia-tour-welcome-back-in-taipei-2025-02-08-國立體育大學綜合體育館",
       "artist": "2NE1",
       "venue": "國立體育大學綜合體育館",
       "date": "2025-02-08",
@@ -2056,6 +2354,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "yoasobi-asia-tour-2024-2025-超現實-cho-genjitsu-2025-02-08-台北小巨蛋",
       "artist": "YOASOBI",
       "venue": "台北小巨蛋",
       "date": "2025-02-08",
@@ -2063,6 +2362,7 @@ window.LIVIBE_DATA = {
       "organizer": "好玩國際文化"
     },
     {
+      "eventId": "yoasobi-asia-tour-2024-2025-超現實-cho-genjitsu-2025-02-08-台北小巨蛋",
       "artist": "YOASOBI",
       "venue": "台北小巨蛋",
       "date": "2025-02-09",
@@ -2070,6 +2370,7 @@ window.LIVIBE_DATA = {
       "organizer": "好玩國際文化"
     },
     {
+      "eventId": "maroon-5-asia-2025-kaohsiung-2025-02-14-高雄國家體育場",
       "artist": "Maroon 5",
       "venue": "高雄國家體育場",
       "date": "2025-02-14",
@@ -2077,6 +2378,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "2025-民歌50高峰會-最終場-2025-02-15-高雄巨蛋",
       "artist": "多組民歌歌手",
       "venue": "高雄巨蛋",
       "date": "2025-02-15",
@@ -2084,6 +2386,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "二十年一刻-巡迴演唱會-2025-02-22-台北小巨蛋",
       "artist": "蘇打綠",
       "venue": "台北小巨蛋",
       "date": "2025-02-22",
@@ -2091,6 +2394,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "二十年一刻-巡迴演唱會-2025-02-22-台北小巨蛋",
       "artist": "蘇打綠",
       "venue": "台北小巨蛋",
       "date": "2025-02-23",
@@ -2098,6 +2402,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "馬戲團運動-circus-世界巡迴演唱會-高雄站-2025-03-01-高雄巨蛋",
       "artist": "麋先生",
       "venue": "高雄巨蛋",
       "date": "2025-03-01",
@@ -2105,6 +2410,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "kenshi-yonezu-2025-world-tour-junk-2025-03-15-台北小巨蛋",
       "artist": "米津玄師",
       "venue": "台北小巨蛋",
       "date": "2025-03-15",
@@ -2112,6 +2418,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "tension-tour-2025-2025-03-15-高雄巨蛋",
       "artist": "Kylie Minogue",
       "venue": "高雄巨蛋",
       "date": "2025-03-15",
@@ -2119,6 +2426,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "kenshi-yonezu-2025-world-tour-junk-2025-03-15-台北小巨蛋",
       "artist": "米津玄師",
       "venue": "台北小巨蛋",
       "date": "2025-03-16",
@@ -2126,6 +2434,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "the-tense-in-taipei-2025-03-16-台北大巨蛋",
       "artist": "TAEYEON 太妍",
       "venue": "台北大巨蛋",
       "date": "2025-03-16",
@@ -2133,6 +2442,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "雙生火焰演唱會-2025-03-22-台北小巨蛋",
       "artist": "戴佩妮",
       "venue": "台北小巨蛋",
       "date": "2025-03-22",
@@ -2140,6 +2450,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "x-s-world-tour-2025-2025-03-22-桃園會展中心",
       "artist": "Cigarettes After Sex",
       "venue": "桃園會展中心",
       "date": "2025-03-22",
@@ -2147,6 +2458,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "60-世界巡迴演唱會-高雄站-2025-03-28-高雄巨蛋",
       "artist": "張學友",
       "venue": "高雄巨蛋",
       "date": "2025-03-28",
@@ -2154,6 +2466,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "requiem-tour-in-taipei-2025-2025-03-28-國立體育大學綜合體育館",
       "artist": "keshi",
       "venue": "國立體育大學綜合體育館",
       "date": "2025-03-28",
@@ -2161,6 +2474,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "60-世界巡迴演唱會-高雄站-2025-03-28-高雄巨蛋",
       "artist": "張學友",
       "venue": "高雄巨蛋",
       "date": "2025-03-29",
@@ -2168,6 +2482,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-高雄站-2025-03-28-高雄巨蛋",
       "artist": "張學友",
       "venue": "高雄巨蛋",
       "date": "2025-03-30",
@@ -2175,6 +2490,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-04",
@@ -2182,6 +2498,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "andrea-bocelli-live-in-taipei-dome-2025-04-04-台北大巨蛋",
       "artist": "Andrea Bocelli",
       "venue": "台北大巨蛋",
       "date": "2025-04-04",
@@ -2189,6 +2506,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-05",
@@ -2196,6 +2514,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-06",
@@ -2203,6 +2522,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-11",
@@ -2210,6 +2530,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-12",
@@ -2217,6 +2538,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-13",
@@ -2224,6 +2546,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-18",
@@ -2231,6 +2554,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-19",
@@ -2238,6 +2562,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "60-世界巡迴演唱會-台北安可場-2025-04-04-台北小巨蛋",
       "artist": "張學友",
       "venue": "台北小巨蛋",
       "date": "2025-04-20",
@@ -2245,6 +2570,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "幸福的末班車-15週年演唱會-高雄場-2025-05-03-高雄巨蛋",
       "artist": "TRASH",
       "venue": "高雄巨蛋",
       "date": "2025-05-03",
@@ -2252,6 +2578,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-23",
@@ -2259,6 +2586,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-24",
@@ -2266,6 +2594,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-25",
@@ -2273,6 +2602,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-29",
@@ -2280,6 +2610,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-30",
@@ -2287,6 +2618,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "fear-and-dreams-世界巡迴演唱會-高雄站-2025-05-23-高雄巨蛋",
       "artist": "陳奕迅",
       "venue": "高雄巨蛋",
       "date": "2025-05-31",
@@ -2294,6 +2626,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "一路這樣愛過來-演唱會-2025-06-07-台北小巨蛋",
       "artist": "彭佳慧",
       "venue": "台北小巨蛋",
       "date": "2025-06-07",
@@ -2301,6 +2634,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "jj20-final-lap-世界巡迴演唱會-2025-06-07-台北大巨蛋",
       "artist": "林俊傑",
       "venue": "台北大巨蛋",
       "date": "2025-06-07",
@@ -2308,6 +2642,7 @@ window.LIVIBE_DATA = {
       "organizer": "JFJ Productions"
     },
     {
+      "eventId": "jj20-final-lap-世界巡迴演唱會-2025-06-07-台北大巨蛋",
       "artist": "林俊傑",
       "venue": "台北大巨蛋",
       "date": "2025-06-08",
@@ -2315,6 +2650,7 @@ window.LIVIBE_DATA = {
       "organizer": "JFJ Productions"
     },
     {
+      "eventId": "rock-star-2-巡迴演唱會-2025-06-13-台北小巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "台北小巨蛋",
       "date": "2025-06-13",
@@ -2322,6 +2658,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "rock-star-2-巡迴演唱會-2025-06-13-台北小巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "台北小巨蛋",
       "date": "2025-06-14",
@@ -2329,6 +2666,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "rock-star-2-巡迴演唱會-2025-06-13-台北小巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "台北小巨蛋",
       "date": "2025-06-15",
@@ -2336,6 +2674,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-06-27",
@@ -2343,6 +2682,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-06-28",
@@ -2350,6 +2690,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-06-29",
@@ -2357,6 +2698,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-07-04",
@@ -2364,6 +2706,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-07-05",
@@ -2371,6 +2714,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-07-06",
@@ -2378,6 +2722,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-11",
@@ -2385,6 +2730,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-07-11",
@@ -2392,6 +2738,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "übermensch-world-tour-in-taipei-2025-07-11-台北小巨蛋",
       "artist": "G-DRAGON",
       "venue": "台北小巨蛋",
       "date": "2025-07-11",
@@ -2399,6 +2746,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-12",
@@ -2406,6 +2754,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "回到那一天25週年巡迴演唱會-台北站-2025-06-27-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2025-07-12",
@@ -2413,6 +2762,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "übermensch-world-tour-in-taipei-2025-07-11-台北小巨蛋",
       "artist": "G-DRAGON",
       "venue": "台北小巨蛋",
       "date": "2025-07-12",
@@ -2420,6 +2770,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "übermensch-world-tour-in-taipei-2025-07-11-台北小巨蛋",
       "artist": "G-DRAGON",
       "venue": "台北小巨蛋",
       "date": "2025-07-13",
@@ -2427,6 +2778,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-15",
@@ -2434,6 +2786,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-18",
@@ -2441,6 +2794,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-18",
@@ -2448,6 +2802,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-19",
@@ -2455,6 +2810,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-19",
@@ -2462,6 +2818,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-20",
@@ -2469,6 +2826,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-22",
@@ -2476,6 +2834,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-22",
@@ -2483,6 +2842,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-25",
@@ -2490,6 +2850,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-25",
@@ -2497,6 +2858,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-高雄站-2025-07-11-高雄巨蛋",
       "artist": "江蕙",
       "venue": "高雄巨蛋",
       "date": "2025-07-26",
@@ -2504,6 +2866,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-26",
@@ -2511,6 +2874,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-台北小巨蛋演唱會-2025-07-18-台北小巨蛋",
       "artist": "頑童MJ116",
       "venue": "台北小巨蛋",
       "date": "2025-07-27",
@@ -2518,6 +2882,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ayumi-hamasaki-asia-tour-2025-a-i-am-ayu-ep-ⅱ-2025-08-01-台北小巨蛋",
       "artist": "濱崎步",
       "venue": "台北小巨蛋",
       "date": "2025-08-01",
@@ -2525,6 +2890,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "CNBLUE",
       "venue": "高雄巨蛋",
       "date": "2025-08-02",
@@ -2532,6 +2898,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "FTISLAND",
       "venue": "高雄巨蛋",
       "date": "2025-08-02",
@@ -2539,6 +2906,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "Hi-Fi Un!corn",
       "venue": "高雄巨蛋",
       "date": "2025-08-02",
@@ -2546,6 +2914,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "N.Flying",
       "venue": "高雄巨蛋",
       "date": "2025-08-02",
@@ -2553,6 +2922,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ayumi-hamasaki-asia-tour-2025-a-i-am-ayu-ep-ⅱ-2025-08-01-台北小巨蛋",
       "artist": "濱崎步",
       "venue": "台北小巨蛋",
       "date": "2025-08-02",
@@ -2560,6 +2930,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "CNBLUE",
       "venue": "高雄巨蛋",
       "date": "2025-08-03",
@@ -2567,6 +2938,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "FTISLAND",
       "venue": "高雄巨蛋",
       "date": "2025-08-03",
@@ -2574,6 +2946,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "Hi-Fi Un!corn",
       "venue": "高雄巨蛋",
       "date": "2025-08-03",
@@ -2581,6 +2954,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fnc-band-kingdom-in-kaohsiung-2025-08-02-高雄巨蛋",
       "artist": "N.Flying",
       "venue": "高雄巨蛋",
       "date": "2025-08-03",
@@ -2588,6 +2962,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "二十年一刻-巡迴演唱會-高雄站-2025-08-09-高雄巨蛋",
       "artist": "蘇打綠",
       "venue": "高雄巨蛋",
       "date": "2025-08-09",
@@ -2595,6 +2970,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "二十年一刻-巡迴演唱會-高雄站-2025-08-09-高雄巨蛋",
       "artist": "蘇打綠",
       "venue": "高雄巨蛋",
       "date": "2025-08-10",
@@ -2602,6 +2978,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-12",
@@ -2609,6 +2986,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-13",
@@ -2616,6 +2994,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-15",
@@ -2623,6 +3002,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "就在日落以後-巡迴演唱會-高雄站-2025-08-16-高雄巨蛋",
       "artist": "孫燕姿",
       "venue": "高雄巨蛋",
       "date": "2025-08-16",
@@ -2630,6 +3010,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-16",
@@ -2637,6 +3018,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "就在日落以後-巡迴演唱會-高雄站-2025-08-16-高雄巨蛋",
       "artist": "孫燕姿",
       "venue": "高雄巨蛋",
       "date": "2025-08-17",
@@ -2644,6 +3026,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-17",
@@ -2651,6 +3034,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-19",
@@ -2658,6 +3042,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-20",
@@ -2665,6 +3050,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-22",
@@ -2672,6 +3058,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "活著alive-高雄巨蛋演唱會-2025-08-23-高雄巨蛋",
       "artist": "蕭秉治",
       "venue": "高雄巨蛋",
       "date": "2025-08-23",
@@ -2679,6 +3066,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-23",
@@ -2686,6 +3074,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-24",
@@ -2693,6 +3082,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-26",
@@ -2700,6 +3090,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-27",
@@ -2707,6 +3098,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-29",
@@ -2714,6 +3106,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "沒有翅膀的人-世界巡迴演唱會-高雄首站-2025-08-30-高雄巨蛋",
       "artist": "八三夭 (831)",
       "venue": "高雄巨蛋",
       "date": "2025-08-30",
@@ -2721,6 +3114,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-08-30",
@@ -2728,6 +3122,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北站-2025-08-12-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2025-09-01",
@@ -2735,6 +3130,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "all-in-全面進擊演唱會-高雄站-2025-09-06-高雄巨蛋",
       "artist": "Energy",
       "venue": "高雄巨蛋",
       "date": "2025-09-06",
@@ -2742,6 +3138,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "all-in-全面進擊演唱會-高雄站-2025-09-06-高雄巨蛋",
       "artist": "Energy",
       "venue": "高雄巨蛋",
       "date": "2025-09-07",
@@ -2749,6 +3146,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "不要告別巡迴演唱會-2025-09-13-高雄巨蛋",
       "artist": "蔡琴",
       "venue": "高雄巨蛋",
       "date": "2025-09-13",
@@ -2756,6 +3154,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "少年的奇幻之旅3-0演唱會-2025-09-20-台北小巨蛋",
       "artist": "周華健",
       "venue": "台北小巨蛋",
       "date": "2025-09-20",
@@ -2763,6 +3162,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "少年的奇幻之旅3-0演唱會-2025-09-20-台北小巨蛋",
       "artist": "周華健",
       "venue": "台北小巨蛋",
       "date": "2025-09-21",
@@ -2770,6 +3170,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-台北返場-2025-09-26-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2025-09-26",
@@ -2777,6 +3178,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-台北返場-2025-09-26-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2025-09-27",
@@ -2784,6 +3186,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "odyssey-旅程巡迴演唱會-台北返場-2025-09-26-台北小巨蛋",
       "artist": "周興哲 (Eric Chou)",
       "venue": "台北小巨蛋",
       "date": "2025-09-28",
@@ -2791,6 +3194,7 @@ window.LIVIBE_DATA = {
       "organizer": "星空飛騰"
     },
     {
+      "eventId": "翊起聽見愛-演唱會-2025-10-04-台北小巨蛋",
       "artist": "李翊君",
       "venue": "台北小巨蛋",
       "date": "2025-10-04",
@@ -2798,6 +3202,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "丁噹",
       "venue": "高雄巨蛋",
       "date": "2025-10-04",
@@ -2805,6 +3210,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "五月天",
       "venue": "高雄巨蛋",
       "date": "2025-10-04",
@@ -2812,6 +3218,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "玖壹壹",
       "venue": "高雄巨蛋",
       "date": "2025-10-04",
@@ -2819,6 +3226,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "U:NUS",
       "venue": "高雄巨蛋",
       "date": "2025-10-04",
@@ -2826,6 +3234,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "丁噹",
       "venue": "高雄巨蛋",
       "date": "2025-10-05",
@@ -2833,6 +3242,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "五月天",
       "venue": "高雄巨蛋",
       "date": "2025-10-05",
@@ -2840,6 +3250,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "玖壹壹",
       "venue": "高雄巨蛋",
       "date": "2025-10-05",
@@ -2847,6 +3258,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2025-super-slippa-超犀利趴14-2025-10-04-高雄巨蛋",
       "artist": "U:NUS",
       "venue": "高雄巨蛋",
       "date": "2025-10-05",
@@ -2854,6 +3266,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "yuuri-asia-tour-2025-in-taipei-2025-10-11-台北小巨蛋",
       "artist": "優里",
       "venue": "台北小巨蛋",
       "date": "2025-10-11",
@@ -2861,6 +3274,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "yuuri-asia-tour-2025-in-taipei-2025-10-11-台北小巨蛋",
       "artist": "優里",
       "venue": "台北小巨蛋",
       "date": "2025-10-12",
@@ -2868,6 +3282,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "不是因為天氣晴朗才見面-演唱會-2025-11-01-台北小巨蛋",
       "artist": "理想混蛋",
       "venue": "台北小巨蛋",
       "date": "2025-11-01",
@@ -2875,6 +3290,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "übermensch-world-tour-encore-in-taipei-2025-11-01-台北大巨蛋",
       "artist": "G-DRAGON",
       "venue": "台北大巨蛋",
       "date": "2025-11-01",
@@ -2882,6 +3298,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "不是因為天氣晴朗才見面-演唱會-2025-11-01-台北小巨蛋",
       "artist": "理想混蛋",
       "venue": "台北小巨蛋",
       "date": "2025-11-02",
@@ -2889,6 +3306,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "übermensch-world-tour-encore-in-taipei-2025-11-01-台北大巨蛋",
       "artist": "G-DRAGON",
       "venue": "台北大巨蛋",
       "date": "2025-11-02",
@@ -2896,6 +3314,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "iconic-世界巡迴演唱會-高雄站-2025-11-08-高雄巨蛋",
       "artist": "郭富城",
       "venue": "高雄巨蛋",
       "date": "2025-11-08",
@@ -2903,6 +3322,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "iconic-世界巡迴演唱會-高雄站-2025-11-08-高雄巨蛋",
       "artist": "郭富城",
       "venue": "高雄巨蛋",
       "date": "2025-11-09",
@@ -2910,6 +3330,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-taipei-2025-11-14-台北大巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北大巨蛋",
       "date": "2025-11-14",
@@ -2917,6 +3338,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "夜遊-a-night-tour-小巨蛋夜未眠巡迴演唱會-2025-11-15-台北小巨蛋",
       "artist": "丁噹",
       "venue": "台北小巨蛋",
       "date": "2025-11-15",
@@ -2924,6 +3346,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-taipei-2025-11-14-台北大巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北大巨蛋",
       "date": "2025-11-15",
@@ -2931,6 +3354,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "夜遊-a-night-tour-小巨蛋夜未眠巡迴演唱會-2025-11-15-台北小巨蛋",
       "artist": "丁噹",
       "venue": "台北小巨蛋",
       "date": "2025-11-16",
@@ -2938,6 +3362,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-taipei-2025-11-14-台北大巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "台北大巨蛋",
       "date": "2025-11-16",
@@ -2945,6 +3370,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "多組藝人",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-22",
@@ -2952,6 +3378,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "滅火器",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-22",
@@ -2959,6 +3386,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "ASIAN KUNG-FU GENERATION",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-22",
@@ -2966,6 +3394,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "不簡單的演唱會-2025-11-22-台北小巨蛋",
       "artist": "Marz23",
       "venue": "台北小巨蛋",
       "date": "2025-11-22",
@@ -2973,6 +3402,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "臺北大巨蛋-民歌大團圓-2025-11-22-台北大巨蛋",
       "artist": "超過60組民歌音樂人",
       "venue": "台北大巨蛋",
       "date": "2025-11-22",
@@ -2980,6 +3410,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "rock-star-2-演唱會-高雄站-2025-11-22-高雄巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "高雄巨蛋",
       "date": "2025-11-22",
@@ -2987,6 +3418,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "多組藝人",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-23",
@@ -2994,6 +3426,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "滅火器",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-23",
@@ -3001,6 +3434,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "2025-fireball-fest-火球祭-2025-11-22-樂天桃園棒球場",
       "artist": "ASIAN KUNG-FU GENERATION",
       "venue": "樂天桃園棒球場",
       "date": "2025-11-23",
@@ -3008,6 +3442,7 @@ window.LIVIBE_DATA = {
       "organizer": "夥球擊"
     },
     {
+      "eventId": "rock-star-2-演唱會-高雄站-2025-11-22-高雄巨蛋",
       "artist": "伍佰 & China Blue",
       "venue": "高雄巨蛋",
       "date": "2025-11-23",
@@ -3015,6 +3450,7 @@ window.LIVIBE_DATA = {
       "organizer": "開麗娛樂"
     },
     {
+      "eventId": "hatsune-miku-expo-2025-taipei-2025-11-26-台北小巨蛋",
       "artist": "初音未來",
       "venue": "台北小巨蛋",
       "date": "2025-11-26",
@@ -3022,6 +3458,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "少年的奇幻之旅3-0巡迴演唱會-2025-11-29-高雄巨蛋",
       "artist": "周華健",
       "venue": "高雄巨蛋",
       "date": "2025-11-29",
@@ -3029,6 +3466,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-民歌50高峰會-最終加場-2025-12-06-高雄巨蛋",
       "artist": "多組民歌歌手",
       "venue": "高雄巨蛋",
       "date": "2025-12-06",
@@ -3036,6 +3474,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2025-zerobaseone-world-tour-here-now-2025-12-06-台北小巨蛋",
       "artist": "ZEROBASEONE",
       "venue": "台北小巨蛋",
       "date": "2025-12-06",
@@ -3043,6 +3482,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "the-dream-show-4-in-taipei-2025-12-06-台北大巨蛋",
       "artist": "NCT DREAM",
       "venue": "台北大巨蛋",
       "date": "2025-12-06",
@@ -3050,6 +3490,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "羅志祥30巡迴演唱會-台北站-2025-12-13-台北小巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "台北小巨蛋",
       "date": "2025-12-13",
@@ -3057,6 +3498,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "羅志祥30巡迴演唱會-台北站-2025-12-13-台北小巨蛋",
       "artist": "羅志祥 (Show Lo)",
       "venue": "台北小巨蛋",
       "date": "2025-12-14",
@@ -3064,6 +3506,7 @@ window.LIVIBE_DATA = {
       "organizer": "寬宏藝術"
     },
     {
+      "eventId": "onerepublic-2025-live-in-kaohsiung-2025-12-19-高雄巨蛋",
       "artist": "OneRepublic",
       "venue": "高雄巨蛋",
       "date": "2025-12-19",
@@ -3071,6 +3514,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "α-回到未來1986-演唱會-2025-12-20-台北小巨蛋",
       "artist": "宇宙人",
       "venue": "台北小巨蛋",
       "date": "2025-12-20",
@@ -3078,6 +3522,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ma-vie-world-tour-2025-12-21-高雄巨蛋",
       "artist": "Doja Cat",
       "venue": "高雄巨蛋",
       "date": "2025-12-21",
@@ -3085,6 +3530,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "one-day-直到那一天世界巡迴演唱會-2025-12-26-台北小巨蛋",
       "artist": "李聖傑",
       "venue": "台北小巨蛋",
       "date": "2025-12-26",
@@ -3092,6 +3538,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "one-day-直到那一天世界巡迴演唱會-2025-12-26-台北小巨蛋",
       "artist": "李聖傑",
       "venue": "台北小巨蛋",
       "date": "2025-12-27",
@@ -3099,6 +3546,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "pleasure-世界巡迴演唱會-taipei-2025-2026-2025-12-30-台北大巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北大巨蛋",
       "date": "2025-12-30",
@@ -3106,6 +3554,7 @@ window.LIVIBE_DATA = {
       "organizer": "凌時差音樂"
     },
     {
+      "eventId": "pleasure-世界巡迴演唱會-taipei-2025-2026-2025-12-30-台北大巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北大巨蛋",
       "date": "2025-12-31",
@@ -3113,6 +3562,7 @@ window.LIVIBE_DATA = {
       "organizer": "凌時差音樂"
     },
     {
+      "eventId": "pleasure-世界巡迴演唱會-taipei-2025-2026-2025-12-30-台北大巨蛋",
       "artist": "蔡依林 (Jolin Tsai)",
       "venue": "台北大巨蛋",
       "date": "2026-01-01",
@@ -3120,6 +3570,7 @@ window.LIVIBE_DATA = {
       "organizer": "凌時差音樂"
     },
     {
+      "eventId": "babymonster-asia-fan-concert-2025-26-love-monsters-2026-01-02-台北小巨蛋",
       "artist": "BABYMONSTER",
       "venue": "台北小巨蛋",
       "date": "2026-01-02",
@@ -3127,6 +3578,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "babymonster-asia-fan-concert-2025-26-love-monsters-2026-01-02-台北小巨蛋",
       "artist": "BABYMONSTER",
       "venue": "台北小巨蛋",
       "date": "2026-01-03",
@@ -3134,6 +3586,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "all-in-全面進擊巡迴演唱會-2026-01-10-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2026-01-10",
@@ -3141,6 +3594,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "all-in-全面進擊巡迴演唱會-2026-01-10-台北小巨蛋",
       "artist": "Energy",
       "venue": "台北小巨蛋",
       "date": "2026-01-11",
@@ -3148,6 +3602,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "still-raining-encore-2026-01-17-台北小巨蛋",
       "artist": "Rain",
       "venue": "台北小巨蛋",
       "date": "2026-01-17",
@@ -3155,6 +3610,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "告五人",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3162,6 +3618,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "玖壹壹",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3169,6 +3626,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "周興哲",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3176,6 +3634,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "夏川里美",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3183,6 +3642,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "張信哲",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3190,6 +3650,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "盧廣仲",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3197,6 +3658,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "五十-動轉未來感恩慈善演唱會-2026-01-18-台北大巨蛋",
       "artist": "A-Lin",
       "venue": "台北大巨蛋",
       "date": "2026-01-18",
@@ -3204,6 +3666,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "sugar-high-2-0-世界巡迴演唱會-最終場-2026-01-23-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2026-01-23",
@@ -3211,6 +3674,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-kaohsiung-2026-01-23-高雄巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "高雄巨蛋",
       "date": "2026-01-23",
@@ -3218,6 +3682,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "sugar-high-2-0-世界巡迴演唱會-最終場-2026-01-23-台北小巨蛋",
       "artist": "王心凌",
       "venue": "台北小巨蛋",
       "date": "2026-01-24",
@@ -3225,6 +3690,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-kaohsiung-2026-01-23-高雄巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "高雄巨蛋",
       "date": "2026-01-24",
@@ -3232,6 +3698,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "super-show-10-in-kaohsiung-2026-01-23-高雄巨蛋",
       "artist": "SUPER JUNIOR",
       "venue": "高雄巨蛋",
       "date": "2026-01-25",
@@ -3239,6 +3706,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "act-tomorrow-in-taipei-2026-01-31-台北大巨蛋",
       "artist": "TOMORROW X TOGETHER",
       "venue": "台北大巨蛋",
       "date": "2026-01-31",
@@ -3246,6 +3714,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "the-avenoir-tour-2026-in-kaohsiung-2026-01-31-高雄巨蛋",
       "artist": "Calum Scott",
       "venue": "高雄巨蛋",
       "date": "2026-01-31",
@@ -3253,6 +3722,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "act-tomorrow-in-taipei-2026-01-31-台北大巨蛋",
       "artist": "TOMORROW X TOGETHER",
       "venue": "台北大巨蛋",
       "date": "2026-02-01",
@@ -3260,6 +3730,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "怪奇的珍珠-巡迴演唱會-台北旗艦場-2026-02-07-台北小巨蛋",
       "artist": "魏如萱",
       "venue": "台北小巨蛋",
       "date": "2026-02-07",
@@ -3267,6 +3738,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "怪奇的珍珠-巡迴演唱會-台北旗艦場-2026-02-07-台北小巨蛋",
       "artist": "魏如萱",
       "venue": "台北小巨蛋",
       "date": "2026-02-08",
@@ -3274,6 +3746,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北最終場-2026-02-20-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2026-02-20",
@@ -3281,6 +3754,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北最終場-2026-02-20-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2026-02-21",
@@ -3288,6 +3762,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北最終場-2026-02-20-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2026-02-22",
@@ -3295,6 +3770,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北最終場-2026-02-20-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2026-02-24",
@@ -3302,6 +3778,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "無-有-演唱會-台北最終場-2026-02-20-台北小巨蛋",
       "artist": "江蕙",
       "venue": "台北小巨蛋",
       "date": "2026-02-25",
@@ -3309,6 +3786,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "from-asia-with-love-2026-03-04-台北小巨蛋",
       "artist": "OneRepublic",
       "venue": "台北小巨蛋",
       "date": "2026-03-04",
@@ -3316,6 +3794,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "syncopation-in-taipei-2026-03-07-台北大巨蛋",
       "artist": "i-dle",
       "venue": "台北大巨蛋",
       "date": "2026-03-07",
@@ -3323,6 +3802,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "this-is-for-world-tour-in-taipei-2026-03-20-台北大巨蛋",
       "artist": "TWICE",
       "venue": "台北大巨蛋",
       "date": "2026-03-20",
@@ -3330,6 +3810,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "雙生火焰高雄巨蛋演唱會-2026-03-21-高雄巨蛋",
       "artist": "戴佩妮",
       "venue": "高雄巨蛋",
       "date": "2026-03-21",
@@ -3337,6 +3818,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "this-is-for-world-tour-in-taipei-2026-03-20-台北大巨蛋",
       "artist": "TWICE",
       "venue": "台北大巨蛋",
       "date": "2026-03-21",
@@ -3344,6 +3826,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "this-is-for-world-tour-in-taipei-2026-03-20-台北大巨蛋",
       "artist": "TWICE",
       "venue": "台北大巨蛋",
       "date": "2026-03-22",
@@ -3351,6 +3834,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "into-the-wish-our-wish-in-kaohsiung-2026-03-28-高雄巨蛋",
       "artist": "NCT WISH",
       "venue": "高雄巨蛋",
       "date": "2026-03-28",
@@ -3358,6 +3842,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "tuki-asia-tour-2026-2026-04-04-台北小巨蛋",
       "artist": "tuki.",
       "venue": "台北小巨蛋",
       "date": "2026-04-04",
@@ -3365,6 +3850,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "tuki-asia-tour-2026-2026-04-04-台北小巨蛋",
       "artist": "tuki.",
       "venue": "台北小巨蛋",
       "date": "2026-04-05",
@@ -3372,6 +3858,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "i-am-gloria-世界巡迴演唱會-台北站-2026-04-09-台北大巨蛋",
       "artist": "G.E.M. 鄧紫棋",
       "venue": "台北大巨蛋",
       "date": "2026-04-09",
@@ -3379,6 +3866,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "i-am-gloria-世界巡迴演唱會-台北站-2026-04-09-台北大巨蛋",
       "artist": "G.E.M. 鄧紫棋",
       "venue": "台北大巨蛋",
       "date": "2026-04-10",
@@ -3386,6 +3874,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "i-am-gloria-世界巡迴演唱會-台北站-2026-04-09-台北大巨蛋",
       "artist": "G.E.M. 鄧紫棋",
       "venue": "台北大巨蛋",
       "date": "2026-04-11",
@@ -3393,6 +3882,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "i-am-gloria-世界巡迴演唱會-台北站-2026-04-09-台北大巨蛋",
       "artist": "G.E.M. 鄧紫棋",
       "venue": "台北大巨蛋",
       "date": "2026-04-12",
@@ -3400,6 +3890,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "夜遊-a-night-tour-高雄巨蛋夜未眠巡迴演唱會-2026-04-18-高雄巨蛋",
       "artist": "丁噹",
       "venue": "高雄巨蛋",
       "date": "2026-04-18",
@@ -3407,6 +3898,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "cxm-double-up-live-party-in-kaohsiung-2026-04-24-高雄巨蛋",
       "artist": "CxM",
       "venue": "高雄巨蛋",
       "date": "2026-04-24",
@@ -3414,6 +3906,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "好想好好愛周蕙-演唱會-2026-04-25-台北小巨蛋",
       "artist": "周蕙",
       "venue": "台北小巨蛋",
       "date": "2026-04-25",
@@ -3421,6 +3914,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "cxm-double-up-live-party-in-kaohsiung-2026-04-24-高雄巨蛋",
       "artist": "CxM",
       "venue": "高雄巨蛋",
       "date": "2026-04-25",
@@ -3428,6 +3922,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "detox-asia-tour-2026-2026-04-25-台北大巨蛋",
       "artist": "ONE OK ROCK",
       "venue": "台北大巨蛋",
       "date": "2026-04-25",
@@ -3435,6 +3930,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "張清芳與她的好友們慈善演唱會-2026-04-26-台北小巨蛋",
       "artist": "張清芳",
       "venue": "台北小巨蛋",
       "date": "2026-04-26",
@@ -3442,6 +3938,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "張清芳與她的好友們慈善演唱會-2026-04-26-台北小巨蛋",
       "artist": "張清芳的好友們",
       "venue": "台北小巨蛋",
       "date": "2026-04-26",
@@ -3449,6 +3946,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "cxm-double-up-live-party-in-kaohsiung-2026-04-24-高雄巨蛋",
       "artist": "CxM",
       "venue": "高雄巨蛋",
       "date": "2026-04-26",
@@ -3456,6 +3954,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "detox-asia-tour-2026-2026-04-25-台北大巨蛋",
       "artist": "ONE OK ROCK",
       "venue": "台北大巨蛋",
       "date": "2026-04-26",
@@ -3463,6 +3962,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "exo-planet-6-exhorizon-in-taipei-2026-05-09-台北小巨蛋",
       "artist": "EXO",
       "venue": "台北小巨蛋",
       "date": "2026-05-09",
@@ -3470,6 +3970,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "exo-planet-6-exhorizon-in-taipei-2026-05-09-台北小巨蛋",
       "artist": "EXO",
       "venue": "台北小巨蛋",
       "date": "2026-05-10",
@@ -3477,6 +3978,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "一路向前-世界巡迴演唱會-台北旗艦場-2026-05-15-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2026-05-15",
@@ -3484,6 +3986,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "就在日落以後-巡迴演唱會-台北站-2026-05-15-台北大巨蛋",
       "artist": "孫燕姿",
       "venue": "台北大巨蛋",
       "date": "2026-05-15",
@@ -3491,6 +3994,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "一路向前-世界巡迴演唱會-台北旗艦場-2026-05-15-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2026-05-16",
@@ -3498,6 +4002,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "一路向前-世界巡迴演唱會-台北旗艦場-2026-05-15-台北小巨蛋",
       "artist": "動力火車",
       "venue": "台北小巨蛋",
       "date": "2026-05-17",
@@ -3505,6 +4010,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "就在日落以後-巡迴演唱會-台北站-2026-05-15-台北大巨蛋",
       "artist": "孫燕姿",
       "venue": "台北大巨蛋",
       "date": "2026-05-17",
@@ -3512,6 +4018,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "韋-您好-hi-we1-巡迴演唱會-2026-05-30-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2026-05-30",
@@ -3519,6 +4026,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "韋-您好-hi-we1-巡迴演唱會-2026-05-30-台北小巨蛋",
       "artist": "韋禮安 (WeiBird)",
       "venue": "台北小巨蛋",
       "date": "2026-05-31",
@@ -3526,6 +4034,7 @@ window.LIVIBE_DATA = {
       "organizer": "KKLIVE"
     },
     {
+      "eventId": "cen-ral-tour-in-taipei-2026-06-06-台北小巨蛋",
       "artist": "King Gnu",
       "venue": "台北小巨蛋",
       "date": "2026-06-06",
@@ -3533,6 +4042,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-高雄巨蛋演唱會-2026-06-06-高雄巨蛋",
       "artist": "頑童MJ116",
       "venue": "高雄巨蛋",
       "date": "2026-06-06",
@@ -3540,6 +4050,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "cen-ral-tour-in-taipei-2026-06-06-台北小巨蛋",
       "artist": "King Gnu",
       "venue": "台北小巨蛋",
       "date": "2026-06-07",
@@ -3547,6 +4058,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-高雄巨蛋演唱會-2026-06-06-高雄巨蛋",
       "artist": "頑童MJ116",
       "venue": "高雄巨蛋",
       "date": "2026-06-07",
@@ -3554,6 +4066,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-高雄巨蛋演唱會-2026-06-06-高雄巨蛋",
       "artist": "頑童MJ116",
       "venue": "高雄巨蛋",
       "date": "2026-06-12",
@@ -3561,6 +4074,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-高雄巨蛋演唱會-2026-06-06-高雄巨蛋",
       "artist": "頑童MJ116",
       "venue": "高雄巨蛋",
       "date": "2026-06-13",
@@ -3568,6 +4082,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "ogs-高雄巨蛋演唱會-2026-06-06-高雄巨蛋",
       "artist": "頑童MJ116",
       "venue": "高雄巨蛋",
       "date": "2026-06-14",
@@ -3575,6 +4090,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "lisa-live-is-smile-always-15-in-taipei-2026-06-19-台北小巨蛋",
       "artist": "LiSA",
       "venue": "台北小巨蛋",
       "date": "2026-06-19",
@@ -3582,6 +4098,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "lisa-live-is-smile-always-15-in-taipei-2026-06-19-台北小巨蛋",
       "artist": "LiSA",
       "venue": "台北小巨蛋",
       "date": "2026-06-20",
@@ -3589,6 +4106,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "itzy-3rd-world-tour-tunnel-vision-in-kaohsiung-2026-06-27-高雄巨蛋",
       "artist": "ITZY",
       "venue": "高雄巨蛋",
       "date": "2026-06-27",
@@ -3596,6 +4114,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "itzy-3rd-world-tour-tunnel-vision-in-kaohsiung-2026-06-27-高雄巨蛋",
       "artist": "ITZY",
       "venue": "高雄巨蛋",
       "date": "2026-06-28",
@@ -3603,6 +4122,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-03",
@@ -3610,6 +4130,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-04",
@@ -3617,6 +4138,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2026-world-tour-4ward-in-kaohsiung-2026-07-04-高雄巨蛋",
       "artist": "MAMAMOO",
       "venue": "高雄巨蛋",
       "date": "2026-07-04",
@@ -3624,6 +4146,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-05",
@@ -3631,6 +4154,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "2026-world-tour-4ward-in-kaohsiung-2026-07-04-高雄巨蛋",
       "artist": "MAMAMOO",
       "venue": "高雄巨蛋",
       "date": "2026-07-05",
@@ -3638,6 +4162,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-08",
@@ -3645,6 +4170,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-10",
@@ -3652,6 +4178,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-11",
@@ -3659,6 +4186,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "1st-world-tour-episode-1-zero-frontier-in-kaohsiung-2026-07-11-高雄巨蛋",
       "artist": "NMIXX",
       "venue": "高雄巨蛋",
       "date": "2026-07-11",
@@ -3666,6 +4194,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "5525-2-回到那一天巡迴演唱會-台北站-2026-07-03-台北大巨蛋",
       "artist": "五月天 (Mayday)",
       "venue": "台北大巨蛋",
       "date": "2026-07-12",
@@ -3673,6 +4202,7 @@ window.LIVIBE_DATA = {
       "organizer": "相信音樂"
     },
     {
+      "eventId": "1st-world-tour-episode-1-zero-frontier-in-kaohsiung-2026-07-11-高雄巨蛋",
       "artist": "NMIXX",
       "venue": "高雄巨蛋",
       "date": "2026-07-12",
@@ -3680,6 +4210,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "exo-planet-6-exhorizon-in-kaohsiung-2026-07-18-高雄巨蛋",
       "artist": "EXO",
       "venue": "高雄巨蛋",
       "date": "2026-07-18",
@@ -3687,6 +4218,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "on-fire-day-2026-演唱會-2026-07-18-台北小巨蛋",
       "artist": "滅火器 (Fire EX.)",
       "venue": "台北小巨蛋",
       "date": "2026-07-18",
@@ -3694,6 +4226,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "exo-planet-6-exhorizon-in-kaohsiung-2026-07-18-高雄巨蛋",
       "artist": "EXO",
       "venue": "高雄巨蛋",
       "date": "2026-07-19",
@@ -3701,6 +4234,7 @@ window.LIVIBE_DATA = {
       "organizer": "超級圓頂"
     },
     {
+      "eventId": "on-fire-day-2026-演唱會-2026-07-18-台北小巨蛋",
       "artist": "滅火器 (Fire EX.)",
       "venue": "台北小巨蛋",
       "date": "2026-07-19",
@@ -3708,6 +4242,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "dxs-serenade-on-stage-kaohsiung-2026-07-24-高雄巨蛋",
       "artist": "DxS",
       "venue": "高雄巨蛋",
       "date": "2026-07-24",
@@ -3715,6 +4250,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "dxs-serenade-on-stage-kaohsiung-2026-07-24-高雄巨蛋",
       "artist": "DxS",
       "venue": "高雄巨蛋",
       "date": "2026-07-25",
@@ -3722,6 +4258,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "dxs-serenade-on-stage-kaohsiung-2026-07-24-高雄巨蛋",
       "artist": "DxS",
       "venue": "高雄巨蛋",
       "date": "2026-07-26",
@@ -3729,6 +4266,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "一五一拾-台北小巨蛋演唱會-2026-08-08-台北小巨蛋",
       "artist": "許富凱",
       "venue": "台北小巨蛋",
       "date": "2026-08-08",
@@ -3736,6 +4274,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "落日飛車2026高雄演唱會-2026-08-08-高雄流行音樂中心-海音館",
       "artist": "落日飛車",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2026-08-08",
@@ -3743,6 +4282,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "k-wave-infinity-2026-08-08-高雄巨蛋",
       "artist": "多組韓國藝人",
       "venue": "高雄巨蛋",
       "date": "2026-08-08",
@@ -3750,6 +4290,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "落日飛車2026高雄演唱會-2026-08-08-高雄流行音樂中心-海音館",
       "artist": "落日飛車",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2026-08-09",
@@ -3757,6 +4298,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "synk-complexity-in-taipei-2026-08-11-台北大巨蛋",
       "artist": "aespa",
       "venue": "台北大巨蛋",
       "date": "2026-08-11",
@@ -3764,6 +4306,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "沒有翅膀的人-世界巡迴演唱會-2026生日趴-2026-08-15-台北小巨蛋",
       "artist": "八三夭 (831)",
       "venue": "台北小巨蛋",
       "date": "2026-08-15",
@@ -3771,6 +4314,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "沒有翅膀的人-世界巡迴演唱會-2026生日趴-2026-08-15-台北小巨蛋",
       "artist": "八三夭 (831)",
       "venue": "台北小巨蛋",
       "date": "2026-08-16",
@@ -3778,6 +4322,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "敵不過想念-演唱會-高雄站-2026-08-22-高雄巨蛋",
       "artist": "游鴻明",
       "venue": "高雄巨蛋",
       "date": "2026-08-22",
@@ -3785,6 +4330,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "grateful-yesterdays-tour-2026-in-taipei-2026-08-22-台北小巨蛋",
       "artist": "back number",
       "venue": "台北小巨蛋",
       "date": "2026-08-22",
@@ -3792,6 +4338,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "t-o-p-2026-fan-concert-in-taipei-2026-08-22-國立體育大學綜合體育館",
       "artist": "T.O.P",
       "venue": "國立體育大學綜合體育館",
       "date": "2026-08-22",
@@ -3799,6 +4346,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "grateful-yesterdays-tour-2026-in-taipei-2026-08-22-台北小巨蛋",
       "artist": "back number",
       "venue": "台北小巨蛋",
       "date": "2026-08-23",
@@ -3806,6 +4354,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "t-o-p-2026-fan-concert-in-taipei-2026-08-22-國立體育大學綜合體育館",
       "artist": "T.O.P",
       "venue": "國立體育大學綜合體育館",
       "date": "2026-08-23",
@@ -3813,6 +4362,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "official-hige-dandism-asia-tour-2026-2026-08-29-台北小巨蛋",
       "artist": "Official髭男dism",
       "venue": "台北小巨蛋",
       "date": "2026-08-29",
@@ -3820,6 +4370,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "official-hige-dandism-asia-tour-2026-2026-08-29-台北小巨蛋",
       "artist": "Official髭男dism",
       "venue": "台北小巨蛋",
       "date": "2026-08-30",
@@ -3827,6 +4378,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "her-voice-無所畏懼的女聲-2026-09-05-高雄巨蛋",
       "artist": "多組女歌手",
       "venue": "高雄巨蛋",
       "date": "2026-09-05",
@@ -3834,6 +4386,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "itzy-3rd-world-tour-tunnel-vision-in-taipei-2026-09-05-台北小巨蛋",
       "artist": "ITZY",
       "venue": "台北小巨蛋",
       "date": "2026-09-05",
@@ -3841,6 +4394,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "ive-2nd-world-tour-show-what-i-am-in-taipei-2026-09-11-台北小巨蛋",
       "artist": "IVE",
       "venue": "台北小巨蛋",
       "date": "2026-09-11",
@@ -3848,6 +4402,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "飛行日-2026巡迴演唱會-高雄站-2026-09-12-高雄巨蛋",
       "artist": "劉若英",
       "venue": "高雄巨蛋",
       "date": "2026-09-12",
@@ -3855,6 +4410,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2026-ftisland-tour-0-xix-iii-fate-in-kaohsiung-2026-09-12-高雄流行音樂中心-海音館",
       "artist": "FTISLAND",
       "venue": "高雄流行音樂中心 海音館",
       "date": "2026-09-12",
@@ -3862,6 +4418,7 @@ window.LIVIBE_DATA = {
       "organizer": "希林國際"
     },
     {
+      "eventId": "ive-2nd-world-tour-show-what-i-am-in-taipei-2026-09-11-台北小巨蛋",
       "artist": "IVE",
       "venue": "台北小巨蛋",
       "date": "2026-09-12",
@@ -3869,6 +4426,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "ive-2nd-world-tour-show-what-i-am-in-taipei-2026-09-11-台北小巨蛋",
       "artist": "IVE",
       "venue": "台北小巨蛋",
       "date": "2026-09-13",
@@ -3876,6 +4434,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "bravo-演唱會-2026-09-18-台北小巨蛋",
       "artist": "蕭煌奇",
       "venue": "台北小巨蛋",
       "date": "2026-09-18",
@@ -3883,6 +4442,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "bravo-演唱會-2026-09-18-台北小巨蛋",
       "artist": "蕭煌奇",
       "venue": "台北小巨蛋",
       "date": "2026-09-19",
@@ -3890,6 +4450,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "hans-zimmer-live-the-next-level-in-kaohsiung-2026-09-19-高雄巨蛋",
       "artist": "Hans Zimmer",
       "venue": "高雄巨蛋",
       "date": "2026-09-19",
@@ -3897,6 +4458,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "lany-soft-world-tour-2026-09-26-台北小巨蛋",
       "artist": "LANY",
       "venue": "台北小巨蛋",
       "date": "2026-09-26",
@@ -3904,6 +4466,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "the-stage-2026-new-wav-live-in-kaohsiung-2026-09-26-高雄巨蛋",
       "artist": "TREASURE",
       "venue": "高雄巨蛋",
       "date": "2026-09-26",
@@ -3911,6 +4474,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "數著時間的日子-巡迴演唱會-2026-10-03-台北小巨蛋",
       "artist": "彭佳慧",
       "venue": "台北小巨蛋",
       "date": "2026-10-03",
@@ -3918,6 +4482,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "2026-plave-world-tour-keep-it-manic-in-kaohsiung-2026-10-03-高雄巨蛋",
       "artist": "PLAVE",
       "venue": "高雄巨蛋",
       "date": "2026-10-03",
@@ -3925,6 +4490,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "yuuri-2026-live-in-taipei-2026-10-09-台北小巨蛋",
       "artist": "優里",
       "venue": "台北小巨蛋",
       "date": "2026-10-09",
@@ -3932,6 +4498,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "xx-cosmos-world-tour-in-taipei-2026-10-10-台北大巨蛋",
       "artist": "BIGBANG",
       "venue": "台北大巨蛋",
       "date": "2026-10-10",
@@ -3939,6 +4506,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "yuuri-2026-live-in-taipei-2026-10-09-台北小巨蛋",
       "artist": "優里",
       "venue": "台北小巨蛋",
       "date": "2026-10-10",
@@ -3946,6 +4514,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "xx-cosmos-world-tour-in-taipei-2026-10-10-台北大巨蛋",
       "artist": "BIGBANG",
       "venue": "台北大巨蛋",
       "date": "2026-10-11",
@@ -3953,6 +4522,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "不是因為天氣晴朗才見面-演唱會-高雄站-2026-10-17-高雄巨蛋",
       "artist": "理想混蛋",
       "venue": "高雄巨蛋",
       "date": "2026-10-17",
@@ -3960,6 +4530,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "xg-world-tour-the-core-2026-10-17-台北小巨蛋",
       "artist": "XG",
       "venue": "台北小巨蛋",
       "date": "2026-10-17",
@@ -3967,6 +4538,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "不是因為天氣晴朗才見面-演唱會-高雄站-2026-10-17-高雄巨蛋",
       "artist": "理想混蛋",
       "venue": "高雄巨蛋",
       "date": "2026-10-18",
@@ -3974,6 +4546,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "whatever-s-clever-world-tour-2026-10-20-台北小巨蛋",
       "artist": "Charlie Puth",
       "venue": "台北小巨蛋",
       "date": "2026-10-20",
@@ -3981,6 +4554,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "2026-tws-tour-24-7-for-you-in-kaohsiung-2026-10-24-高雄巨蛋",
       "artist": "TWS",
       "venue": "高雄巨蛋",
       "date": "2026-10-24",
@@ -3988,6 +4562,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "vaundy-asia-arena-tour-2026-horo-2026-10-31-台北小巨蛋",
       "artist": "Vaundy",
       "venue": "台北小巨蛋",
       "date": "2026-10-31",
@@ -3995,6 +4570,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "vaundy-asia-arena-tour-2026-horo-2026-10-31-台北小巨蛋",
       "artist": "Vaundy",
       "venue": "台北小巨蛋",
       "date": "2026-11-01",
@@ -4002,6 +4578,7 @@ window.LIVIBE_DATA = {
       "organizer": "大鴻藝術"
     },
     {
+      "eventId": "bts-world-tour-arirang-in-kaohsiung-2026-11-19-高雄國家體育場",
       "artist": "BTS",
       "venue": "高雄國家體育場",
       "date": "2026-11-19",
@@ -4009,6 +4586,7 @@ window.LIVIBE_DATA = {
       "organizer": "BIGHIT MUSIC / Live Nation Taiwan"
     },
     {
+      "eventId": "babymonster-world-tour-choom-in-taipei-2026-11-21-台北小巨蛋",
       "artist": "BABYMONSTER",
       "venue": "台北小巨蛋",
       "date": "2026-11-21",
@@ -4016,6 +4594,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "bts-world-tour-arirang-in-kaohsiung-2026-11-19-高雄國家體育場",
       "artist": "BTS",
       "venue": "高雄國家體育場",
       "date": "2026-11-21",
@@ -4023,6 +4602,7 @@ window.LIVIBE_DATA = {
       "organizer": "BIGHIT MUSIC / Live Nation Taiwan"
     },
     {
+      "eventId": "babymonster-world-tour-choom-in-taipei-2026-11-21-台北小巨蛋",
       "artist": "BABYMONSTER",
       "venue": "台北小巨蛋",
       "date": "2026-11-22",
@@ -4030,6 +4610,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "bts-world-tour-arirang-in-kaohsiung-2026-11-19-高雄國家體育場",
       "artist": "BTS",
       "venue": "高雄國家體育場",
       "date": "2026-11-22",
@@ -4037,6 +4618,7 @@ window.LIVIBE_DATA = {
       "organizer": "BIGHIT MUSIC / Live Nation Taiwan"
     },
     {
+      "eventId": "joji-solaris-2026-11-27-高雄巨蛋",
       "artist": "Joji",
       "venue": "高雄巨蛋",
       "date": "2026-11-27",
@@ -4044,6 +4626,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "on-fire-day-2026-高雄巨蛋演唱會-2026-12-12-高雄巨蛋",
       "artist": "滅火器 (Fire EX.)",
       "venue": "高雄巨蛋",
       "date": "2026-12-12",
@@ -4051,6 +4634,7 @@ window.LIVIBE_DATA = {
       "organizer": "未提供"
     },
     {
+      "eventId": "stray-kids-world-tour-run-it-in-taipei-2026-12-12-台北大巨蛋",
       "artist": "Stray Kids",
       "venue": "台北大巨蛋",
       "date": "2026-12-12",
@@ -4058,6 +4642,7 @@ window.LIVIBE_DATA = {
       "organizer": "Live Nation Taiwan"
     },
     {
+      "eventId": "on-fire-day-2026-高雄巨蛋演唱會-2026-12-12-高雄巨蛋",
       "artist": "滅火器 (Fire EX.)",
       "venue": "高雄巨蛋",
       "date": "2026-12-13",

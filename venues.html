@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVIBE | 場館視野</title>
-    <link rel="stylesheet" href="assets/css/app.css?v=20260821-10">
+    <link rel="stylesheet" href="assets/css/app.css?v=20260824-2">
 </head>
 <body>
     <nav class="navbar">
@@ -21,7 +21,7 @@
         <div>
             <p class="eyebrow">LIVIBE Venue Guide</p>
             <h1>各大場館座位視野</h1>
-            <p>選場館、舞台配置與座位區，查看觀眾提供的真實視角。視野評價會與 LIVIBE 的演唱會場次及評論互相連結。</p>
+            <p>選場館、舞台配置與座位區，建立可分享的視野定位。真實照片投稿與認證會在後續階段接上，不以示意素材冒充觀眾內容。</p>
             <div class="venue-search-row">
                 <label class="search-box">
                     <span>搜尋場館</span>
@@ -42,7 +42,7 @@
         <div class="venue-hero-stat">
             <strong id="venue-count">0</strong>
             <span>座場館</span>
-            <small>持續收錄觀眾實拍</small>
+            <small>持續整理場館與舞台配置</small>
         </div>
     </header>
 
@@ -59,8 +59,8 @@
                     <div id="venue-category-admin"></div>
                 </div>
                 <div class="featured-stats">
-                    <span><strong id="featured-photos">1,577</strong> <span id="featured-photo-unit">張視野</span></span>
-                    <span><strong id="featured-rating">8.6</strong> 平均視野</span>
+                    <span><strong id="featured-photos">2</strong> <span id="featured-photo-unit">份配置</span></span>
+                    <span><strong id="featured-rating">--</strong> 視野評分</span>
                     <span><strong id="featured-zones">24</strong> 個區域</span>
                 </div>
             </div>
@@ -77,11 +77,12 @@
                 <p id="featured-map-caption">點選座位區查看視野摘要 · 配置參考臺北小巨蛋官方公開資料</p>
             </div>
             <aside class="mini-view-card">
-                <div id="featured-photo" class="seat-view-photo venue-photo"></div>
-                <small id="featured-zone-label">黃 2A · 14排 7號</small>
-                <h3 id="featured-zone-title">正面完整舞台視野</h3>
-                <div class="mini-rating"><strong id="featured-zone-score">8.8</strong><span>/ 10</span></div>
-                <p id="featured-zone-copy">適合看完整舞美，延伸舞台升起時距離感比照片更近。</p>
+                <div id="featured-photo" class="seat-view-photo venue-photo is-placeholder"><span>等待真實視野投稿</span></div>
+                <small id="featured-zone-label">請選擇座位區</small>
+                <h3 id="featured-zone-title">選取區域以建立分享連結</h3>
+                <div class="mini-rating"><strong id="featured-zone-score">--</strong><span> 尚無評分</span></div>
+                <p id="featured-zone-copy">現階段提供座位區定位與配置參考；照片、描述與評分必須由真實投稿資料產生。</p>
+                <button id="copy-zone-link" class="secondary-button zone-share-button" type="button" disabled>複製此視野連結</button>
             </aside>
         </section>
 
@@ -95,9 +96,9 @@
         <section id="venue-grid" class="venue-card-grid" aria-live="polite"></section>
     </main>
 
-    <script src="assets/data/site-data.js?v=20260821-3"></script>
+    <script src="assets/data/site-data.js?v=20260824-2"></script>
     <script src="assets/js/venue-maps.js?v=20260821-10"></script>
-    <script src="assets/js/core.js?v=20260821-10"></script>
-    <script src="assets/js/venues.js?v=20260821-10"></script>
+    <script src="assets/js/core.js?v=20260824-2"></script>
+    <script src="assets/js/venues.js?v=20260824-2"></script>
 </body>
 </html>

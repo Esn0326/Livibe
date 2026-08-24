@@ -25,6 +25,7 @@ const siteDataContext = { window: {} };
 runInNewContext(siteDataSource, siteDataContext);
 const siteData = siteDataContext.window.LIVIBE_DATA;
 const concerts = siteData?.concerts || [];
+const metadata = siteData?.meta || {};
 const venueData = siteData?.venueData;
 const catalog = venueData?.venues || [];
 const locations = venueData?.locations || {};
@@ -39,11 +40,34 @@ for (const config of configs) {
 }
 
 const unknownCities = [...new Set(catalog.map((venue) => venue.citySource || venue.city).filter((city) => !locations.cities[city]))];
-const siteDataValid = Array.isArray(concerts) && Array.isArray(catalog) && Boolean(locations.cities) && Boolean(locations.countries);
-const failures = { missingReferences, missingMaps, unknownCities, siteDataValid };
-if (missingReferences.length || missingMaps.length || unknownCities.length || !siteDataValid) {
+const missingEventIds = concerts.filter((concert) => !concert.eventId).length;
+const eventIdentity = new Map();
+const conflictingEventIds = [];
+for (const concert of concerts) {
+    if (!concert.eventId) continue;
+    const identity = `${concert.theme}\u0000${concert.venue}`;
+    const previous = eventIdentity.get(concert.eventId);
+    if (previous && previous !== identity) conflictingEventIds.push(concert.eventId);
+    eventIdentity.set(concert.eventId, identity);
+}
+const siteDataValid = Array.isArray(concerts)
+    && Array.isArray(catalog)
+    && Boolean(locations.cities)
+    && Boolean(locations.countries)
+    && /^\d{4}-\d{2}-\d{2}$/.test(metadata.catalogSnapshot || '');
+const failures = { missingReferences, missingMaps, unknownCities, missingEventIds, conflictingEventIds, siteDataValid };
+if (missingReferences.length || missingMaps.length || unknownCities.length || missingEventIds || conflictingEventIds.length || !siteDataValid) {
     console.error(JSON.stringify(failures, null, 2));
     process.exitCode = 1;
 } else {
-    console.log(JSON.stringify({ pages: pages.length, concerts: concerts.length, venues: catalog.length, layouts: configs.length, cities: Object.keys(locations.cities).length, status: 'ok' }, null, 2));
+    console.log(JSON.stringify({
+        pages: pages.length,
+        concertRows: concerts.length,
+        verifiedEvents: eventIdentity.size,
+        catalogSnapshot: metadata.catalogSnapshot,
+        venues: catalog.length,
+        layouts: configs.length,
+        cities: Object.keys(locations.cities).length,
+        status: 'ok'
+    }, null, 2));
 }

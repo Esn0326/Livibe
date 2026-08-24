@@ -3,6 +3,7 @@ let currentSessionIndex = 0;
 const qs = (selector) => document.querySelector(selector);
 const { transform: transformRawData, escapeHtml, typeLabel } = window.LIVIBE_EVENTS;
 const ACCESS = window.LIVIBE_ACCESS;
+const COMMUNITY = window.LIVIBE_COMMUNITY;
 const CONCERT_CONFIG_KEY = 'livibe-concert-venue-configs';
 const RAW_VENUES = window.LIVIBE_DATA?.venueData?.venues || [];
 const CONCERT_IMPORTED_ZONE_INFO = {};
@@ -77,7 +78,7 @@ function stableDiscussionId(item, index) {
     return `local-${Math.abs(hash)}`;
 }
 
-function getStoredDiscussion(eventId) {
+function readStoredDiscussion(eventId) {
     try {
         const items = JSON.parse(localStorage.getItem(discussionKey(eventId)) || '[]');
         let migrated = false;
@@ -93,6 +94,14 @@ function getStoredDiscussion(eventId) {
     }
 }
 
+function getStoredDiscussion(event) {
+    const current = readStoredDiscussion(event.id);
+    if (current.length || !event.legacyId || event.legacyId === event.id) return current;
+    const legacy = readStoredDiscussion(event.legacyId);
+    if (legacy.length) localStorage.setItem(discussionKey(event.id), JSON.stringify(legacy));
+    return legacy;
+}
+
 function getDeletedDiscussion(eventId) {
     try {
         return new Set(JSON.parse(localStorage.getItem(deletedDiscussionKey(eventId)) || '[]'));
@@ -106,18 +115,29 @@ function defaultDiscussion(event) {
         {
             id: 'default-editorial',
             name: 'LIVIBE 編輯部',
-            rating: event.rating,
-            text: `${event.sessions[0]?.venue || '場館'} 的動線與音場表現是本場值得觀察的重點。`,
-            time: '精選留言'
-        },
-        {
-            id: 'default-community',
-            name: '觀眾 Mina',
-            rating: Math.max(7, Math.round(event.rating - 0.4)),
-            text: '希望大家補充不同區域視角，之後買票更有參考價值。',
-            time: '討論串'
+            text: event.isUpcoming
+                ? '這場演出尚未舉行，目前只收集期待度；演出結束後會切換為觀眾評價。'
+                : '這個頁面正在等待第一則觀眾評價。分數只會使用實際送出的評價計算。',
+            time: '評分說明'
         }
     ];
+}
+
+function updateRatingSummary(event) {
+    const summary = COMMUNITY.summary(event);
+    const isExpectation = summary.kind === 'expectation';
+    qs('#rating-score').textContent = summary.average === null ? '--' : summary.average.toFixed(1);
+    qs('#rating-label').textContent = `${isExpectation ? '觀眾期待度' : '觀眾評分'}${summary.count && !summary.isRepresentative ? '（樣本不足）' : ''}`;
+    qs('#rating-volume').textContent = `${summary.count} / ${summary.minimumSamples} 則`;
+    qs('#discussion-title').textContent = isExpectation ? '演出期待與討論' : '觀眾評價與討論';
+    qs('#review-score-label').textContent = isExpectation ? '你的期待度' : '你的演後評分';
+    qs('#review-text').placeholder = isExpectation
+        ? '分享你期待的歌單、舞台或嘉賓'
+        : '分享音響、視線、入場動線或演出亮點';
+    const sampleNote = summary.isRepresentative ? '已達第一版最低樣本門檻。' : `至少需要 ${summary.minimumSamples} 則才列入評分排序。`;
+    qs('#review-disclosure').textContent = isExpectation
+        ? `尚未舉行：此處顯示期待度，不會混入演出後評分。${sampleNote}資料目前只儲存在你的瀏覽器。`
+        : `分數來自本頁實際送出的演後評價。${sampleNote}資料目前只儲存在你的瀏覽器。`;
 }
 
 function updateSession(index) {
@@ -151,7 +171,7 @@ function renderNews(event) {
     const keywords = encodeURIComponent(`${event.title} ${event.displayArtist}`);
     const news = [
         ['LIVIBE Guide', `${event.title} 演出資訊與場館指南`, '整理日期、場館、主辦單位與入場前可先確認的重點。', '#venue-section'],
-        ['Community Watch', `${event.displayArtist} 近期演出討論熱度上升`, '觀眾最常關注票區視線、音響表現與交通散場安排。', '#discussion-section'],
+        ['MVP Roadmap', '可信評價功能持續建置中', '目前只呈現實際送出的本機樣本；正式會員、認證入場與防灌分將於後續階段加入。', 'index.html#product-roadmap'],
         ['Google News', '查看外部新聞搜尋', '以演出名稱與藝人作為關鍵字，查看最新公開報導。', `https://news.google.com/search?q=${keywords}`]
     ];
 
@@ -167,7 +187,7 @@ function renderNews(event) {
 function renderDiscussion(event) {
     const deleted = getDeletedDiscussion(event.id);
     const items = [
-        ...getStoredDiscussion(event.id).map((item) => ({ ...item, source: 'stored' })),
+        ...getStoredDiscussion(event).map((item) => ({ ...item, source: 'stored' })),
         ...defaultDiscussion(event).filter((item) => !deleted.has(item.id)).map((item) => ({ ...item, source: 'default' }))
     ];
     const canDelete = ACCESS.can('discussion.delete');
@@ -180,13 +200,13 @@ function renderDiscussion(event) {
                 ${canDelete ? `<button class="discussion-delete" type="button" data-discussion-id="${escapeHtml(item.id)}" data-discussion-source="${item.source}" aria-label="刪除 ${escapeHtml(item.name)} 的留言">刪除</button>` : ''}
             </div>
             <p>${escapeHtml(item.text)}</p>
-            <small>${Number(item.rating).toFixed(1)} / 10</small>
+            ${Number.isFinite(Number(item.rating)) ? `<small>${Number(item.rating).toFixed(1)} / 10</small>` : ''}
         </article>
     `).join('');
     list.querySelectorAll('.discussion-delete').forEach((button) => button.addEventListener('click', () => {
         if (!ACCESS.can('discussion.delete')) return;
         if (button.dataset.discussionSource === 'stored') {
-            const next = getStoredDiscussion(event.id).filter((item) => item.id !== button.dataset.discussionId);
+            const next = getStoredDiscussion(event).filter((item) => item.id !== button.dataset.discussionId);
             localStorage.setItem(discussionKey(event.id), JSON.stringify(next));
         } else {
             const nextDeleted = getDeletedDiscussion(event.id);
@@ -194,6 +214,7 @@ function renderDiscussion(event) {
             localStorage.setItem(deletedDiscussionKey(event.id), JSON.stringify([...nextDeleted]));
         }
         renderDiscussion(event);
+        updateRatingSummary(event);
     }));
 }
 
@@ -209,17 +230,19 @@ function bindReviewForm(event) {
         if (!ACCESS.can('discussion.create')) return;
         const text = qs('#review-text').value.trim();
         if (!text) return;
-        const items = getStoredDiscussion(event.id);
+        const items = getStoredDiscussion(event);
         items.unshift({
             id: globalThis.crypto?.randomUUID?.() || `local-${Date.now()}`,
-            name: '我的留言',
+            name: '本機使用者',
             rating: Number(qs('#review-rating').value),
             text,
-            time: '剛剛'
+            kind: COMMUNITY.kindFor(event),
+            time: `${event.isUpcoming ? '期待度' : '演後評價'} · 剛剛`
         });
         localStorage.setItem(discussionKey(event.id), JSON.stringify(items.slice(0, 10)));
         qs('#review-text').value = '';
         renderDiscussion(event);
+        updateRatingSummary(event);
     });
 }
 
@@ -244,10 +267,10 @@ function genericConcertImportedView(zone, venue, config, index) {
     return {
         title: `${label} 座位視野`,
         location: `${venue.name} · ${config.label}`,
-        score: (7.8 + (index % 9) / 10).toFixed(1),
-        copy: `此區屬於「${config.label}」配置；實際視線仍會依延伸台、燈光、音響與現場器材位置調整。`,
-        tags: ['場館配置', config.label],
-        photo: index % 4
+        score: null,
+        copy: `此區屬於「${config.label}」配置；目前尚無經審核的真實視野投稿。實際視線仍會依延伸台、燈光、音響與現場器材位置調整。`,
+        tags: ['配置參考', config.label, '等待投稿'],
+        photo: null
     };
 }
 
@@ -302,8 +325,9 @@ async function renderConcertVenueConfiguration(event, session) {
     diagram.setAttribute('aria-label', `${session.venue}・${config?.label || '尚無配置'}互動座位圖`);
     const hideButton = document.querySelector('#venue-section [data-map-action="hide-empty"]');
     if (hideButton) {
-        hideButton.disabled = Boolean(config?.mapAsset && !config.mapKind);
-        hideButton.textContent = hideButton.disabled ? '照片狀態未同步' : '隱藏無照片區';
+        hideButton.disabled = true;
+        hideButton.textContent = '照片資料待上線';
+        hideButton.title = '真實照片投稿與審核功能會在後續階段接上';
         hideButton.classList.remove('active');
     }
 
@@ -349,11 +373,11 @@ function renderDetail(event) {
     qs('#status-display').textContent = event.isUpcoming ? '即將到來' : '歷史演出';
     qs('#detail-title').textContent = event.title;
     qs('#detail-artist').textContent = event.displayArtist;
-    qs('#rating-score').textContent = event.rating.toFixed(1);
-    qs('#volume-score').textContent = `${event.volume} dB`;
+    updateRatingSummary(event);
     qs('#display-organizer').textContent = event.organizer;
     window.setupArenaMapControls(qs('#stage-svg-diagram'), document.querySelector('#venue-section [data-map-tools]'));
-    qs('#summary-text').textContent = `${event.title} 收錄於 LIVIBE 演唱會資料庫，目前包含 ${event.sessions.length} 個場次、${event.artists.length} 組演出名單與場館資訊。`;
+    const catalogSnapshot = window.LIVIBE_DATA?.meta?.catalogSnapshot;
+    qs('#summary-text').textContent = `${event.title} 收錄於 LIVIBE 演唱會資料庫，目前包含 ${event.sessions.length} 個場次、${event.artists.length} 組演出名單與場館資訊。${catalogSnapshot ? ` 資料查證基準：${catalogSnapshot}。` : ''}`;
 
     const dropdown = qs('#session-dropdown');
     dropdown.innerHTML = event.sessions.map((session, index) => `<option value="${index}">${escapeHtml(session.label)} · ${escapeHtml(session.venue)}</option>`).join('');
@@ -388,7 +412,7 @@ async function loadDetail() {
         const rawData = window.LIVIBE_DATA?.concerts;
         if (!Array.isArray(rawData)) throw new Error('演唱會資料格式錯誤');
         const events = transformRawData(rawData);
-        const event = events.find((item) => item.id === id || item.title === id);
+        const event = events.find((item) => item.id === id || item.legacyId === id || item.title === id);
         if (!event) {
             qs('#detail-title').textContent = '找不到這場演出';
             qs('#summary-text').textContent = '請回到首頁重新選擇演唱會。';
@@ -419,13 +443,6 @@ function bindSvgStageControls() {
     Object.assign(stageDescriptions, window.TAIPEI_ARENA_ZONES || {});
     Object.assign(stageDescriptions, window.LINKOU_ARENA_ZONES || {});
     Object.assign(stageDescriptions, CONCERT_IMPORTED_ZONE_INFO);
-    const photos = [
-        'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop'
-    ];
-
     const zones = document.querySelectorAll('#stage-svg-diagram .seat-zone');
     zones.forEach((zone) => {
         zone.addEventListener('click', () => {
@@ -439,11 +456,12 @@ function bindSvgStageControls() {
                 const view = stageDescriptions[zoneId];
                 qs('#view-title').textContent = view.title;
                 qs('#view-location').textContent = view.location;
-                qs('#view-score').textContent = view.score;
+                qs('#view-score').textContent = '--';
                 qs('#view-description').textContent = view.copy;
-                qs('#view-tags').innerHTML = view.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('');
-                qs('#seat-view-photo').style.backgroundImage = `linear-gradient(180deg, transparent 52%, rgba(0,0,0,.72)), url("${photos[view.photo]}")`;
-                qs('#seat-view-photo').innerHTML = `<span>觀眾席實拍示意 · ${escapeHtml(view.title)}</span>`;
+                qs('#view-tags').innerHTML = [...new Set([...view.tags, '等待真實投稿'])].map((tag) => `<span>${escapeHtml(tag)}</span>`).join('');
+                qs('#seat-view-photo').classList.add('is-placeholder');
+                qs('#seat-view-photo').style.backgroundImage = 'none';
+                qs('#seat-view-photo').innerHTML = `<span>${escapeHtml(view.title)} · 等待真實視野投稿</span>`;
             }
         });
     });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVIBE | 演唱會詳情</title>
-    <link rel="stylesheet" href="assets/css/app.css?v=20260821-10">
+    <link rel="stylesheet" href="assets/css/app.css?v=20260824-2">
 </head>
 <body>
     <nav class="navbar">
@@ -32,11 +32,11 @@
                 <div class="rating-row">
                     <div class="score-box">
                         <span id="rating-score">--</span>
-                        <small>LIVIBE 評分</small>
+                        <small id="rating-label">觀眾評分</small>
                     </div>
                     <div class="score-box subtle">
-                        <span id="volume-score">-- dB</span>
-                        <small>現場震撼度</small>
+                        <span id="rating-volume">0 則</span>
+                        <small>本機評價樣本</small>
                     </div>
                     <button id="watchlist-button" class="secondary-button" type="button">加入片單</button>
                 </div>
@@ -82,7 +82,7 @@
                         <a class="text-link" href="venues.html">查看完整場館視野庫 →</a>
                     </div>
                     <div id="concert-config-admin" class="concert-config-admin"></div>
-                    <p class="venue-help">點選座位圖上的區域，查看該區實拍視角與觀眾評價。座位配置取自 LIVIBE 場館資料庫，實際配置仍以各場次主辦單位公告為準。</p>
+                    <p class="venue-help">點選座位圖上的區域，查看該區視角參考。座位配置取自 LIVIBE 場館資料庫；原型中的照片、描述與分數可能是示意資料，實際配置仍以各場次主辦單位公告為準。</p>
                     <div class="seat-view-layout">
                         <div>
                             <div class="diagram-toolbar">
@@ -110,7 +110,7 @@
                             <p id="view-description">選擇區域後，這裡會顯示座位實拍視角、距離感與可能的遮擋資訊。</p>
                             <div id="view-tags" class="view-tags"></div>
                             <div class="seat-actions">
-                                <button type="button" id="view-more-button" class="primary-button">查看此區視野</button>
+                                <button type="button" id="view-more-button" class="primary-button" disabled>真實視野待投稿</button>
                                 <a id="display-map" class="secondary-link" href="#" target="_blank" rel="noopener">場館交通</a>
                             </div>
                         </aside>
@@ -126,20 +126,36 @@
             </article>
 
             <aside class="content-stack">
+                <section class="panel score-method-panel">
+                    <div class="panel-header">
+                        <h2>評分如何產生</h2>
+                    </div>
+                    <ol>
+                        <li>演出前只計算期待度，演出後才計算觀眾評分。</li>
+                        <li>總分為目前送出分數的平均值，並同步顯示樣本數。</li>
+                        <li>本 MVP 的資料只保存在這台裝置，不代表公開社群排名。</li>
+                    </ol>
+                </section>
                 <section class="panel" id="discussion-section">
                     <div class="panel-header">
-                        <h2>觀眾討論</h2>
+                        <h2 id="discussion-title">觀眾討論</h2>
                         <div id="discussion-role-control"></div>
                     </div>
+                    <p id="review-disclosure" class="prototype-note"></p>
                     <form id="review-form" class="review-form">
                         <label>
-                            <span>你的評分</span>
+                            <span id="review-score-label">你的評分</span>
                             <select id="review-rating">
                                 <option value="10">10 - 必看神場</option>
                                 <option value="9">9 - 非常推薦</option>
                                 <option value="8" selected>8 - 值得進場</option>
                                 <option value="7">7 - 表現穩定</option>
                                 <option value="6">6 - 普通</option>
+                                <option value="5">5 - 不如預期</option>
+                                <option value="4">4 - 體驗欠佳</option>
+                                <option value="3">3 - 不推薦</option>
+                                <option value="2">2 - 非常失望</option>
+                                <option value="1">1 - 嚴重問題</option>
                             </select>
                         </label>
                         <label>
@@ -154,9 +170,9 @@
         </section>
     </main>
 
-    <script src="assets/data/site-data.js?v=20260821-3"></script>
+    <script src="assets/data/site-data.js?v=20260824-2"></script>
     <script src="assets/js/venue-maps.js?v=20260821-10"></script>
-    <script src="assets/js/core.js?v=20260821-10"></script>
-    <script src="assets/js/concert.js?v=20260821-10"></script>
+    <script src="assets/js/core.js?v=20260824-2"></script>
+    <script src="assets/js/concert.js?v=20260824-2"></script>
 </body>
 </html>

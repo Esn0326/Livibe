@@ -13,13 +13,6 @@ const VENUE_CATEGORIES = Object.freeze({
 let currentVenue = null;
 let currentConfig = null;
 
-const VIEW_PHOTOS = [
-    'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop'
-];
-
 function readVenueCategoryOverrides() {
     try {
         return JSON.parse(localStorage.getItem('livibe-venue-category-overrides') || '{}');
@@ -95,8 +88,6 @@ const CUSTOM_VENUE_OVERRIDES = {
             city: '台北市',
             citySource: 'Taipei',
             capacity: 15000,
-            photos: 1577,
-            rating: 8.6,
             zones: 48,
             mapType: 'taipei',
             configs: [
@@ -111,8 +102,6 @@ const CUSTOM_VENUE_OVERRIDES = {
         city: '桃園市',
         citySource: 'Taoyuan',
         capacity: 15000,
-        photos: 642,
-        rating: 8.4,
         zones: 48,
         mapType: 'linkou',
         configs: [
@@ -135,8 +124,8 @@ const VENUES = IMPORTED_VENUES
             city: localizedText(cityI18n, 'zh-TW'),
             cardAccent,
             cardAccentSecondary,
-            photos: Number(venue.photos) || 0,
-            rating: Number(venue.rating) || 8,
+            photos: 0,
+            rating: null,
             zones: Number(venue.zones) || 0,
             configs: Array.isArray(venue.configs) ? venue.configs : []
         };
@@ -162,17 +151,25 @@ function formatCapacity(capacity) {
 
 function genericImportedView(zone, venue, config, index) {
     const label = zone.dataset.fullname || zone.getAttribute('aria-label') || zone.id || `區域 ${index + 1}`;
-    const score = (7.8 + (index % 9) / 10).toFixed(1);
     return {
         location: `${venue.name} · ${label}`,
         title: `${label} 座位視野`,
-        score,
-        copy: `此區屬於「${config.label}」配置；實際視線會依延伸台、燈光、音響與現場器材位置調整。`,
-        photo: index % VIEW_PHOTOS.length
+        score: null,
+        copy: `此區屬於「${config.label}」配置；目前尚無經審核的真實視野投稿。實際視線仍會依延伸台、燈光、音響與現場器材位置調整。`
     };
 }
 
-function selectZone(zoneId) {
+function updateVenueUrl(zoneId = null) {
+    if (!currentVenue || !currentConfig) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('venue', currentVenue.id);
+    url.searchParams.set('config', currentConfig.id);
+    if (zoneId) url.searchParams.set('zone', zoneId);
+    else url.searchParams.delete('zone');
+    window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+}
+
+function selectZone(zoneId, { syncUrl = true } = {}) {
     document.querySelectorAll('#featured-diagram .seat-zone').forEach((zone) => {
         zone.classList.toggle('active', zone.dataset.zone === zoneId);
     });
@@ -183,9 +180,18 @@ function selectZone(zoneId) {
     if (!view) return;
     $('#featured-zone-label').textContent = view.location;
     $('#featured-zone-title').textContent = view.title;
-    $('#featured-zone-score').textContent = view.score;
+    $('#featured-zone-score').textContent = '--';
+    $('#featured-zone-score').nextElementSibling.textContent = ' 尚無評分';
     $('#featured-zone-copy').textContent = view.copy;
-    $('#featured-photo').style.backgroundImage = `linear-gradient(180deg, transparent 45%, rgba(0,0,0,.78)), url("${VIEW_PHOTOS[view.photo % VIEW_PHOTOS.length]}")`;
+    const photo = $('#featured-photo');
+    photo.classList.add('is-placeholder');
+    photo.style.backgroundImage = 'none';
+    photo.innerHTML = '<span>等待真實視野投稿</span>';
+    const shareButton = $('#copy-zone-link');
+    shareButton.disabled = false;
+    shareButton.dataset.zoneId = zoneId;
+    shareButton.textContent = '複製此視野連結';
+    if (syncUrl) updateVenueUrl(zoneId);
 }
 
 async function loadImportedMap(diagram, venue, config, renderToken) {
@@ -225,16 +231,29 @@ function resetMapTools(diagram, imported) {
     const hideButton = document.querySelector('#featured-venue [data-map-action="hide-empty"]');
     hideButton?.classList.remove('active');
     if (hideButton) {
-        hideButton.textContent = imported ? '照片狀態未同步' : '隱藏無照片區';
-        hideButton.disabled = imported;
-        hideButton.title = imported ? '目前僅同步座位圖，尚未同步照片狀態' : '';
+        hideButton.textContent = '照片資料待上線';
+        hideButton.disabled = true;
+        hideButton.title = '真實照片投稿與審核功能會在後續階段接上';
     }
 }
 
-async function renderVenueConfig(venue, config) {
+async function renderVenueConfig(venue, config, requestedZoneId = null) {
     currentVenue = venue;
     currentConfig = config;
+    updateVenueUrl(requestedZoneId);
     renderVenueCategoryControl(venue, config);
+    const shareButton = $('#copy-zone-link');
+    shareButton.disabled = true;
+    shareButton.dataset.zoneId = '';
+    shareButton.textContent = '選擇座位區後分享';
+    $('#featured-photo').classList.add('is-placeholder');
+    $('#featured-photo').style.backgroundImage = 'none';
+    $('#featured-photo').innerHTML = '<span>等待真實視野投稿</span>';
+    $('#featured-zone-label').textContent = '請選擇座位區';
+    $('#featured-zone-title').textContent = '選取區域以建立分享連結';
+    $('#featured-zone-score').textContent = '--';
+    $('#featured-zone-score').nextElementSibling.textContent = ' 尚無評分';
+    $('#featured-zone-copy').textContent = '現階段提供座位區定位與配置參考；照片、描述與評分必須由真實投稿資料產生。';
     const diagram = $('#featured-diagram');
     const imported = Boolean(config.mapAsset && !config.mapKind);
     const renderToken = `${venue.id}:${config.id}:${Date.now()}`;
@@ -265,8 +284,10 @@ async function renderVenueConfig(venue, config) {
         }
         if (diagram.dataset.renderToken !== renderToken) return;
         bindZoneInteractions(diagram);
-        const firstZone = diagram.querySelector('.seat-zone');
-        if (firstZone && !imported) selectZone(firstZone.dataset.zone);
+        const zones = Array.from(diagram.querySelectorAll('.seat-zone'));
+        const requestedZone = zones.find((zone) => zone.dataset.zone === requestedZoneId);
+        const initialZone = requestedZone || (!imported ? zones[0] : null);
+        if (initialZone) selectZone(initialZone.dataset.zone, { syncUrl: Boolean(requestedZone) });
     } catch (error) {
         console.error(error);
         if (diagram.dataset.renderToken === renderToken) {
@@ -276,21 +297,22 @@ async function renderVenueConfig(venue, config) {
     }
 }
 
-function showVenue(venue) {
+function showVenue(venue, { configId = null, zoneId = null, scroll = true } = {}) {
     currentVenue = venue;
     $('#featured-name').textContent = venue.name;
     $('#featured-meta').textContent = `${venueCity(venue)} · ${formatCapacity(venue.capacity)}`;
-    $('#featured-photos').textContent = venue.photos ? venue.photos.toLocaleString() : venue.configs.length;
-    $('#featured-photo-unit').textContent = venue.photos ? '張視野' : '份配置';
-    $('#featured-rating').textContent = venue.rating.toFixed(1);
+    $('#featured-photos').textContent = venue.configs.length;
+    $('#featured-photo-unit').textContent = '份配置';
+    $('#featured-rating').textContent = '--';
     $('#featured-zones').textContent = venue.zones;
 
     const singleLayout = venue.configs.length === 1;
+    const selectedConfig = venue.configs.find((config) => config.id === configId) || venue.configs[0];
     const tabs = $('#layout-tabs');
     tabs.classList.toggle('single-layout', singleLayout);
     tabs.innerHTML = singleLayout
         ? `<span class="layout-badge">單一配置 · ${escapeHtml(venue.configs[0].label)}</span>`
-        : venue.configs.map((config, index) => `<button class="${index === 0 ? 'active' : ''}" type="button" data-config-id="${escapeHtml(config.id)}">${escapeHtml(config.label)}</button>`).join('');
+        : venue.configs.map((config) => `<button class="${config.id === selectedConfig.id ? 'active' : ''}" type="button" data-config-id="${escapeHtml(config.id)}">${escapeHtml(config.label)}</button>`).join('');
 
     tabs.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => {
         tabs.querySelectorAll('button').forEach((item) => item.classList.remove('active'));
@@ -299,8 +321,8 @@ function showVenue(venue) {
         if (config) renderVenueConfig(venue, config);
     }));
 
-    renderVenueConfig(venue, venue.configs[0]);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderVenueConfig(venue, selectedConfig, zoneId);
+    if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderRegionOptions() {
@@ -330,9 +352,9 @@ function renderVenues() {
         <button class="venue-card" type="button" data-id="${escapeHtml(venue.id)}" style="--venue-accent:${venue.cardAccent};--venue-accent-secondary:${venue.cardAccentSecondary}">
             <div class="venue-card-art"><span>${escapeHtml(venueCity(venue))}</span><strong>${escapeHtml(venueCity(venue).slice(0, 2))}</strong></div>
             <div class="venue-card-content">
-                <div><small>${escapeHtml(venue.region)} · ${venue.configs.length} 種舞台配置</small><strong class="venue-score">★ ${venue.rating.toFixed(1)}</strong></div>
+                <div><small>${escapeHtml(venue.region)} · ${venue.configs.length} 種舞台配置</small><strong class="venue-score">等待投稿</strong></div>
                 <h3>${escapeHtml(venue.name)}</h3>
-                <p>${venue.photos ? `${venue.photos.toLocaleString()} 張實拍視野` : `已收錄 ${venue.configs.length} 份座位圖`} · ${venue.zones ? `${venue.zones} 個座位區` : '互動分區載入後顯示'}</p>
+                <p>已收錄 ${venue.configs.length} 份座位圖 · ${venue.zones ? `${venue.zones} 個座位區` : '互動分區載入後顯示'}</p>
                 <span class="text-link">查看座位圖 →</span>
             </div>
         </button>`).join('') || '<div class="empty-state">找不到符合條件的場館。</div>';
@@ -344,12 +366,30 @@ function renderVenues() {
 $('#venue-count').textContent = VENUES.length;
 ACCESS.mountRoleControl($('#venue-role-control'));
 renderRegionOptions();
-showVenue(VENUES[0]);
+const initialParams = new URLSearchParams(window.location.search);
+const initialVenue = VENUES.find((venue) => venue.id === initialParams.get('venue')) || VENUES[0];
+showVenue(initialVenue, {
+    configId: initialParams.get('config'),
+    zoneId: initialParams.get('zone'),
+    scroll: false
+});
 ['#venue-search', '#venue-region'].forEach((selector) => {
     $(selector).addEventListener('input', renderVenues);
     $(selector).addEventListener('change', renderVenues);
 });
 renderVenues();
+
+$('#copy-zone-link').addEventListener('click', async () => {
+    const button = $('#copy-zone-link');
+    if (!button.dataset.zoneId) return;
+    updateVenueUrl(button.dataset.zoneId);
+    try {
+        await navigator.clipboard.writeText(window.location.href);
+        button.textContent = '連結已複製';
+    } catch {
+        button.textContent = '請複製網址列連結';
+    }
+});
 
 window.addEventListener('livibe:rolechange', () => {
     ACCESS.mountRoleControl($('#venue-role-control'));

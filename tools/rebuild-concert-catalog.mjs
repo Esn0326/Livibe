@@ -5,6 +5,12 @@ import vm from 'node:vm';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputPath = resolve(projectRoot, 'assets/data/site-data.js');
+const CATALOG_SNAPSHOT = '2026-08-21';
+const slugify = (value) => String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-|-$/g, '');
 
 // Snapshot: 2026-08-21. This catalog intentionally covers ticketed concerts,
 // concert-style music festivals and announced future shows in Taiwan. Pure fan
@@ -12,7 +18,15 @@ const outputPath = resolve(projectRoot, 'assets/data/site-data.js');
 // excluded. See non/research/concert-data-sources.md for the research trail.
 const events = [];
 const add = (artist, venue, dates, theme, organizer = '未提供') => {
-    events.push({ artists: Array.isArray(artist) ? artist : [artist], venue, dates, theme, organizer });
+    const normalizedDates = Array.isArray(dates) ? dates : [dates];
+    events.push({
+        id: `${slugify(theme)}-${normalizedDates[0]}-${slugify(venue)}`,
+        artists: Array.isArray(artist) ? artist : [artist],
+        venue,
+        dates: normalizedDates,
+        theme,
+        organizer
+    });
 };
 
 // 2022 — Taipei Arena official/history records plus verified major shows.
@@ -286,6 +300,7 @@ add('Stray Kids', '台北大巨蛋', ['2026-12-12'], 'Stray Kids World Tour “R
 add('滅火器 (Fire EX.)', '高雄巨蛋', ['2026-12-12', '2026-12-13'], 'ON FIRE DAY 2026 高雄巨蛋演唱會');
 
 const concerts = events.flatMap((event) => event.dates.flatMap((date) => event.artists.map((artist) => ({
+    eventId: event.id,
     artist,
     venue: event.venue,
     date,
@@ -299,10 +314,17 @@ vm.runInNewContext(existingSource, sandbox, { filename: outputPath });
 const existingData = sandbox.window.LIVIBE_DATA;
 if (!existingData?.venueData) throw new Error(`Invalid site data source: ${outputPath}`);
 
+const meta = {
+    ...(existingData.meta || {}),
+    catalogSnapshot: CATALOG_SNAPSHOT,
+    catalogScope: '2022–2026 台灣已舉行及已正式公告演出',
+    catalogPolicy: '排除純傳聞、未定日期活動、典禮與體育中場演出'
+};
+
 const output = `/**
  * LIVIBE 網站資料唯一來源。
  * 集中管理演出、國家、城市、多語系、色票、場館與舞台配置。
  */
-window.LIVIBE_DATA = ${JSON.stringify({ concerts, venueData: existingData.venueData }, null, 2)};\n`;
+window.LIVIBE_DATA = ${JSON.stringify({ meta, concerts, venueData: existingData.venueData }, null, 2)};\n`;
 await writeFile(outputPath, output, 'utf8');
 console.log(`Rebuilt ${concerts.length} concert rows from ${events.length} verified events in site-data.js.`);

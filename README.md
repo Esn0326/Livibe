@@ -1,6 +1,10 @@
 # LIVIBE
 
-LIVIBE 是以 IMDb 評價網站概念呈現演唱會、場館與互動座位視野的靜態網站。
+LIVIBE 是以 IMDb 評價網站概念呈現演唱會、場館與互動座位視野的前端 MVP。
+
+目前版本把尚未舉行的「期待度」與演出結束後的「觀眾評分」分開計算，所有分數都會顯示本機樣本數，至少 5 則才列入評分排序，不再以產生式示意分數填充排行榜。場館頁可用 `venue/config/zone` 參數分享指定座位區；真實視野投稿尚未接上，因此不顯示虛構照片數或區域分數。評價、片單與管理設定仍只保存在目前瀏覽器，尚未形成公開、跨裝置的社群資料。
+
+產品功能範圍、限制與後續階段請見 [`docs/mvp-roadmap.md`](docs/mvp-roadmap.md)。
 
 ## Source tree
 
@@ -21,6 +25,7 @@ LIVIBE 是以 IMDb 評價網站概念呈現演唱會、場館與互動座位視�
 │  │  └─ venue-maps.js                # 小巨蛋、林口與描點資料
 │  └─ venue-maps/                     # 通用場館 SVG
 ├─ tools/                              # 資料重建、場館匯入與驗證
+├─ docs/mvp-roadmap.md                 # MVP 功能、限制與後續路線圖
 └─ non/                                # 不參與正式網站載入的歷史與產製資料
 ```
 
@@ -63,3 +68,5 @@ node tools/validate-project.mjs
 場館匯入工具 `tools/import-venue-maps.mjs` 會保留演出與地區設定，只更新同一份 `site-data.js` 的場館內容。
 
 查證範圍與主要來源記錄於 `non/research/concert-data-sources.md`。
+
+首頁的演出行事曆會直接讀取同一份 `site-data.js`，並跟隨藝人、類型與時間篩選條件更新，不需要維護第二份月曆資料。

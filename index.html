@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVIBE - 演唱會資料庫</title>
-    <link rel="stylesheet" href="assets/css/app.css?v=20260821-10">
+    <link rel="stylesheet" href="assets/css/app.css?v=20260824-2">
 </head>
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo-box">LIVIBE</a>
         <div class="nav-links">
             <a href="#concert-grid">演出</a>
+            <a href="#concert-calendar">行事曆</a>
             <a href="venues.html">場館視野</a>
             <a href="#news-strip">新聞</a>
+            <a href="#product-roadmap">開發藍圖</a>
         </div>
         <a class="nav-auth-link" data-auth-link href="login.html">管理登入</a>
     </nav>
@@ -22,7 +24,7 @@
         <div class="hero-content">
             <p class="eyebrow">Concert Database for Taiwan</p>
             <h1>找到下一場值得進場的演唱會</h1>
-            <p class="hero-copy">像 IMDb 查電影一樣，快速瀏覽演唱會、音樂祭、場館資訊、觀眾評分與討論熱度。</p>
+            <p class="hero-copy">探索演唱會、音樂祭與場館資訊。演出前看期待度，演出後看觀眾評價；每一個分數都顯示實際樣本。</p>
             <div class="hero-stats" id="hero-stats">
                 <span>載入資料中</span>
             </div>
@@ -66,6 +68,28 @@
             </label>
         </section>
 
+        <section class="calendar-section" id="concert-calendar" aria-labelledby="calendar-title">
+            <div class="calendar-header">
+                <div>
+                    <p class="eyebrow">Calendar</p>
+                    <h2 id="calendar-title">演出行事曆</h2>
+                    <p id="calendar-count">載入本月場次中</p>
+                </div>
+                <div class="calendar-controls" aria-label="切換行事曆月份">
+                    <button id="calendar-prev" type="button" aria-label="上一個月">‹</button>
+                    <button id="calendar-today" type="button">今天</button>
+                    <strong id="calendar-month" aria-live="polite"></strong>
+                    <button id="calendar-next" type="button" aria-label="下一個月">›</button>
+                </div>
+            </div>
+            <div class="calendar-scroll" tabindex="0" aria-label="演唱會月曆，可水平捲動">
+                <div class="calendar-weekdays" aria-hidden="true">
+                    <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+                </div>
+                <div id="calendar-grid" class="calendar-grid" role="grid" aria-label="演唱會場次"></div>
+            </div>
+        </section>
+
         <section class="section-header">
             <div>
                 <p class="eyebrow">Browse</p>
@@ -75,6 +99,9 @@
         </section>
 
         <section id="concert-grid" class="concert-grid" aria-live="polite"></section>
+        <div class="load-more-wrap">
+            <button id="load-more-button" class="secondary-button" type="button" hidden>載入更多</button>
+        </div>
 
         <section class="news-strip" id="news-strip">
             <div class="section-header compact">
@@ -85,10 +112,43 @@
             </div>
             <div class="news-grid" id="home-news"></div>
         </section>
+
+        <section class="roadmap-strip" id="product-roadmap">
+            <div class="section-header compact">
+                <div>
+                    <p class="eyebrow">Product Roadmap</p>
+                    <h2>從可信評價開始</h2>
+                </div>
+                <p>第一版先驗證核心體驗，後續功能逐步上線。</p>
+            </div>
+            <div class="roadmap-grid">
+                <article class="roadmap-card active">
+                    <span>MVP · 現在</span>
+                    <h3>演出探索與評價原型</h3>
+                    <p>演出資料、期待度／演後評價分流、樣本數、片單、討論與場館視野。</p>
+                </article>
+                <article class="roadmap-card">
+                    <span>下一階段</span>
+                    <h3>正式會員與認證入場</h3>
+                    <p>後端帳號、跨裝置同步、票券認證、防灌分與內容檢舉。</p>
+                </article>
+                <article class="roadmap-card">
+                    <span>成長階段</span>
+                    <h3>跨國資訊與通知</h3>
+                    <p>K-pop、J-pop、華語市場的多語資料、開賣提醒與藝人追蹤。</p>
+                </article>
+                <article class="roadmap-card">
+                    <span>未來</span>
+                    <h3>社群聚合與票務媒合</h3>
+                    <p>合規引用社群討論，先做官方售票與需求媒合，再評估安全交易。</p>
+                </article>
+            </div>
+            <p class="prototype-note">目前為前端 MVP：評價與片單只儲存在這台裝置的瀏覽器，尚未提供公開帳號、實名認證或票務交易。</p>
+        </section>
     </main>
 
-    <script src="assets/data/site-data.js?v=20260821-3"></script>
-    <script src="assets/js/core.js?v=20260821-10"></script>
-    <script src="assets/js/home.js?v=20260821-3"></script>
+    <script src="assets/data/site-data.js?v=20260824-2"></script>
+    <script src="assets/js/core.js?v=20260824-2"></script>
+    <script src="assets/js/home.js?v=20260824-2"></script>
 </body>
 </html>
