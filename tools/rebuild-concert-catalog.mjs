@@ -5,6 +5,8 @@ import vm from 'node:vm';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputPath = resolve(projectRoot, 'assets/data/site-data.js');
+const posterSourcePath = resolve(projectRoot, 'tools/concert-posters.json');
+const posterSources = JSON.parse(await readFile(posterSourcePath, 'utf8'));
 const CATALOG_SNAPSHOT = '2026-10-15';
 const slugify = (value) => String(value || '')
     .trim()
@@ -19,14 +21,15 @@ const slugify = (value) => String(value || '')
 const events = [];
 const add = (artist, venue, dates, theme, organizer = '未提供', posterUrl = '') => {
     const normalizedDates = Array.isArray(dates) ? dates : [dates];
+    const id = `${slugify(theme)}-${normalizedDates[0]}-${slugify(venue)}`;
     events.push({
-        id: `${slugify(theme)}-${normalizedDates[0]}-${slugify(venue)}`,
+        id,
         artists: Array.isArray(artist) ? artist : [artist],
         venue,
         dates: normalizedDates,
         theme,
         organizer,
-        posterUrl
+        posterUrl: posterUrl || posterSources[id]?.posterUrl || ''
     });
 };
 

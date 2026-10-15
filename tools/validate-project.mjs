@@ -44,6 +44,9 @@ const missingEventIds = concerts.filter((concert) => !concert.eventId).length;
 const invalidPosterUrls = concerts
     .filter((concert) => concert.posterUrl && !/^https:\/\/.+/.test(concert.posterUrl))
     .map((concert) => concert.eventId || concert.theme);
+const missingPosterUrls = [...new Set(concerts
+    .filter((concert) => !concert.posterUrl)
+    .map((concert) => concert.eventId || concert.theme))];
 const eventIdentity = new Map();
 const conflictingEventIds = [];
 for (const concert of concerts) {
@@ -58,8 +61,8 @@ const siteDataValid = Array.isArray(concerts)
     && Boolean(locations.cities)
     && Boolean(locations.countries)
     && /^\d{4}-\d{2}-\d{2}$/.test(metadata.catalogSnapshot || '');
-const failures = { missingReferences, missingMaps, unknownCities, missingEventIds, invalidPosterUrls, conflictingEventIds, siteDataValid };
-if (missingReferences.length || missingMaps.length || unknownCities.length || missingEventIds || invalidPosterUrls.length || conflictingEventIds.length || !siteDataValid) {
+const failures = { missingReferences, missingMaps, unknownCities, missingEventIds, missingPosterUrls, invalidPosterUrls, conflictingEventIds, siteDataValid };
+if (missingReferences.length || missingMaps.length || unknownCities.length || missingEventIds || missingPosterUrls.length || invalidPosterUrls.length || conflictingEventIds.length || !siteDataValid) {
     console.error(JSON.stringify(failures, null, 2));
     process.exitCode = 1;
 } else {
@@ -67,6 +70,7 @@ if (missingReferences.length || missingMaps.length || unknownCities.length || mi
         pages: pages.length,
         concertRows: concerts.length,
         verifiedEvents: eventIdentity.size,
+        posterEvents: eventIdentity.size - missingPosterUrls.length,
         catalogSnapshot: metadata.catalogSnapshot,
         venues: catalog.length,
         layouts: configs.length,

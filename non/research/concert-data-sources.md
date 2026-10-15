@@ -30,15 +30,17 @@
 ## 重建方式
 
 ```powershell
+node tools/backfill-concert-posters.mjs
+node tools/validate-concert-posters.mjs
 node tools/rebuild-concert-catalog.mjs
 node tools/validate-project.mjs
 ```
 
-未來更新時，先調整 `tools/rebuild-concert-catalog.mjs` 的事件清單，再依序執行上述兩個指令。若公告取消或延期，應移除原日期並改成實際舉辦日；仍未確定新日期的活動暫不寫入正式資料。
+未來更新時，先調整 `tools/rebuild-concert-catalog.mjs` 的事件清單，再依序執行上述指令。若公告取消或延期，應移除原日期並改成實際舉辦日；仍未確定新日期的活動暫不寫入正式資料。已結束場次繼續保留，作為 LIVIBE 的歷史演出資料。
 
 ### 官方海報連結
 
-每筆 `add()` 可選填第六個參數 `posterUrl`。僅使用主辦、藝人或官方售票頁直接提供的 HTTPS 圖片網址；網址不存在或圖片無法載入時，網站會自動顯示預設演出圖。例如：
+每筆 `add()` 可選填第六個參數 `posterUrl`；未直接填寫時，重建程式會依 `eventId` 讀取 `tools/concert-posters.json`。自動擷取以官方場館、主辦、藝人或售票頁為優先，無法自動配對的來源則保留於兩份 override 檔。所有網址可用 `node tools/validate-concert-posters.mjs` 逐一驗證；圖片失效時網站仍會顯示預設演出圖。例如：
 
 ```js
 add('藝人', '場館', ['YYYY-MM-DD'], '演出名稱', '主辦單位', 'https://official.example/poster.jpg');

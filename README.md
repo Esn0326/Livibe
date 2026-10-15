@@ -58,12 +58,23 @@ python -m http.server 8765 --bind 127.0.0.1
 
 ## Concert data
 
-演唱會正式清單維護於 `tools/rebuild-concert-catalog.mjs`，目前收錄 2022–2026 年台灣已舉辦及已公告場次。重建時會保留場館資料，只更新 `site-data.js` 的演出內容：
+演唱會正式清單維護於 `tools/rebuild-concert-catalog.mjs`，目前收錄 2022–2027 年台灣已舉辦及已公告場次；過往場次不會因日期結束而移除。海報來源集中於 `tools/concert-posters.json`，重建時會保留場館資料，只更新 `site-data.js` 的演出內容：
 
 ```powershell
 node tools/rebuild-concert-catalog.mjs
 node tools/validate-project.mjs
 ```
+
+需要重新擷取官方場館及既有來源的海報時，依序執行：
+
+```powershell
+node tools/backfill-concert-posters.mjs
+node tools/validate-concert-posters.mjs
+node tools/rebuild-concert-catalog.mjs
+node tools/validate-project.mjs
+```
+
+無法由官方場館頁自動配對的場次，分別記錄於 `tools/concert-poster-search-overrides.json` 與 `tools/concert-poster-overrides.json`，避免下一次重建遺失人工查證結果。
 
 場館匯入工具 `tools/import-venue-maps.mjs` 會保留演出與地區設定，只更新同一份 `site-data.js` 的場館內容。
 
