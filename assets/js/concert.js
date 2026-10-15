@@ -367,7 +367,16 @@ async function renderConcertVenueConfiguration(event, session) {
 function renderDetail(event) {
     currentEvent = event;
     document.title = `LIVIBE | ${event.title}`;
-    qs('#detail-poster').style.backgroundImage = `linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.62)), url("${event.poster}")`;
+    const poster = qs('#detail-poster');
+    const setPoster = (url) => {
+        poster.style.backgroundImage = `linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.62)), url("${url}")`;
+    };
+    setPoster(event.poster);
+    if (event.poster !== event.fallbackPoster) {
+        const posterProbe = new Image();
+        posterProbe.addEventListener('error', () => setPoster(event.fallbackPoster), { once: true });
+        posterProbe.src = event.poster;
+    }
     qs('#tag-display').textContent = typeLabel(event.tag);
     qs('#tag-display').className = `type-pill tag-${event.tag.toLowerCase()}`;
     qs('#status-display').textContent = event.isUpcoming ? '即將到來' : '歷史演出';

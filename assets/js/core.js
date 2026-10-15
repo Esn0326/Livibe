@@ -16,6 +16,16 @@
         return value.trim().toLowerCase().replace(/\s+/g, '-');
     }
 
+    function safePosterUrl(value) {
+        if (!value) return null;
+        try {
+            const url = new URL(String(value), window.location.href);
+            return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
+        } catch {
+            return null;
+        }
+    }
+
     function firstDate(value) {
         return String(value || '').match(/\d{4}-\d{2}-\d{2}/)?.[0] || '1970-01-01';
     }
@@ -37,9 +47,11 @@
                 legacyId: slugify(title),
                 title,
                 organizer: item.organizer || '未提供',
+                posterUrl: safePosterUrl(item.posterUrl),
                 rawItems: []
             });
             grouped.get(groupKey).rawItems.push(item);
+            if (!grouped.get(groupKey).posterUrl) grouped.get(groupKey).posterUrl = safePosterUrl(item.posterUrl);
         });
 
         return Array.from(grouped.values()).map((group) => {
@@ -54,6 +66,7 @@
             const tag = classifyEvent(group.title, artists, sessions);
             const startDate = sessions[0]?.date || '1970-01-01';
             const endDate = sessions.at(-1)?.date || startDate;
+            const fallbackPoster = FALLBACK_POSTERS[Math.abs(hashCode(group.title)) % FALLBACK_POSTERS.length];
             return {
                 id: group.id,
                 legacyId: group.legacyId,
@@ -64,7 +77,8 @@
                 startDate,
                 endDate,
                 dateDisplay: sessions.length > 1 ? `${startDate} 起，共 ${sessions.length} 場` : startDate,
-                poster: FALLBACK_POSTERS[Math.abs(hashCode(group.title)) % FALLBACK_POSTERS.length],
+                poster: group.posterUrl || fallbackPoster,
+                fallbackPoster,
                 organizer: group.organizer,
                 sessions,
                 isUpcoming: new Date(`${endDate}T00:00:00+08:00`) >= TODAY

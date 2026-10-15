@@ -161,7 +161,7 @@ function renderGrid() {
     grid.innerHTML = events.map((event) => `
         <a class="concert-card" href="concert.html?id=${encodeURIComponent(event.id)}" aria-label="${escapeHtml(event.title)}">
             <div class="poster-wrapper">
-                <img src="${event.poster}" alt="${escapeHtml(event.title)} 海報" loading="lazy">
+                <img src="${event.poster}" data-fallback-poster="${event.fallbackPoster}" alt="${escapeHtml(event.title)} 海報" loading="lazy">
                 <span class="type-pill tag-${event.tag.toLowerCase()}">${typeLabel(event.tag)}</span>
             </div>
             <div class="card-content">
@@ -175,6 +175,12 @@ function renderGrid() {
             </div>
         </a>
     `).join('');
+    grid.querySelectorAll('img[data-fallback-poster]').forEach((image) => {
+        image.addEventListener('error', () => {
+            const fallbackPoster = image.dataset.fallbackPoster;
+            if (fallbackPoster && image.src !== fallbackPoster) image.src = fallbackPoster;
+        }, { once: true });
+    });
     loadMore.hidden = visibleCount >= filteredEvents.length;
     loadMore.textContent = `載入更多（尚有 ${Math.max(0, filteredEvents.length - visibleCount)} 場）`;
 }

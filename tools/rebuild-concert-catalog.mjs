@@ -5,19 +5,19 @@ import vm from 'node:vm';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputPath = resolve(projectRoot, 'assets/data/site-data.js');
-const CATALOG_SNAPSHOT = '2026-08-21';
+const CATALOG_SNAPSHOT = '2026-10-15';
 const slugify = (value) => String(value || '')
     .trim()
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, '-')
     .replace(/^-|-$/g, '');
 
-// Snapshot: 2026-08-21. This catalog intentionally covers ticketed concerts,
+// Snapshot: 2026-10-15. This catalog intentionally covers ticketed concerts,
 // concert-style music festivals and announced future shows in Taiwan. Pure fan
 // meetings, award ceremonies, sports intermissions and date-less rumours are
 // excluded. See non/research/concert-data-sources.md for the research trail.
 const events = [];
-const add = (artist, venue, dates, theme, organizer = '未提供') => {
+const add = (artist, venue, dates, theme, organizer = '未提供', posterUrl = '') => {
     const normalizedDates = Array.isArray(dates) ? dates : [dates];
     events.push({
         id: `${slugify(theme)}-${normalizedDates[0]}-${slugify(venue)}`,
@@ -25,7 +25,8 @@ const add = (artist, venue, dates, theme, organizer = '未提供') => {
         venue,
         dates: normalizedDates,
         theme,
-        organizer
+        organizer,
+        posterUrl
     });
 };
 
@@ -229,7 +230,7 @@ add('Doja Cat', '高雄巨蛋', ['2025-12-21'], 'Ma Vie World Tour', 'Live Natio
 add('李聖傑', '台北小巨蛋', ['2025-12-26', '2025-12-27'], 'One Day 直到那一天世界巡迴演唱會');
 add('蔡依林 (Jolin Tsai)', '台北大巨蛋', ['2025-12-30', '2025-12-31', '2026-01-01'], 'PLEASURE 世界巡迴演唱會 TAIPEI 2025-2026', '凌時差音樂');
 
-// 2026 — held shows and officially announced future shows as of 2026-08-21.
+// 2026 — held shows and officially announced future shows as of 2026-10-15.
 add('BABYMONSTER', '台北小巨蛋', ['2026-01-02', '2026-01-03'], 'BABYMONSTER ASIA FAN CONCERT 2025-26：LOVE MONSTERS');
 add('Energy', '台北小巨蛋', ['2026-01-10', '2026-01-11'], 'ALL IN 全面進擊巡迴演唱會', '相信音樂');
 add('Rain', '台北小巨蛋', ['2026-01-17'], 'Still Raining: Encore');
@@ -278,8 +279,10 @@ add('Official髭男dism', '台北小巨蛋', ['2026-08-29', '2026-08-30'], 'OFFI
 add(['多組女歌手'], '高雄巨蛋', ['2026-09-05'], 'HER VOICE - 無所畏懼的女聲');
 add('ITZY', '台北小巨蛋', ['2026-09-05'], 'ITZY 3RD WORLD TOUR TUNNEL VISION in TAIPEI', 'Live Nation Taiwan');
 add('IVE', '台北小巨蛋', ['2026-09-11', '2026-09-12', '2026-09-13'], 'IVE 2ND WORLD TOUR SHOW WHAT I AM IN TAIPEI', 'Live Nation Taiwan');
+add('李泳知 (Lee Youngji)', '台北流行音樂中心 表演廳', ['2026-09-19', '2026-09-20'], '2026 LEE YOUNGJI WORLD TOUR <2.0>', 'Live Nation Taiwan');
 add('劉若英', '高雄巨蛋', ['2026-09-12'], '《飛行日》2026巡迴演唱會 高雄站');
 add('FTISLAND', '高雄流行音樂中心 海音館', ['2026-09-12'], "2026 FTISLAND TOUR 0 — XIX — III 'FaTe' in KAOHSIUNG", '希林國際');
+add('THE ROSE', '高雄流行音樂中心 海音館', ['2026-09-19'], 'THE ROSE ROSETOPIA ASIA TOUR 2026 IN KAOHSIUNG');
 add('蕭煌奇', '台北小巨蛋', ['2026-09-18', '2026-09-19'], 'BRAVO 演唱會');
 add('Hans Zimmer', '高雄巨蛋', ['2026-09-19'], 'HANS ZIMMER LIVE - THE NEXT LEVEL IN KAOHSIUNG');
 add('LANY', '台北小巨蛋', ['2026-09-26'], 'LANY: soft world tour', 'Live Nation Taiwan');
@@ -289,15 +292,65 @@ add('PLAVE', '高雄巨蛋', ['2026-10-03'], '2026 PLAVE World Tour [KEEP IT MAN
 add('優里', '台北小巨蛋', ['2026-10-09', '2026-10-10'], 'YUURI 2026 LIVE IN TAIPEI');
 add('BIGBANG', '台北大巨蛋', ['2026-10-10', '2026-10-11'], 'XX : COSMOS World Tour in Taipei');
 add('XG', '台北小巨蛋', ['2026-10-17'], 'XG WORLD TOUR: THE CORE');
+add(['AiNA THE END', 'ATEEZ', 'FRUITS ZIPPER', 'Hearts2Hearts', 'King & Prince', 'NCT WISH', '櫻坂46', '&TEAM'], '台北小巨蛋', ['2026-10-24', '2026-10-25'], 'MUSIC EXPO LIVE 2026 in TAIPEI', '寬宏藝術');
 add('理想混蛋', '高雄巨蛋', ['2026-10-17', '2026-10-18'], '《不是因為天氣晴朗才見面》演唱會 高雄站');
 add('Charlie Puth', '台北小巨蛋', ['2026-10-20'], "Whatever's Clever! World Tour", 'Live Nation Taiwan');
 add('TWS', '高雄巨蛋', ['2026-10-24'], "2026 TWS TOUR '24/7:FOR:YOU' IN KAOHSIUNG");
+add('PLAVE', '國立體育大學綜合體育館 (林口體育館)', ['2026-10-23', '2026-10-24'], '2026 PLAVE World Tour [KEEP IT MANIC] in Taipei', 'APPLEWOOD Taiwan');
 add('Vaundy', '台北小巨蛋', ['2026-10-31', '2026-11-01'], 'Vaundy ASIA ARENA TOUR 2026 “HORO”', '大鴻藝術');
+add('告五人 (Accusefive)', '台北小巨蛋', ['2026-11-06', '2026-11-07', '2026-11-08'], '《在這裡 @century》世界巡迴演唱會', '相信音樂');
+add('孫盛希 (Shi Shi)', 'Legacy TERA', ['2026-11-01'], 'Shi Shi [The Taste Of…] 世界巡迴 台北場', 'Live Nation Taiwan');
+add('徐暐翔 (Vash Hsu)', 'Legacy Taipei 傳 音樂展演空間', ['2026-11-08'], '《愛火山的人》專場演唱會', 'Live Nation Taiwan / 台灣索尼音樂娛樂');
+add('82MAJOR', 'Clapper Studio', ['2026-11-08'], '82CLUB : OUT OF CONTROL in TAIPEI', 'iMe TW');
+add('yung kai', 'Zepp New Taipei', ['2026-11-11'], "stay with the ocean, i'll find you: asia tour 2026", 'Live Nation Taiwan');
+add('Culture Wars', 'Legacy Taipei 傳 音樂展演空間', ['2026-11-13'], 'CULTURE WARS LIVE IN TAIPEI 2026', 'Live Nation Taiwan');
+add('Juice Boy', 'SUB LIVE', ['2026-11-14'], 'Where Forever Ends Live Concert 2026', 'Live Nation Taiwan');
+add('Malcolm Todd', 'TICC 台北國際會議中心', ['2026-11-23'], 'Malcolm Todd: Do That Again Tour', 'Live Nation Taiwan');
+add('山下智久', '高雄流行音樂中心 海音館', ['2026-11-14'], '2026 巡迴演唱會 DREAMING 高雄場');
+add('LE SSERAFIM', '國立體育大學綜合體育館 (林口體育館)', ['2026-11-14', '2026-11-15'], '2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN TAIPEI');
+add('BINI', '新北市工商展覽中心', ['2026-11-15'], 'BINI: SIGNALS WORLD TOUR 2026 TAIPEI', 'FBG Live Taiwan');
 add('BTS', '高雄國家體育場', ['2026-11-19', '2026-11-21', '2026-11-22'], "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG", 'BIGHIT MUSIC / Live Nation Taiwan');
 add('BABYMONSTER', '台北小巨蛋', ['2026-11-21', '2026-11-22'], 'BABYMONSTER WORLD TOUR [CHOOM] in TAIPEI');
+add('wave to earth', 'TICC 台北國際會議中心', ['2026-11-24'], 'wave to earth - the pieces tour', 'Live Nation Taiwan');
 add('Joji', '高雄巨蛋', ['2026-11-27'], 'JOJI SOLARIS', 'Live Nation Taiwan');
+add('Young K', 'TICC 台北國際會議中心', ['2026-11-28', '2026-11-29'], 'Young K Solo Tour <YOUNGEST> in TAIPEI', 'Live Nation Taiwan');
+add(['言承旭', '吳建豪', '周渝民', '五月天 阿信'], '台北大巨蛋', ['2026-11-28', '2026-11-29'], 'F✦FOREVER 恆星之城・光年赴約・臺北 限定場演唱會', '用心音樂 / 相信音樂 / 寬魚國際 / Live Nation Taiwan');
+add('MAMAMOO', '台北小巨蛋', ['2026-11-28', '2026-11-29'], 'MAMAMOO 2026 WORLD TOUR <4WARD> in TAIPEI', '希林國際 / VIBE MAKER 希波企劃', 'https://www-ws.gov.taipei/001/Upload/617/relpic/28176/9713315/8d67f75e-a235-4a4b-b865-fbce152b2d7c.png');
+add('DOMi + JD Beck', 'Clapper Studio', ['2026-12-04'], 'DOMi & JD BECK - WHO ASKED? Tour', 'Live Nation Taiwan');
+add('brb.', 'Clapper Studio', ['2026-12-05'], 'brb. “half/lives” Tour', 'Live Nation Taiwan');
+add('Khalid', 'TICC 台北國際會議中心', ['2026-12-07'], "Khalid: It's Always Summer Somewhere Tour", 'Live Nation Taiwan');
+add('FKJ', 'Zepp New Taipei', ['2026-12-08'], 'FKJ – Tyber Tour in Taipei', 'Live Nation Taiwan');
+add('Slowdive', 'Zepp New Taipei', ['2026-12-10'], 'Slowdive 2026 Live in Taipei', 'ULC Presents 有料創藝');
+add('田馥甄 (Hebe)', '台北小巨蛋', ['2026-12-12', '2026-12-13', '2026-12-15', '2026-12-18', '2026-12-19', '2026-12-20'], '要去什麼地方 2026台北小巨蛋演唱會', '樂來樂好有限公司 / 何樂音樂有限公司', 'https://www-ws.gov.taipei/001/Upload/617/relpic/28176/9713720/7bba5940-80f8-48f0-9be5-17017b4b3fce.jpg');
+add('劉若英', '台北小巨蛋', ['2026-12-05'], '《飛行日》2026巡迴演唱會 台北站', '相信音樂 / 相遇音樂');
+add('T.O.P', '高雄巨蛋', ['2026-12-19'], 'T.O.P PRE-STUDIO 2026 in KAOHSIUNG', 'APPLEWOOD Taiwan');
+add('Mr.Children', '台北小巨蛋', ['2026-12-26', '2026-12-27'], 'Mr.Children Tour 2026 “Saturday in the Park”', '雅慕斯娛樂股份有限公司', 'https://www-ws.gov.taipei/001/Upload/617/relpic/28176/9716413/baebf606-ce09-4683-b954-43e954546cc1.jpg');
+add('鄭宜農 (Enno Cheng)', '高雄流行音樂中心 LIVE WAREHOUSE 大庫', ['2026-12-27'], '《缺與圓之後 Inter-Phases》高雄演唱會', '邊走邊聽有限公司');
+add('鼓鼓 呂思緯 (GBOYSWAG)', '台北流行音樂中心 表演廳', ['2026-12-26'], '《我現在又在想你了 Missing You All Over Again》巡迴演唱會');
 add('Stray Kids', '台北大巨蛋', ['2026-12-12'], 'Stray Kids World Tour “RUN IT” in Taipei', 'Live Nation Taiwan');
 add('滅火器 (Fire EX.)', '高雄巨蛋', ['2026-12-12', '2026-12-13'], 'ON FIRE DAY 2026 高雄巨蛋演唱會');
+add('5 Seconds of Summer', '台北流行音樂中心 表演廳', ['2026-11-25'], '5 SECONDS OF SUMMER: EVERYONE’S A STAR! WORLD TOUR', 'Live Nation Taiwan');
+add('Kodaline', 'TICC 台北國際會議中心', ['2026-08-24'], 'Kodaline – Farewell Tour', 'Live Nation Taiwan');
+add('The Kid LAROI', 'Zepp New Taipei', ['2026-07-03', '2026-07-07', '2026-07-08'], 'THE KID LAROI: A PERFECT WORLD TOUR', 'Live Nation Taiwan');
+add('BE:FIRST', 'Legacy TERA', ['2026-09-27'], 'BE:FIRST WORLD SHOWCASE 2026 “WATCH ME”', 'Live Nation Taiwan');
+add('Henry Moodie', '高雄 LIVE WAREHOUSE', ['2026-09-28'], 'Henry Moodie: Mood Swings World Tour', 'Live Nation Taiwan');
+add('Henry Moodie', 'Legacy Taipei 傳 音樂展演空間', ['2026-10-05'], 'Henry Moodie: Mood Swings World Tour', 'Live Nation Taiwan');
+add('Post Malone', '高雄國家體育場', ['2026-09-19'], 'Post Malone Presents The BIG ASS Stadium World Tour', 'Live Nation Taiwan');
+add('拍謝少年', '高雄流行音樂中心 海音館', ['2026-10-10'], '2026 Takao Rock 打狗祭 ➤ Hi-ing 5 | 拍謝少年〖噪音特區 Noise Zone〗高流演唱會 | 售票專場', '高雄流行音樂中心');
+add('蔡健雅', '高雄流行音樂中心 海音館', ['2026-10-17'], '2026 Takao Rock 打狗祭 KMC Select ➤國泰世華銀行 蔡健雅 除此之外 Into The B-Sides', '高雄流行音樂中心');
+add('尤雅', '高雄流行音樂中心 海音館', ['2026-10-24'], '尤雅- 2026《往事只能回味》演唱會-高雄站');
+
+// 2027 — officially announced future shows as of 2026-10-15.
+add('BOYNEXTDOOR', '國立體育大學綜合體育館 (林口體育館)', ['2027-01-08', '2027-01-09', '2027-01-10'], 'BOYNEXTDOOR TOUR ‘KNOCK ON Vol.2’ IN TAIPEI', '遠雄創藝');
+add('Blue', '高雄流行音樂中心 海音館', ['2027-01-17'], 'Blue 25th Anniversary Tour in Kaohsiung', 'Live Nation Taiwan');
+add('Against The Current', 'TICC 台北國際會議中心', ['2027-01-15'], 'AGAINST THE CURRENT : TILL DEATH & BACK TOUR', 'Live Nation Taiwan');
+add('Maroon 5', '高雄國家體育場', ['2027-01-24'], 'Maroon 5 Asia 2027 in Kaohsiung', 'Live Nation Taiwan');
+add('Westlife', '高雄巨蛋', ['2027-01-30'], 'WESTLIFE 25: THE ANNIVERSARY WORLD TOUR', 'Live Nation Taiwan');
+add('Freya Skye', 'Zepp New Taipei', ['2027-02-22'], 'Freya Skye - Stars Align Tour', 'Live Nation Taiwan');
+add('溫室雜草 (Easy Weeds)', 'Legacy TERA', ['2027-01-29'], '〖衝突的意義_Mastering〗溫室雜草專輯發片最大場', 'Live Nation Taiwan');
+add('Roy Kim', 'Zepp New Taipei', ['2027-01-30'], '2026-27 ROY KIM LIVE TOUR [R:O:Y] in TAIPEI');
+add('beabadoobee', '高雄流行音樂中心 海音館', ['2027-04-11'], 'The Powerlines Tour', 'Live Nation Taiwan');
+add('Bruno Mars', '高雄國家體育場', ['2027-05-01', '2027-05-02'], 'Bruno Mars - The Romantic Tour', 'Live Nation Taiwan');
 
 const concerts = events.flatMap((event) => event.dates.flatMap((date) => event.artists.map((artist) => ({
     eventId: event.id,
@@ -305,7 +358,8 @@ const concerts = events.flatMap((event) => event.dates.flatMap((date) => event.a
     venue: event.venue,
     date,
     theme: event.theme,
-    organizer: event.organizer
+    organizer: event.organizer,
+    posterUrl: event.posterUrl
 })))).sort((a, b) => a.date.localeCompare(b.date) || a.theme.localeCompare(b.theme, 'zh-Hant') || a.artist.localeCompare(b.artist, 'zh-Hant'));
 
 const existingSource = await readFile(outputPath, 'utf8');
@@ -317,7 +371,7 @@ if (!existingData?.venueData) throw new Error(`Invalid site data source: ${outpu
 const meta = {
     ...(existingData.meta || {}),
     catalogSnapshot: CATALOG_SNAPSHOT,
-    catalogScope: '2022–2026 台灣已舉行及已正式公告演出',
+    catalogScope: '2022–2027 台灣已舉行及已正式公告演出',
     catalogPolicy: '排除純傳聞、未定日期活動、典禮與體育中場演出'
 };
 
